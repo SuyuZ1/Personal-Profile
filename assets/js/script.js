@@ -47,6 +47,19 @@ document.querySelectorAll('a[href$=".html"]').forEach((link) => {
 
 window.addEventListener("pageshow", () => body.classList.remove("page-leaving"));
 
+function revealHashTarget() {
+  if (!window.location.hash) return;
+
+  const target = document.querySelector(window.location.hash);
+  if (!target) return;
+
+  window.setTimeout(() => {
+    target.scrollIntoView({ block: "start", behavior: "auto" });
+  }, reduceMotion ? 0 : 760);
+}
+
+window.addEventListener("load", revealHashTarget);
+
 if (canvas) {
   const context = canvas.getContext("2d");
   const pointer = { x: -1000, y: -1000 };
