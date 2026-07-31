@@ -9,7 +9,7 @@ function launchProfile() {
 
   body.classList.add("launching");
   window.setTimeout(() => {
-    window.location.href = "home.html";
+    window.location.href = "pages/home.html";
   }, reduceMotion ? 0 : 680);
 }
 
