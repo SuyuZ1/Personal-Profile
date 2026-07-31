@@ -1438,23 +1438,26 @@ footer > a:hover {
 }
 
 .evolution-blueprint {
-  --blueprint-blue: #3148cf;
-  --blueprint-violet: #765de5;
-  --blueprint-cyan: #16a9c4;
-  --blueprint-green: #11a979;
-  --blueprint-orange: #e58b38;
+  --blueprint-blue: #778cff;
+  --blueprint-violet: #a58bff;
+  --blueprint-cyan: #55dff3;
+  --blueprint-green: #55d9a2;
+  --blueprint-orange: #f5a45f;
   overflow: hidden;
-  border: 1px solid rgba(82, 96, 157, 0.22);
+  border: 1px solid rgba(132, 146, 214, 0.2);
   border-radius: 16px;
-  color: #17235a;
+  color: #dbe3ff;
   background:
-    linear-gradient(rgba(51, 70, 151, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(51, 70, 151, 0.035) 1px, transparent 1px),
-    #f4f6fd;
-  background-size: 30px 30px;
+    radial-gradient(circle at 51% 43%, rgba(102, 91, 207, 0.11), transparent 29%),
+    radial-gradient(circle at 88% 36%, rgba(49, 154, 184, 0.065), transparent 25%),
+    linear-gradient(rgba(130, 145, 215, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(130, 145, 215, 0.04) 1px, transparent 1px),
+    #0a0d16;
+  background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px, auto;
   box-shadow:
-    0 30px 90px rgba(0, 0, 0, 0.35),
-    inset 0 1px rgba(255, 255, 255, 0.9);
+    0 36px 100px rgba(0, 0, 0, 0.52),
+    inset 0 1px rgba(255, 255, 255, 0.045),
+    0 0 70px rgba(91, 81, 190, 0.055);
 }
 
 .blueprint-titlebar {
@@ -1462,9 +1465,9 @@ footer > a:hover {
   justify-content: space-between;
   gap: 30px;
   padding: 16px 22px;
-  border-bottom: 1px solid rgba(49, 72, 207, 0.16);
-  color: #60709f;
-  background: rgba(255, 255, 255, 0.64);
+  border-bottom: 1px solid rgba(128, 143, 213, 0.15);
+  color: #8491ba;
+  background: rgba(7, 10, 18, 0.78);
   font-family: var(--mono);
   font-size: 0.53rem;
   letter-spacing: 0.09em;
@@ -1485,14 +1488,16 @@ footer > a:hover {
   flex-direction: column;
   padding: 25px;
   overflow: hidden;
-  border: 1px solid rgba(60, 76, 149, 0.15);
+  border: 1px solid rgba(128, 142, 210, 0.14);
   border-radius: 13px;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 9px 28px rgba(41, 55, 117, 0.06);
+  background: linear-gradient(145deg, rgba(20, 24, 39, 0.94), rgba(9, 12, 21, 0.9));
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.24),
+    inset 0 1px rgba(255, 255, 255, 0.028);
 }
 
 .blueprint-stage__heading > span {
-  color: #6f7ca9;
+  color: #7f8bb5;
   font-family: var(--mono);
   font-size: 0.52rem;
   letter-spacing: 0.1em;
@@ -1500,7 +1505,7 @@ footer > a:hover {
 
 .blueprint-stage__heading h3 {
   margin: 8px 0 0;
-  color: #18265d;
+  color: #edf1ff;
   font-size: clamp(1.25rem, 1.7vw, 1.75rem);
   font-weight: 650;
   line-height: 1.05;
@@ -1518,8 +1523,10 @@ footer > a:hover {
   height: 64px;
   place-items: center;
   margin: 28px auto 20px;
+  border: 1px solid rgba(128, 143, 213, 0.13);
   border-radius: 50%;
-  background: #eff1f9;
+  background: #151a2a;
+  box-shadow: 0 0 32px rgba(119, 140, 255, 0.06);
 }
 
 .human-controller i::before,
@@ -1528,7 +1535,7 @@ footer > a:hover {
   position: absolute;
   left: 50%;
   border-radius: 50%;
-  background: #29325c;
+  background: #8795ca;
   transform: translateX(-50%);
 }
 
@@ -1538,7 +1545,7 @@ footer > a:hover {
 .human-controller span {
   position: absolute;
   top: calc(100% + 5px);
-  color: #65719b;
+  color: #808cb5;
   font-family: var(--mono);
   font-size: 0.47rem;
   letter-spacing: 0.08em;
@@ -1552,9 +1559,9 @@ footer > a:hover {
   height: 52px;
   margin: 14px 0 22px;
   padding: 0 18px;
-  border: 1px solid rgba(73, 88, 151, 0.2);
+  border: 1px solid rgba(122, 139, 211, 0.19);
   border-radius: 9px;
-  background: #f9faff;
+  background: rgba(12, 16, 27, 0.86);
 }
 
 .fixed-pipeline::before {
@@ -1563,7 +1570,7 @@ footer > a:hover {
   right: 23px;
   left: 23px;
   height: 1px;
-  background: #8993b6;
+  background: #6373a8;
 }
 
 .fixed-pipeline i {
@@ -1571,15 +1578,15 @@ footer > a:hover {
   z-index: 1;
   width: 8px;
   height: 8px;
-  border: 2px solid #fff;
+  border: 2px solid #121727;
   border-radius: 50%;
-  background: #64709e;
+  background: #8796ca;
 }
 
 .fixed-pipeline span {
   position: absolute;
   top: calc(100% + 5px);
-  color: #7984aa;
+  color: #7b88b1;
   font-family: var(--mono);
   font-size: 0.44rem;
   letter-spacing: 0.06em;
@@ -1598,9 +1605,9 @@ footer > a:hover {
   gap: 9px;
   min-height: 58px;
   padding: 10px;
-  border: 1px dashed rgba(77, 91, 153, 0.22);
+  border: 1px dashed rgba(123, 139, 210, 0.2);
   border-radius: 8px;
-  background: rgba(248, 249, 255, 0.78);
+  background: rgba(13, 17, 29, 0.74);
 }
 
 .source-cluster > div:last-child {
@@ -1614,17 +1621,17 @@ footer > a:hover {
   place-items: center;
   border-radius: 50%;
   color: var(--blueprint-blue);
-  background: rgba(49, 72, 207, 0.09);
+  background: rgba(119, 140, 255, 0.1);
   font-size: 0.75rem;
 }
 
-.source-cluster > div:nth-child(2) b { color: var(--blueprint-green); background: rgba(17, 169, 121, 0.09); }
-.source-cluster > div:nth-child(3) b { color: var(--blueprint-violet); background: rgba(118, 93, 229, 0.09); }
-.source-cluster > div:nth-child(4) b { color: var(--blueprint-orange); background: rgba(229, 139, 56, 0.09); }
-.source-cluster > div:nth-child(5) b { color: var(--blueprint-cyan); background: rgba(22, 169, 196, 0.09); }
+.source-cluster > div:nth-child(2) b { color: var(--blueprint-green); background: rgba(85, 217, 162, 0.1); }
+.source-cluster > div:nth-child(3) b { color: var(--blueprint-violet); background: rgba(165, 139, 255, 0.1); }
+.source-cluster > div:nth-child(4) b { color: var(--blueprint-orange); background: rgba(245, 164, 95, 0.1); }
+.source-cluster > div:nth-child(5) b { color: var(--blueprint-cyan); background: rgba(85, 223, 243, 0.1); }
 
 .source-cluster span {
-  color: #495887;
+  color: #bec8e8;
   font-size: 0.61rem;
   font-weight: 620;
   line-height: 1.15;
@@ -1633,7 +1640,7 @@ footer > a:hover {
 .stage-caption {
   margin: auto 0 0;
   padding-top: 18px;
-  color: #747fa5;
+  color: #7581a7;
   font-family: var(--mono);
   font-size: 0.5rem;
   letter-spacing: 0.06em;
@@ -1676,16 +1683,16 @@ footer > a:hover {
   width: min(100%, 330px);
   aspect-ratio: 1;
   margin: 22px auto 18px;
-  border: 1px dashed rgba(49, 72, 207, 0.23);
+  border: 1px dashed rgba(119, 140, 255, 0.27);
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(118, 93, 229, 0.08), transparent 56%);
+  background: radial-gradient(circle, rgba(116, 97, 227, 0.14), transparent 58%);
 }
 
 .agent-loop::before {
   content: "";
   position: absolute;
   inset: 13%;
-  border: 1px solid rgba(49, 72, 207, 0.1);
+  border: 1px solid rgba(119, 140, 255, 0.12);
   border-radius: 50%;
 }
 
@@ -1696,9 +1703,12 @@ footer > a:hover {
   left: 50%;
   width: 100px;
   height: 86px;
+  border: 1px solid rgba(137, 151, 255, 0.26);
   border-radius: 28px;
-  background: linear-gradient(150deg, #252f73, #101740);
-  box-shadow: 0 15px 38px rgba(47, 60, 141, 0.25);
+  background: linear-gradient(150deg, #27347e, #11183d 72%);
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.34),
+    0 0 42px rgba(90, 112, 255, 0.18);
   transform: translate(-50%, -50%);
 }
 
@@ -1709,7 +1719,7 @@ footer > a:hover {
   left: 50%;
   width: 1px;
   height: 16px;
-  background: #6f7dd7;
+  background: #7184e8;
 }
 
 .agent-avatar::after {
@@ -1741,7 +1751,7 @@ footer > a:hover {
   right: 0;
   bottom: 12px;
   left: 0;
-  color: #aeb9ff;
+  color: #c0c9ff;
   font-family: var(--mono);
   font-size: 0.48rem;
   font-weight: 700;
@@ -1759,10 +1769,12 @@ footer > a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(59, 78, 166, 0.14);
+  border: 1px solid rgba(125, 141, 214, 0.17);
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 8px 20px rgba(48, 61, 130, 0.08);
+  background: rgba(17, 21, 35, 0.94);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.28),
+    inset 0 1px rgba(255, 255, 255, 0.025);
   text-align: center;
 }
 
@@ -1773,13 +1785,13 @@ footer > a:hover {
 
 .agent-action span {
   margin-top: 3px;
-  color: #29396f;
+  color: #dce4ff;
   font-size: 0.58rem;
   font-weight: 700;
 }
 
 .agent-action small {
-  color: #8a94b4;
+  color: #7d89ae;
   font-size: 0.46rem;
 }
 
@@ -1801,9 +1813,9 @@ footer > a:hover {
 .capability-grid > div {
   min-height: 74px;
   padding: 9px;
-  border: 1px solid rgba(49, 72, 207, 0.12);
+  border: 1px solid rgba(125, 141, 214, 0.14);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(13, 17, 29, 0.78);
 }
 
 .capability-grid span {
@@ -1815,7 +1827,7 @@ footer > a:hover {
 .capability-grid b {
   display: block;
   margin-top: 16px;
-  color: #495988;
+  color: #b7c1e1;
   font-size: 0.49rem;
   line-height: 1.2;
 }
@@ -1838,8 +1850,8 @@ footer > a:hover {
 }
 
 .world-ring {
-  fill: rgba(49, 72, 207, 0.025);
-  stroke: rgba(49, 72, 207, 0.2);
+  fill: rgba(119, 140, 255, 0.035);
+  stroke: rgba(119, 140, 255, 0.25);
   stroke-width: 1;
 }
 
@@ -1850,19 +1862,19 @@ footer > a:hover {
 
 .world-links path {
   fill: none;
-  stroke: rgba(80, 96, 165, 0.2);
+  stroke: rgba(116, 135, 202, 0.28);
   stroke-width: 1;
 }
 
 .world-nodes circle {
-  stroke: #fff;
+  stroke: #111726;
   stroke-width: 2;
 }
 
 .world-nodes--blue circle { fill: var(--blueprint-blue); }
 .world-nodes--green circle { fill: var(--blueprint-green); }
 .world-nodes--orange circle { fill: var(--blueprint-orange); }
-.world-minor-nodes circle { fill: #96a2cc; }
+.world-minor-nodes circle { fill: #7f8ebc; }
 
 .world-badge {
   position: absolute;
@@ -1872,11 +1884,13 @@ footer > a:hover {
   justify-content: center;
   width: 62px;
   aspect-ratio: 1;
-  border: 1px solid rgba(49, 72, 207, 0.16);
+  border: 1px solid rgba(125, 141, 214, 0.18);
   border-radius: 50%;
   color: var(--blueprint-blue);
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 8px 23px rgba(56, 70, 139, 0.12);
+  background: rgba(16, 21, 35, 0.94);
+  box-shadow:
+    0 10px 27px rgba(0, 0, 0, 0.32),
+    0 0 25px rgba(103, 120, 220, 0.08);
   font-size: 1rem;
 }
 
@@ -1898,9 +1912,9 @@ footer > a:hover {
   gap: 16px;
   margin: 0 28px 28px;
   padding: 19px 22px;
-  border: 1px solid rgba(49, 72, 207, 0.16);
+  border: 1px solid rgba(125, 141, 214, 0.16);
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.74);
+  background: rgba(10, 14, 24, 0.86);
 }
 
 .feedback-rail__label {
@@ -1922,14 +1936,14 @@ footer > a:hover {
 }
 
 .feedback-rail div span {
-  color: #596792;
+  color: #aeb9db;
   font-size: 0.51rem;
   font-weight: 620;
   line-height: 1.15;
 }
 
 .feedback-rail > i {
-  color: #9ca6c9;
+  color: #5f6d98;
   font-size: 1.1rem;
   font-style: normal;
 }
