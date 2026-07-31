@@ -1,5 +1,14 @@
 # Personal Profile
 
-Personal website for SuyuZ1, hosted with GitHub Pages.
+Multi-page personal research website for SuyuZ1, hosted with GitHub Pages.
 
-This is currently a minimal deployment test. Profile content will be added later.
+Current structure:
+
+- Interactive entrance
+- Home
+- About
+- Education
+- Research with two topic detail pages
+- Projects
+
+Final profile and research materials will be added later.

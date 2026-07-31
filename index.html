@@ -8,12 +8,12 @@
       content="Suyu's personal profile — artificial intelligence and embodied intelligence."
     />
     <meta name="theme-color" content="#08090d" />
-    <title>Suyu — AI &amp; Embodied Intelligence</title>
+    <title>Suyu — Personal Profile</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="intro-page">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
 
     <section class="intro" id="intro" aria-label="Profile introduction">
@@ -26,9 +26,9 @@
         <span>31°13′N&nbsp;&nbsp;121°28′E</span>
       </div>
 
-      <div class="intro-copy">
-        <p class="eyebrow"><span></span> PERSONAL PROFILE / 001</p>
-        <h1>Hello, I'm <em>Suyu.</em></h1>
+      <div class="intro-copy intro-copy--classic">
+        <p class="eyebrow"><span></span> PERSONAL PROFILE</p>
+        <h1>Hello, I'm Suyu.</h1>
         <p class="intro-field">Artificial Intelligence × Embodied Intelligence</p>
 
         <button class="enter-trigger" id="enter-profile" type="button">
@@ -39,180 +39,9 @@
       </div>
 
       <div class="intro-meta intro-meta--bottom">
-        <span>SCROLL SYSTEM / STANDBY</span>
+        <span>INTERFACE / READY</span>
         <span class="system-status"><i></i> SYSTEM ONLINE</span>
       </div>
     </section>
-
-    <div class="site-shell" id="profile" aria-hidden="true">
-      <header class="site-header">
-        <a class="wordmark" href="#home" aria-label="Suyu home">
-          <span class="wordmark-mark">S.</span>
-          <span class="wordmark-text">Suyu<br />Profile</span>
-        </a>
-
-        <nav aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-        </nav>
-
-        <a class="header-contact" href="https://github.com/SuyuZ1" target="_blank" rel="noreferrer">
-          GitHub <span>↗</span>
-        </a>
-      </header>
-
-      <main>
-        <section class="hero section" id="home">
-          <div class="section-index">01 / 05</div>
-          <div class="hero-copy">
-            <p class="eyebrow"><span></span> AI · RESEARCH · SYSTEMS</p>
-            <h2>
-              Intelligence,<br />
-              <span>grounded in the</span><br />
-              physical world.
-            </h2>
-          </div>
-
-          <div class="hero-footer">
-            <p>
-              Exploring the intersection of artificial intelligence and embodied systems —
-              where perception, reasoning and action become one.
-            </p>
-            <div class="hero-tags" aria-label="Research fields">
-              <span>Artificial Intelligence</span>
-              <span>Embodied Intelligence</span>
-            </div>
-          </div>
-
-          <div class="scroll-cue" aria-hidden="true">
-            <span>Explore</span>
-            <i></i>
-          </div>
-        </section>
-
-        <section class="about section" id="about">
-          <div class="section-heading">
-            <p class="section-label">02 / About</p>
-            <p class="section-kicker">Research profile</p>
-          </div>
-
-          <div class="about-layout">
-            <h3>Building intelligence that can perceive, reason and act.</h3>
-            <div class="about-body">
-              <p>
-                My work focuses on artificial intelligence and embodied intelligence. This
-                space will document the questions I explore, the systems I build and the ideas
-                that shape my research.
-              </p>
-              <p class="placeholder-note">Full biography and research statement coming soon.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="education section" id="education">
-          <div class="section-heading">
-            <p class="section-label">03 / Education</p>
-            <p class="section-kicker">Academic trajectory</p>
-          </div>
-
-          <div class="education-panel">
-            <span class="panel-number">EDU / 01</span>
-            <div>
-              <p class="education-status">Profile data pending</p>
-              <h3>Education background</h3>
-              <p>Institution, degree, research focus and timeline will be added here.</p>
-            </div>
-            <div class="data-bars" aria-hidden="true">
-              <i></i><i></i><i></i><i></i><i></i><i></i>
-            </div>
-          </div>
-        </section>
-
-        <section class="research section" id="research">
-          <div class="section-heading">
-            <p class="section-label">04 / Research</p>
-            <p class="section-kicker">Two research trajectories</p>
-          </div>
-
-          <div class="research-intro">
-            <h3>Two topics.<br />One evolving research vision.</h3>
-            <p>
-              Each topic will connect its central questions with related papers, methods and
-              technologies.
-            </p>
-          </div>
-
-          <div class="topic-grid">
-            <article class="topic-card topic-card--one">
-              <div class="topic-card__top">
-                <span>Research trajectory</span>
-                <span>01</span>
-              </div>
-              <div class="topic-visual" aria-hidden="true">
-                <div class="topic-core"></div>
-                <i></i><i></i><i></i>
-              </div>
-              <div class="topic-card__content">
-                <p>TOPIC / 01</p>
-                <h4>Research Topic One</h4>
-                <span>Title, papers and technical approach coming soon.</span>
-              </div>
-              <div class="topic-card__footer">
-                <span>Papers</span><span>Methods</span><span>Technology</span>
-              </div>
-            </article>
-
-            <article class="topic-card topic-card--two">
-              <div class="topic-card__top">
-                <span>Research trajectory</span>
-                <span>02</span>
-              </div>
-              <div class="topic-visual topic-visual--two" aria-hidden="true">
-                <div class="topic-core"></div>
-                <i></i><i></i><i></i>
-              </div>
-              <div class="topic-card__content">
-                <p>TOPIC / 02</p>
-                <h4>Research Topic Two</h4>
-                <span>Title, papers and technical approach coming soon.</span>
-              </div>
-              <div class="topic-card__footer">
-                <span>Papers</span><span>Methods</span><span>Technology</span>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="projects section" id="projects">
-          <div class="section-heading">
-            <p class="section-label">05 / Projects</p>
-            <p class="section-kicker">Selected systems</p>
-          </div>
-
-          <div class="projects-layout">
-            <div>
-              <h3>Ideas made tangible.</h3>
-              <p>Selected research and engineering projects will live here.</p>
-            </div>
-            <div class="project-slots" aria-label="Future project entries">
-              <article><span>01</span><p>Project entry</p><i>Pending</i></article>
-              <article><span>02</span><p>Project entry</p><i>Pending</i></article>
-              <article><span>03</span><p>Project entry</p><i>Pending</i></article>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer>
-        <div>
-          <p class="eyebrow"><span></span> END OF CURRENT TRANSMISSION</p>
-          <h2>More to come.</h2>
-        </div>
-        <a href="https://github.com/SuyuZ1" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <p class="copyright">© 2026 SUYU / SHANGHAI</p>
-      </footer>
-    </div>
   </body>
 </html>
