@@ -1710,10 +1710,12 @@ footer > a:hover {
 }
 
 .vla-anatomy-stage {
-  min-height: 205px;
+  position: relative;
+  min-height: 310px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  overflow: hidden;
   padding: 17px;
   border: 1px solid rgba(127, 146, 255, 0.2);
   border-radius: 12px;
@@ -1723,18 +1725,74 @@ footer > a:hover {
 }
 
 .vla-anatomy-stage > span {
-  margin-bottom: auto;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 13px;
   color: var(--vla-blue);
   font-family: var(--mono);
   font-size: 0.48rem;
 }
 
+.vla-stage-figure {
+  position: relative;
+  flex: 0 0 158px;
+  width: calc(100% + 14px);
+  margin: 0 -7px 17px;
+  overflow: hidden;
+  border: 1px solid rgba(125, 145, 255, 0.17);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(25, 31, 57, 0.86), rgba(7, 10, 18, 0.95)),
+    repeating-linear-gradient(90deg, transparent 0 17px, rgba(127, 146, 255, 0.035) 18px);
+  box-shadow: inset 0 0 30px rgba(88, 105, 223, 0.08);
+}
+
+.vla-stage-figure::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, transparent 58%, rgba(7, 10, 18, 0.72)),
+    radial-gradient(circle at 50% 42%, transparent 35%, rgba(7, 10, 18, 0.34));
+}
+
+.vla-stage-figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  padding: 7px;
+  opacity: 0.84;
+  filter: invert(0.95) hue-rotate(180deg) saturate(0.92) contrast(1.18) brightness(0.82);
+  mix-blend-mode: screen;
+  transform: scale(1.025);
+}
+
+.vla-stage-figure figcaption {
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  bottom: 7px;
+  left: 8px;
+  color: #8997c5;
+  font-family: var(--mono);
+  font-size: 0.37rem;
+  letter-spacing: 0.07em;
+  text-align: right;
+}
+
 .vla-anatomy-stage b {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
   color: #dce2ff;
   font-size: clamp(0.75rem, 1.1vw, 1.05rem);
 }
 
 .vla-anatomy-stage small {
+  position: relative;
+  z-index: 2;
   margin-top: 7px;
   color: #7884a7;
   font-size: 0.57rem;
@@ -1749,6 +1807,15 @@ footer > a:hover {
 
 .vla-anatomy-stage--milestones > span { color: var(--vla-mint); }
 
+.vla-anatomy-stage--milestones .vla-stage-figure {
+  border-color: rgba(95, 217, 189, 0.17);
+  box-shadow: inset 0 0 30px rgba(69, 199, 170, 0.07);
+}
+
+.vla-anatomy-stage--milestones .vla-stage-figure figcaption {
+  color: #72bba9;
+}
+
 .vla-anatomy-stage--challenges {
   border-color: rgba(238, 161, 93, 0.21);
   background:
@@ -1757,6 +1824,15 @@ footer > a:hover {
 }
 
 .vla-anatomy-stage--challenges > span { color: var(--vla-amber); }
+
+.vla-anatomy-stage--challenges .vla-stage-figure {
+  border-color: rgba(238, 161, 93, 0.17);
+  box-shadow: inset 0 0 30px rgba(238, 161, 93, 0.065);
+}
+
+.vla-anatomy-stage--challenges .vla-stage-figure figcaption {
+  color: #c08a5f;
+}
 
 .vla-anatomy-stages > i {
   align-self: center;

@@ -51,4 +51,7 @@ As a co-first author, Suyu co-led the conceptual framing and knowledge architect
 
 - Manuscript: `../../assets/uploads/research/topic-01/vla-survey-manuscript.pdf`
 - Paper preview: `../../assets/generated/research/topic-01/paper-preview.png`
+- Framework modules figure: `../../assets/generated/research/topic-01/framework-modules.png`
+- Framework milestones figure: `../../assets/generated/research/topic-01/framework-milestones.png`
+- Framework challenges figure: `../../assets/generated/research/topic-01/framework-challenges.png`
 - Additional figures: `../../assets/uploads/research/topic-01/figures/`
