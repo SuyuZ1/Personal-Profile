@@ -3,54 +3,227 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Suyu 的第二个研究主题。" />
+    <meta
+      name="description"
+      content="数据能否学会自我生长？关于数据基础设施与自进化数据世界的研究。"
+    />
     <meta name="theme-color" content="#08090d" />
-    <title>Research Topic Two — Suyu</title>
+    <title>Can Data Learn How to Grow Itself? — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../assets/css/styles.css" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
-  <body class="content-page page-topic page-topic--two">
+  <body class="content-page page-topic page-topic--two page-data-world">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
 
     <div class="page-shell">
       <header class="site-header page-header">
-        <a class="wordmark" href="../home.html" aria-label="Suyu home"><span class="wordmark-mark">S.</span><span class="wordmark-text">Suyu<br />Profile</span></a>
+        <a class="wordmark" href="../home.html" aria-label="Suyu home">
+          <span class="wordmark-mark">S.</span>
+          <span class="wordmark-text">Suyu<br />Profile</span>
+        </a>
         <nav aria-label="Primary navigation">
-          <a href="../home.html">Home</a><a href="../about.html">About</a><a href="../education.html">Education</a><a class="active" href="index.html">Research</a><a href="../projects.html">Projects</a>
+          <a href="../home.html">Home</a>
+          <a href="../about.html">About</a>
+          <a href="../education.html">Education</a>
+          <a class="active" href="index.html">Research</a>
+          <a href="../projects.html">Projects</a>
         </nav>
         <a class="header-contact" href="index.html">全部研究 <span>↗</span></a>
       </header>
 
       <main>
-        <section class="topic-detail-hero">
+        <section class="topic-detail-hero data-world-hero">
           <a class="back-link" href="index.html">← 返回研究主页</a>
-          <div class="topic-detail-orbit topic-detail-orbit--cyan" aria-hidden="true"><div></div><i></i><i></i><i></i></div>
-          <div class="topic-detail-hero__copy">
-            <p class="eyebrow"><span></span> 研究主题 / 02</p>
-            <h1>Research<br />Topic Two</h1>
-            <p>最终标题与研究内容将在后续补充。</p>
+
+          <div class="topic-detail-orbit data-world-hero__orbit" aria-hidden="true">
+            <div class="data-agent-core"><span></span><span></span><b>AI</b></div>
+            <i></i><i></i><i></i>
+            <em class="orbit-label orbit-label--one">理解</em>
+            <em class="orbit-label orbit-label--two">决策</em>
+            <em class="orbit-label orbit-label--three">编排</em>
+          </div>
+
+          <div class="topic-detail-hero__copy data-world-hero__copy">
+            <p class="eyebrow"><span></span> DATA INFRASTRUCTURE / 研究主题 02</p>
+            <h1>Can Data Learn<br />How to Grow<br />Itself?</h1>
+            <p>从人工设计的数据流水线，到自进化数据世界。</p>
           </div>
         </section>
 
-        <section class="content-section topic-detail-content">
-          <div class="content-label">研究概览 / 001</div>
-          <div class="topic-detail-grid">
-            <article><span>01</span><h2>研究问题</h2><p>这里将介绍核心研究问题、研究动机与范围。</p></article>
-            <article><span>02</span><h2>研究方法</h2><p>这里将展示该主题涉及的模型、系统与实验方法。</p></article>
+        <section class="content-section research-question-section">
+          <div class="content-label">研究问题 / 001</div>
+          <div class="research-question-content">
+            <p class="research-question-kicker">核心问题</p>
+            <h2>
+              数据系统能否理解自身所处的数据世界，识别限制增长的关键缺口，并自主组织下一阶段的演化？
+            </h2>
+            <p class="research-question-detail">
+              面对高质量数据获取日益昂贵、人工构建逐渐触及规模上限、多源数据彼此割裂且难以持续增值的共同瓶颈，
+              本研究试图探索：数据基础设施能否超越对人工预设流程的被动执行，通过持续反馈理解自身状态、判断生长方向，
+              并自主组织整个数据世界的演化过程。
+            </p>
+
+            <div class="research-frictions">
+              <article><span>01</span><h3>获取成本高</h3><p>高质量数据的获取成本难以随规模持续下降。</p></article>
+              <article><span>02</span><h3>能力彼此割裂</h3><p>不同数据来源与生产能力仍然相互孤立。</p></article>
+              <article><span>03</span><h3>依赖人工驱动</h3><p>固定流水线依赖预先定义的数据生长路径。</p></article>
+            </div>
           </div>
         </section>
 
-        <section class="content-section topic-output-section">
-          <div class="content-label">研究产出 / 002</div>
+        <section class="evolution-blueprint-section" id="evolution-blueprint" aria-labelledby="blueprint-title">
+          <div class="blueprint-heading">
+            <div>
+              <p>演化蓝图 / 002</p>
+              <h2 id="blueprint-title">From Pipelines to an Evolving Data World.</h2>
+            </div>
+            <span>以 DATA INFRASTRUCTURE 作为统一载体</span>
+          </div>
+
+          <div class="evolution-blueprint">
+            <div class="blueprint-titlebar">
+              <span>自进化数据系统 / 概念图</span>
+              <span>理解 · 决策 · 编排 · 演化</span>
+            </div>
+
+            <div class="blueprint-flow">
+              <article class="blueprint-stage pipeline-stage">
+                <div class="blueprint-stage__heading">
+                  <span>当前 / 01</span>
+                  <h3>Human-Designed<br />Data Pipelines</h3>
+                </div>
+
+                <div class="human-controller">
+                  <i></i>
+                  <span>人工控制</span>
+                </div>
+                <div class="fixed-pipeline"><i></i><i></i><i></i><i></i><span>固定流水线</span></div>
+
+                <div class="source-cluster">
+                  <div><b>◆</b><span>空间<br />数据</span></div>
+                  <div><b>◉</b><span>机器人<br />数据</span></div>
+                  <div><b>△</b><span>仿真<br />数据</span></div>
+                  <div><b>✦</b><span>生成<br />数据</span></div>
+                  <div><b>▥</b><span>评测<br />数据</span></div>
+                </div>
+
+                <p class="stage-caption">固定 · 割裂 · 人工驱动</p>
+              </article>
+
+              <div class="blueprint-arrow" aria-hidden="true">
+                <span>割裂的<br />数据世界</span>
+                <svg viewBox="0 0 90 32"><path d="M3 16H79M66 5l13 11-13 11" /></svg>
+              </div>
+
+              <article class="blueprint-stage agent-stage">
+                <div class="blueprint-stage__heading blueprint-stage__heading--center">
+                  <span>DATA AGENT / 02</span>
+                  <h3>Composable<br />Evolution Loop</h3>
+                </div>
+
+                <div class="agent-loop">
+                  <div class="agent-action agent-action--understand"><b>◎</b><span>理解</span><small>当前数据世界</small></div>
+                  <div class="agent-action agent-action--decide"><b>◉</b><span>决策</span><small>下一步如何生长</small></div>
+                  <div class="agent-action agent-action--orchestrate"><b>⚙</b><span>编排</span><small>调整工作流</small></div>
+                  <div class="agent-action agent-action--learn"><b>↻</b><span>学习</span><small>吸收反馈信号</small></div>
+                  <div class="agent-avatar"><i></i><i></i><span>DATA<br />AGENT</span></div>
+                </div>
+
+                <div class="capability-grid">
+                  <div><span>01</span><b>经验<br />获取</b></div>
+                  <div><span>02</span><b>经验<br />多样化</b></div>
+                  <div><span>03</span><b>经验<br />整合</b></div>
+                  <div><span>04</span><b>演化<br />反馈</b></div>
+                </div>
+              </article>
+
+              <div class="blueprint-arrow blueprint-arrow--right" aria-hidden="true">
+                <span>持续<br />演化</span>
+                <svg viewBox="0 0 90 32"><path d="M3 16H79M66 5l13 11-13 11" /></svg>
+              </div>
+
+              <article class="blueprint-stage world-stage">
+                <div class="blueprint-stage__heading blueprint-stage__heading--center">
+                  <span>未来 / 03</span>
+                  <h3>Self-Evolving<br />Data World</h3>
+                </div>
+
+                <div class="world-network" aria-hidden="true">
+                  <svg viewBox="0 0 340 300" role="img">
+                    <circle class="world-ring" cx="170" cy="150" r="126" />
+                    <circle class="world-ring world-ring--inner" cx="170" cy="150" r="92" />
+                    <g class="world-links">
+                      <path d="M63 115L112 75L156 111L206 64L269 98L281 166L237 222L176 251L111 224L55 175Z" />
+                      <path d="M112 75L111 224M206 64L176 251M63 115L237 222M269 98L55 175M156 111L281 166L111 224L237 222L156 111Z" />
+                      <path d="M112 75L281 166M63 115L176 251M206 64L55 175M269 98L111 224" />
+                    </g>
+                    <g class="world-nodes world-nodes--blue">
+                      <circle cx="63" cy="115" r="7" /><circle cx="112" cy="75" r="5" /><circle cx="156" cy="111" r="8" /><circle cx="206" cy="64" r="6" />
+                    </g>
+                    <g class="world-nodes world-nodes--green">
+                      <circle cx="269" cy="98" r="7" /><circle cx="281" cy="166" r="6" /><circle cx="237" cy="222" r="8" />
+                    </g>
+                    <g class="world-nodes world-nodes--orange">
+                      <circle cx="176" cy="251" r="7" /><circle cx="111" cy="224" r="6" /><circle cx="55" cy="175" r="8" />
+                    </g>
+                    <g class="world-minor-nodes">
+                      <circle cx="94" cy="143" r="3" /><circle cx="136" cy="178" r="4" /><circle cx="190" cy="144" r="4" /><circle cx="222" cy="125" r="3" /><circle cx="217" cy="184" r="4" /><circle cx="159" cy="207" r="3" />
+                    </g>
+                  </svg>
+                  <div class="world-badge world-badge--one">◆<span>数据</span></div>
+                  <div class="world-badge world-badge--two">⚙<span>系统</span></div>
+                  <div class="world-badge world-badge--three">✦<span>增长</span></div>
+                </div>
+
+                <p class="stage-caption">互联 · 扩展 · 持续更新</p>
+              </article>
+            </div>
+
+            <div class="feedback-rail">
+              <span class="feedback-rail__label">持续反馈</span>
+              <div><b>◎</b><span>理解<br />数据世界</span></div>
+              <i>›</i>
+              <div><b>◉</b><span>决定<br />生长方向</span></div>
+              <i>›</i>
+              <div><b>⚙</b><span>编排<br />演化过程</span></div>
+              <i>›</i>
+              <div><b>↻</b><span>从反馈中<br />持续学习</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section research-vision-section">
+          <div class="content-label">研究愿景 / 003</div>
+          <div class="research-vision-content">
+            <p>DATA INFRASTRUCTURE</p>
+            <h2>以统一的数据基础设施，组织整个数据世界的持续演化。</h2>
+            <div>
+              <p>
+                数据系统不再只是承载和处理已有数据，而是逐步学习理解自身数据世界的当前状态、决定下一步应如何生长，
+                并依据持续反馈不断调整演化路径。
+              </p>
+              <p>
+                各项能力按照继承关系与闭环协同逐步展开，最终推动被动的数据基础设施转变为能够自主组织、持续扩展和自我增值的智能数据世界。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section topic-output-section data-world-outputs">
+          <div class="content-label">研究产出 / 004</div>
           <div class="output-list">
-            <article><span>论文 / 01</span><h3>论文内容待补充</h3><p>标题、作者、发表信息与链接。</p></article>
-            <article><span>技术 / 01</span><h3>技术内容待补充</h3><p>代码、数据集、框架与技术贡献。</p></article>
+            <article><span>论文</span><h3>相关论文成果将在此关联。</h3><p>论文标题、发表信息、个人贡献与链接。</p></article>
+            <article><span>技术</span><h3>系统与技术成果。</h3><p>代码、数据集、基础设施与评测方法。</p></article>
           </div>
         </section>
       </main>
 
-      <footer class="page-footer"><a href="topic-01.html">← 研究主题 01</a><a href="index.html">全部研究 <span>↗</span></a><p>© 2026</p></footer>
+      <footer class="page-footer">
+        <a href="topic-01.html">← 研究主题 01</a>
+        <a href="index.html">全部研究 <span>↗</span></a>
+        <p>© 2026</p>
+      </footer>
     </div>
   </body>
 </html>

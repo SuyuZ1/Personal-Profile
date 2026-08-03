@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="数据能否学会自我生长？关于数据基础设施与自进化数据世界的研究。"
+      content="An Anatomy of Vision-Language-Action Models：从基础模块、技术里程碑到关键挑战的 VLA 统一研究框架。"
     />
     <meta name="theme-color" content="#08090d" />
-    <title>Can Data Learn How to Grow Itself? — Suyu</title>
+    <title>An Anatomy of Vision-Language-Action Models — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../assets/css/styles.css" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
-  <body class="content-page page-topic page-topic--one page-data-world">
+  <body class="content-page page-topic page-topic--one page-vla-survey">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
 
     <div class="page-shell">
@@ -29,192 +29,312 @@
           <a class="active" href="index.html">Research</a>
           <a href="../projects.html">Projects</a>
         </nav>
-        <a class="header-contact" href="index.html">全部研究 <span>↗</span></a>
+        <a class="header-contact" href="https://suyuz1.github.io/VLA-Survey-Anatomy/" target="_blank" rel="noreferrer">
+          Living Survey <span>↗</span>
+        </a>
       </header>
 
       <main>
-        <section class="topic-detail-hero data-world-hero">
+        <section class="topic-detail-hero vla-hero">
           <a class="back-link" href="index.html">← 返回研究主页</a>
 
-          <div class="topic-detail-orbit data-world-hero__orbit" aria-hidden="true">
-            <div class="data-agent-core"><span></span><span></span><b>AI</b></div>
-            <i></i><i></i><i></i>
-            <em class="orbit-label orbit-label--one">理解</em>
-            <em class="orbit-label orbit-label--two">决策</em>
-            <em class="orbit-label orbit-label--three">编排</em>
+          <div class="vla-hero__visual" aria-hidden="true">
+            <div class="vla-orbit vla-orbit--outer"></div>
+            <div class="vla-orbit vla-orbit--middle"></div>
+            <div class="vla-orbit vla-orbit--inner"></div>
+            <div class="vla-core">
+              <span>V</span><i></i><span>L</span><i></i><span>A</span>
+            </div>
+            <div class="vla-hero-node vla-hero-node--modules"><b>01</b><span>MODULES</span></div>
+            <div class="vla-hero-node vla-hero-node--milestones"><b>02</b><span>MILESTONES</span></div>
+            <div class="vla-hero-node vla-hero-node--challenges"><b>03</b><span>CHALLENGES</span></div>
+            <div class="vla-pulse vla-pulse--one"></div>
+            <div class="vla-pulse vla-pulse--two"></div>
+            <div class="vla-pulse vla-pulse--three"></div>
           </div>
 
-          <div class="topic-detail-hero__copy data-world-hero__copy">
-            <p class="eyebrow"><span></span> DATA INFRASTRUCTURE / 研究主题 01</p>
-            <h1>Can Data Learn<br />How to Grow<br />Itself?</h1>
-            <p>从人工设计的数据流水线，到自进化数据世界。</p>
+          <div class="topic-detail-hero__copy vla-hero__copy">
+            <p class="eyebrow"><span></span> VLA RESEARCH / 研究主题 01</p>
+            <h1>An Anatomy of<br />Vision-Language-<br />Action Models</h1>
+            <p class="vla-hero__subtitle">From Modules to Milestones and Challenges</p>
+
+            <div class="vla-hero__meta">
+              <span>共同一作 / CO-FIRST AUTHOR</span>
+              <span class="vla-live-pill"><i></i> LIVING SURVEY</span>
+              <span>2026 UPDATE IN PROGRESS</span>
+            </div>
+
+            <div class="vla-hero__actions">
+              <a href="#vla-framework">Explore the Framework <span>↓</span></a>
+              <a href="https://suyuz1.github.io/VLA-Survey-Anatomy/" target="_blank" rel="noreferrer">
+                Open Living Survey <span>↗</span>
+              </a>
+            </div>
           </div>
         </section>
 
-        <section class="content-section research-question-section">
+        <section class="content-section research-question-section vla-question-section">
           <div class="content-label">研究问题 / 001</div>
-          <div class="research-question-content">
-            <p class="research-question-kicker">核心问题</p>
+          <div class="research-question-content vla-question-content">
+            <p class="research-question-kicker">THE CENTRAL QUESTION</p>
             <h2>
-              数据系统能否理解自身所处的数据世界，识别限制增长的关键缺口，并自主组织下一阶段的演化？
+              How can a VLA survey move beyond fragmented categorization to reveal the field’s
+              evolutionary logic and future pathways toward general embodied intelligence?
             </h2>
             <p class="research-question-detail">
-              面对高质量数据获取日益昂贵、人工构建逐渐触及规模上限、多源数据彼此割裂且难以持续增值的共同瓶颈，
-              本研究试图探索：数据基础设施能否超越对人工预设流程的被动执行，通过持续反馈理解自身状态、判断生长方向，
-              并自主组织整个数据世界的演化过程。
+              现有 VLA 综述通常围绕模型架构、训练范式或应用场景进行分类汇总，却缺少能够贯通系统能力构成、
+              技术范式演进与核心挑战形成机制的统一解释框架。本工作试图回答：VLA 的关键能力从何而来，
+              不同技术路线为何演化，以及哪些能力边界真正决定其迈向通用具身智能的下一步。
             </p>
 
-            <div class="research-frictions">
-              <article><span>01</span><h3>获取成本高</h3><p>高质量数据的获取成本难以随规模持续下降。</p></article>
-              <article><span>02</span><h3>能力彼此割裂</h3><p>不同数据来源与生产能力仍然相互孤立。</p></article>
-              <article><span>03</span><h3>依赖人工驱动</h3><p>固定流水线依赖预先定义的数据生长路径。</p></article>
+            <div class="vla-question-grid">
+              <article>
+                <span>01 / PROBLEM</span>
+                <h3>Fragmented Knowledge</h3>
+                <p>模块、模型、技术里程碑与开放问题彼此割裂，领域缺少能够解释发展逻辑的系统认知框架。</p>
+              </article>
+              <article>
+                <span>02 / SOLUTION</span>
+                <h3>Unified Anatomy</h3>
+                <p>将分散的技术路线组织为从基础能力、范式演进到前沿挑战识别的一条完整逻辑链。</p>
+              </article>
+              <article>
+                <span>03 / CONTRIBUTION</span>
+                <h3>Research Roadmap</h3>
+                <p>以五个战略维度刻画 VLA 的技术边界，为下一代通用具身智能建立结构化研究路线图。</p>
+              </article>
             </div>
           </div>
         </section>
 
-        <section class="evolution-blueprint-section" id="evolution-blueprint" aria-labelledby="blueprint-title">
-          <div class="blueprint-heading">
+        <section class="vla-framework-section" id="vla-framework" aria-labelledby="vla-framework-title">
+          <div class="vla-section-heading">
             <div>
-              <p>演化蓝图 / 002</p>
-              <h2 id="blueprint-title">From Pipelines to an Evolving Data World.</h2>
+              <p>UNIFIED FRAMEWORK / 002</p>
+              <h2 id="vla-framework-title">From Fragmented Taxonomies to a Unified VLA Anatomy.</h2>
             </div>
-            <span>以 DATA INFRASTRUCTURE 作为统一载体</span>
+            <span>MODULES · MILESTONES · CHALLENGES</span>
           </div>
 
-          <div class="evolution-blueprint">
-            <div class="blueprint-titlebar">
-              <span>自进化数据系统 / 概念图</span>
-              <span>理解 · 决策 · 编排 · 演化</span>
+          <div class="vla-anatomy-map">
+            <div class="vla-map-titlebar">
+              <span>VLA FIELD ANATOMY / CONCEPT MAP</span>
+              <span>FOUNDATIONS → EVOLUTION → FRONTIERS</span>
             </div>
 
-            <div class="blueprint-flow">
-              <article class="blueprint-stage pipeline-stage">
-                <div class="blueprint-stage__heading">
-                  <span>当前 / 01</span>
-                  <h3>Human-Designed<br />Data Pipelines</h3>
+            <div class="vla-map-flow">
+              <article class="vla-map-fragments">
+                <header><span>BEFORE / 01</span><h3>Fragmented Survey<br />Perspectives</h3></header>
+                <div class="vla-fragment-grid">
+                  <div><b>▦</b><span>模型<br />架构</span></div>
+                  <div><b>⌁</b><span>训练<br />范式</span></div>
+                  <div><b>◫</b><span>数据<br />资源</span></div>
+                  <div><b>◎</b><span>应用<br />场景</span></div>
                 </div>
-
-                <div class="human-controller">
-                  <i></i>
-                  <span>人工控制</span>
-                </div>
-                <div class="fixed-pipeline"><i></i><i></i><i></i><i></i><span>固定流水线</span></div>
-
-                <div class="source-cluster">
-                  <div><b>◆</b><span>空间<br />数据</span></div>
-                  <div><b>◉</b><span>机器人<br />数据</span></div>
-                  <div><b>△</b><span>仿真<br />数据</span></div>
-                  <div><b>✦</b><span>生成<br />数据</span></div>
-                  <div><b>▥</b><span>评测<br />数据</span></div>
-                </div>
-
-                <p class="stage-caption">固定 · 割裂 · 人工驱动</p>
+                <p>分类充分，但解释链条仍然断裂。</p>
               </article>
 
-              <div class="blueprint-arrow" aria-hidden="true">
-                <span>割裂的<br />数据世界</span>
-                <svg viewBox="0 0 90 32"><path d="M3 16H79M66 5l13 11-13 11" /></svg>
+              <div class="vla-map-arrow" aria-hidden="true"><i></i><span>RECONSTRUCT</span></div>
+
+              <article class="vla-map-anatomy">
+                <header><span>FRAMEWORK / 02</span><h3>Unified VLA Anatomy</h3></header>
+                <div class="vla-anatomy-stages">
+                  <div class="vla-anatomy-stage vla-anatomy-stage--modules">
+                    <span>01</span><b>MODULES</b><small>能力构成</small>
+                  </div>
+                  <i>→</i>
+                  <div class="vla-anatomy-stage vla-anatomy-stage--milestones">
+                    <span>02</span><b>MILESTONES</b><small>范式演进</small>
+                  </div>
+                  <i>→</i>
+                  <div class="vla-anatomy-stage vla-anatomy-stage--challenges">
+                    <span>03</span><b>CHALLENGES</b><small>能力边界</small>
+                  </div>
+                </div>
+                <div class="vla-anatomy-caption">
+                  <span>Perception · Brain · Action</span>
+                  <span>2022 → 2026</span>
+                  <span>Open Problems · Future Paths</span>
+                </div>
+              </article>
+
+              <div class="vla-map-arrow vla-map-arrow--future" aria-hidden="true"><i></i><span>PROJECT</span></div>
+
+              <article class="vla-map-roadmap">
+                <header><span>ROADMAP / 03</span><h3>Strategic Research<br />Frontiers</h3></header>
+                <div class="vla-roadmap-list">
+                  <div><b>01</b><span>表征与世界建模</span></div>
+                  <div><b>02</b><span>指令理解与执行</span></div>
+                  <div><b>03</b><span>泛化与持续适应</span></div>
+                  <div><b>04</b><span>安全与可信交互</span></div>
+                  <div><b>05</b><span>数据与评测体系</span></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="vla-map-destination">
+              <span>GENERAL EMBODIED INTELLIGENCE</span>
+              <i></i>
+              <p>从领域知识组织，走向可被持续验证和扩展的研究路线。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section vla-modules-section">
+          <div class="content-label">基础模块 / 003</div>
+          <div class="vla-section-content">
+            <p class="vla-section-kicker">MODULES</p>
+            <h2>What capabilities constitute a VLA system?</h2>
+            <p class="vla-section-intro">
+              Survey 从任何 VLA 系统共享的能力构成出发，以功能而非单一架构划分 Perception、Brain 与 Action，
+              并将数据、训练和评测视为支撑整个能力闭环的基础设施。
+            </p>
+
+            <div class="vla-module-system">
+              <article><span>01</span><b>PERCEPTION</b><h3>感知世界</h3><p>将视觉、语言、触觉与状态信息编码为任务相关表征。</p></article>
+              <i>→</i>
+              <article><span>02</span><b>BRAIN</b><h3>理解与规划</h3><p>融合多模态信息，完成推理、规划与动作生成。</p></article>
+              <i>→</i>
+              <article><span>03</span><b>ACTION</b><h3>作用于世界</h3><p>将意图解码为离散、连续或混合形式的机器人控制。</p></article>
+            </div>
+
+            <div class="vla-support-rail">
+              <span>FOUNDATIONAL SUPPORT</span>
+              <div><b>DATA</b><small>数据构建</small></div>
+              <div><b>TRAINING</b><small>训练策略</small></div>
+              <div><b>EVALUATION</b><small>评测体系</small></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section vla-milestones-section">
+          <div class="content-label">技术演进 / 004</div>
+          <div class="vla-section-content">
+            <p class="vla-section-kicker">MILESTONES</p>
+            <h2>How did VLA evolve into its current form?</h2>
+            <p class="vla-section-intro">
+              论文沿着模型、数据集和评测基准的共同演进重建 VLA 时间线。当前版本覆盖至 2025，2026 年的新工作正在持续整理中。
+            </p>
+
+            <div class="vla-timeline">
+              <article><span>2022–2023</span><h3>Emergence</h3><p>视觉、语言与机器人控制开始被统一到可扩展的策略学习框架中。</p></article>
+              <article><span>2024</span><h3>Expansion</h3><p>更大规模的预训练、跨任务数据与生成式动作建模推动能力扩展。</p></article>
+              <article><span>2025</span><h3>Generalization</h3><p>研究重心逐渐转向跨具身泛化、世界建模、复杂规划与可靠部署。</p></article>
+              <article class="vla-timeline__pending"><span>2026</span><h3>Update in Progress</h3><p>新模型、数据集、基准与技术范式将在下一版本中系统接入。</p><b>LIVE UPDATE</b></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section vla-challenges-section">
+          <div class="content-label">前沿挑战 / 005</div>
+          <div class="vla-section-content vla-challenges-content">
+            <p class="vla-section-kicker">CHALLENGES</p>
+            <h2>Five capability boundaries shaping what comes next.</h2>
+            <p class="vla-section-intro">
+              这五个战略维度不是附加在综述末尾的问题清单，而是用于解释 VLA 下一阶段演化方向的核心研究坐标系。
+            </p>
+
+            <div class="vla-challenge-grid">
+              <article><span>01</span><b>REPRESENTATION</b><h3>多模态表征与物理世界建模</h3><p>连接语义、空间结构、动力学与真实物理交互。</p><small>关联工作 / 待持续更新</small></article>
+              <article><span>02</span><b>EXECUTION</b><h3>复杂指令、规划与实时执行</h3><p>从开放指令理解走向长时规划、错误恢复与高效控制。</p><small>关联工作 / 待持续更新</small></article>
+              <article><span>03</span><b>GENERALIZATION</b><h3>开放世界泛化与持续适应</h3><p>跨任务、环境与具身迁移，并在部署中不断获得新能力。</p><small>关联工作 / 待持续更新</small></article>
+              <article><span>04</span><b>SAFETY & TRUST</b><h3>安全、可解释性与可信交互</h3><p>让机器人决策可验证、行为可预测，并支持人类有效干预。</p><small>关联工作 / 待持续更新</small></article>
+              <article><span>05</span><b>DATA & EVALUATION</b><h3>数据构建与评测体系</h3><p>统一异构数据，并以更具深度和广度的标准衡量真实能力。</p><small>关联工作 / 待持续更新</small></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section vla-contribution-section">
+          <div class="content-label">个人贡献 / 006</div>
+          <div class="vla-contribution-content">
+            <div class="vla-role-card">
+              <span>AUTHOR ROLE</span>
+              <h2>Co-First<br />Author</h2>
+              <p>共同一作</p>
+              <i>FOUNDING THE FRAMEWORK</i>
+            </div>
+            <div class="vla-contribution-copy">
+              <p>MY CONTRIBUTION</p>
+              <h2>Turning an exploding literature into a field-level research architecture.</h2>
+              <div>
+                <p>
+                  作为共同一作，我共同主导了 Survey 的概念框架与知识架构设计，将快速扩张、彼此分散的 VLA 文献，
+                  重构为 Modules–Milestones–Challenges 的统一分析体系。
+                </p>
+                <p>
+                  这项工作不仅完成领域信息的系统归纳，更进一步提炼 VLA 技术演进背后的能力逻辑、关键瓶颈与未来突破路径，
+                  为研究者提供一套可以持续扩展的具身智能知识地图。
+                </p>
+              </div>
+              <ul>
+                <li>统一分析框架与领域知识组织</li>
+                <li>技术演进逻辑与研究叙事构建</li>
+                <li>挑战体系与未来路线图提炼</li>
+                <li>Living Survey 与 2026 前沿更新</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="vla-living-section">
+          <div class="vla-living-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="vla-living-copy">
+            <p><span></span> LIVE KNOWLEDGE BASE / CONTINUOUSLY UPDATED</p>
+            <h2>A Survey That Keeps Moving With the Field.</h2>
+            <p>
+              VLA 仍在快速演进，因此这项工作被设计为一个持续生长的研究资源。论文提供稳定的核心框架，
+              Living Survey 网站则不断接入新的模型、数据集、评测基准与前沿问题。2026 年更新正在进行中。
+            </p>
+            <a href="https://suyuz1.github.io/VLA-Survey-Anatomy/" target="_blank" rel="noreferrer">
+              Visit the Living Survey <span>↗</span>
+            </a>
+          </div>
+          <div class="vla-update-console">
+            <div><span>STATUS</span><b><i></i> ACTIVE</b></div>
+            <div><span>CURRENT CYCLE</span><b>2026 UPDATE</b></div>
+            <div><span>NEW WORKS</span><b>IN PROGRESS</b></div>
+            <div><span>CORE FRAMEWORK</span><b>STABLE</b></div>
+          </div>
+        </section>
+
+        <section class="content-section vla-paper-section" id="paper">
+          <div class="content-label">论文与资源 / 007</div>
+          <div class="vla-paper-content">
+            <a
+              class="vla-paper-preview"
+              href="../../assets/uploads/research/topic-01/vla-survey-manuscript.pdf"
+              target="_blank"
+              aria-label="Open VLA survey manuscript"
+            >
+              <img src="../../assets/generated/research/topic-01/paper-preview.png" alt="VLA survey manuscript first page" />
+              <span>OPEN MANUSCRIPT ↗</span>
+            </a>
+
+            <div class="vla-paper-info">
+              <p>MANUSCRIPT / LIVING SURVEY</p>
+              <h2>An Anatomy of Vision-Language-Action Models</h2>
+              <h3>From Modules to Milestones and Challenges</h3>
+              <p class="vla-paper-authors">Chao Xu*, <strong>Suyu Zhang*</strong>, et al. · * Co-first authors</p>
+
+              <div class="vla-paper-stats">
+                <div><b>25</b><span>PAGES</span></div>
+                <div><b>5</b><span>STRATEGIC FRONTS</span></div>
+                <div><b>15</b><span>SUB-CHALLENGES</span></div>
+                <div><b>280+</b><span>REFERENCES</span></div>
               </div>
 
-              <article class="blueprint-stage agent-stage">
-                <div class="blueprint-stage__heading blueprint-stage__heading--center">
-                  <span>DATA AGENT / 02</span>
-                  <h3>Composable<br />Evolution Loop</h3>
-                </div>
-
-                <div class="agent-loop">
-                  <div class="agent-action agent-action--understand"><b>◎</b><span>理解</span><small>当前数据世界</small></div>
-                  <div class="agent-action agent-action--decide"><b>◉</b><span>决策</span><small>下一步如何生长</small></div>
-                  <div class="agent-action agent-action--orchestrate"><b>⚙</b><span>编排</span><small>调整工作流</small></div>
-                  <div class="agent-action agent-action--learn"><b>↻</b><span>学习</span><small>吸收反馈信号</small></div>
-                  <div class="agent-avatar"><i></i><i></i><span>DATA<br />AGENT</span></div>
-                </div>
-
-                <div class="capability-grid">
-                  <div><span>01</span><b>经验<br />获取</b></div>
-                  <div><span>02</span><b>经验<br />多样化</b></div>
-                  <div><span>03</span><b>经验<br />整合</b></div>
-                  <div><span>04</span><b>演化<br />反馈</b></div>
-                </div>
-              </article>
-
-              <div class="blueprint-arrow blueprint-arrow--right" aria-hidden="true">
-                <span>持续<br />演化</span>
-                <svg viewBox="0 0 90 32"><path d="M3 16H79M66 5l13 11-13 11" /></svg>
+              <div class="vla-paper-actions">
+                <a href="../../assets/uploads/research/topic-01/vla-survey-manuscript.pdf" target="_blank">Read PDF <span>↗</span></a>
+                <a href="https://suyuz1.github.io/VLA-Survey-Anatomy/" target="_blank" rel="noreferrer">Living Project <span>↗</span></a>
               </div>
 
-              <article class="blueprint-stage world-stage">
-                <div class="blueprint-stage__heading blueprint-stage__heading--center">
-                  <span>未来 / 03</span>
-                  <h3>Self-Evolving<br />Data World</h3>
-                </div>
-
-                <div class="world-network" aria-hidden="true">
-                  <svg viewBox="0 0 340 300" role="img">
-                    <circle class="world-ring" cx="170" cy="150" r="126" />
-                    <circle class="world-ring world-ring--inner" cx="170" cy="150" r="92" />
-                    <g class="world-links">
-                      <path d="M63 115L112 75L156 111L206 64L269 98L281 166L237 222L176 251L111 224L55 175Z" />
-                      <path d="M112 75L111 224M206 64L176 251M63 115L237 222M269 98L55 175M156 111L281 166L111 224L237 222L156 111Z" />
-                      <path d="M112 75L281 166M63 115L176 251M206 64L55 175M269 98L111 224" />
-                    </g>
-                    <g class="world-nodes world-nodes--blue">
-                      <circle cx="63" cy="115" r="7" /><circle cx="112" cy="75" r="5" /><circle cx="156" cy="111" r="8" /><circle cx="206" cy="64" r="6" />
-                    </g>
-                    <g class="world-nodes world-nodes--green">
-                      <circle cx="269" cy="98" r="7" /><circle cx="281" cy="166" r="6" /><circle cx="237" cy="222" r="8" />
-                    </g>
-                    <g class="world-nodes world-nodes--orange">
-                      <circle cx="176" cy="251" r="7" /><circle cx="111" cy="224" r="6" /><circle cx="55" cy="175" r="8" />
-                    </g>
-                    <g class="world-minor-nodes">
-                      <circle cx="94" cy="143" r="3" /><circle cx="136" cy="178" r="4" /><circle cx="190" cy="144" r="4" /><circle cx="222" cy="125" r="3" /><circle cx="217" cy="184" r="4" /><circle cx="159" cy="207" r="3" />
-                    </g>
-                  </svg>
-                  <div class="world-badge world-badge--one">◆<span>数据</span></div>
-                  <div class="world-badge world-badge--two">⚙<span>系统</span></div>
-                  <div class="world-badge world-badge--three">✦<span>增长</span></div>
-                </div>
-
-                <p class="stage-caption">互联 · 扩展 · 持续更新</p>
-              </article>
+              <dl class="vla-paper-metadata">
+                <div><dt>Publication status</dt><dd>To be updated</dd></div>
+                <div><dt>Venue</dt><dd>—</dd></div>
+                <div><dt>DOI</dt><dd>—</dd></div>
+                <div><dt>Latest version</dt><dd>2026 update in progress</dd></div>
+              </dl>
             </div>
-
-            <div class="feedback-rail">
-              <span class="feedback-rail__label">持续反馈</span>
-              <div><b>◎</b><span>理解<br />数据世界</span></div>
-              <i>›</i>
-              <div><b>◉</b><span>决定<br />生长方向</span></div>
-              <i>›</i>
-              <div><b>⚙</b><span>编排<br />演化过程</span></div>
-              <i>›</i>
-              <div><b>↻</b><span>从反馈中<br />持续学习</span></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-section research-vision-section">
-          <div class="content-label">研究愿景 / 003</div>
-          <div class="research-vision-content">
-            <p>DATA INFRASTRUCTURE</p>
-            <h2>以统一的数据基础设施，组织整个数据世界的持续演化。</h2>
-            <div>
-              <p>
-                数据系统不再只是承载和处理已有数据，而是逐步学习理解自身数据世界的当前状态、决定下一步应如何生长，
-                并依据持续反馈不断调整演化路径。
-              </p>
-              <p>
-                各项能力按照继承关系与闭环协同逐步展开，最终推动被动的数据基础设施转变为能够自主组织、持续扩展和自我增值的智能数据世界。
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-section topic-output-section data-world-outputs">
-          <div class="content-label">研究产出 / 004</div>
-          <div class="output-list">
-            <article><span>论文</span><h3>相关论文成果将在此关联。</h3><p>论文标题、发表信息、个人贡献与链接。</p></article>
-            <article><span>技术</span><h3>系统与技术成果。</h3><p>代码、数据集、基础设施与评测方法。</p></article>
           </div>
         </section>
       </main>

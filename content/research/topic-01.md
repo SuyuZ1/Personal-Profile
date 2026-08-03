@@ -1,42 +1,54 @@
-# Data Infrastructure: Self-Evolving Data World
+# An Anatomy of Vision-Language-Action Models
 
-## Core idea
+## Identity
 
-### Can Data Learn How to Grow Itself?
-
-**From Human-Designed Data Pipelines to Self-Evolving Data Worlds**
+- Research topic: Vision-Language-Action Models
+- Paper title: An Anatomy of Vision-Language-Action Models: From Modules to Milestones and Challenges
+- Role: Co-first author
+- Status: Living Survey / Manuscript
+- 2026 update: In progress
+- Living project: https://suyuz1.github.io/VLA-Survey-Anatomy/
+- PDF: `../../assets/uploads/research/topic-01/vla-survey-manuscript.pdf`
 
 ## Research question
 
-面对高质量数据获取日益昂贵、人工构建逐渐触及规模上限、多源数据彼此割裂且难以持续增值的共同瓶颈，数据系统能否超越对人工预设流程的被动执行，学习理解自身数据世界的当前状态，识别限制其继续增长的关键缺口，并通过持续反馈自主组织整个数据世界的演化过程？
+How can a VLA survey move beyond fragmented categorization to build a unified framework that connects foundational modules, technological milestones, and emerging challenges, thereby revealing the field’s evolutionary logic and future pathways toward general embodied intelligence?
 
-## Research vision
+## Problem
 
-本研究以 **Data Infrastructure** 为统一载体，逐步打通当前数据生产中相互割裂的数据能力与演化环节。数据系统不再只是承载和处理已有数据，而是逐步学习如何理解自身的数据世界、决定下一步应如何生长，并依据反馈持续调整演化路径。各项工作按照能力继承与闭环协同关系逐步展开，共同推动数据基础设施从人工驱动的被动流水线，演化为能够自主组织、持续扩展和自我增值的智能数据世界。
+现有 VLA 综述大多围绕模型架构、训练范式或应用场景进行分类汇总，却缺乏一套能够贯通系统能力构成、技术范式演进与核心挑战形成机制的统一解释框架。模块、里程碑与开放问题彼此割裂，使领域难以回答关键能力从何而来、技术路线为何演化，以及哪些能力边界真正决定 VLA 迈向通用具身智能的下一步。
 
-## Evolution loop
+## Solution
 
-1. Understand the current data world
-2. Decide what should grow next
-3. Orchestrate adaptable workflows
-4. Learn from evolution feedback
+本工作重新构建 VLA 领域的知识版图，将分散的模型、技术路线与开放问题组织为一条从基础能力构成、关键范式演进到前沿挑战识别的完整逻辑链，使领域发展能够被理解为具身智能能力体系的持续演化。
 
-## Composable capabilities
+## Unified framework
 
-- Experience Acquisition
-- Experience Diversification
-- Experience Integration
-- Evolution Feedback
+1. Modules — Perception, Brain and Action, supported by data, training and evaluation
+2. Milestones — The technological evolution of VLA paradigms
+3. Challenges — Capability boundaries, open problems and future research pathways
 
-## Papers
+## Strategic frontiers
 
-Paper entries will be added here.
+1. Multi-modal Representation and Physical World Modeling
+2. Complex Instruction Following, Planning and Robust Execution
+3. Open-World Generalization and Continuous Adaptation
+4. Safety, Interpretability and Trustworthy Interaction
+5. Data Construction and Evaluation
 
-## Technology
+## Personal contribution
 
-System, code, datasets and evaluation artifacts will be added here.
+As a co-first author, Suyu co-led the conceptual framing and knowledge architecture of the survey. The work organizes a rapidly expanding literature into the Modules–Milestones–Challenges framework, synthesizes the evolutionary logic of VLA research, and translates fragmented technical progress into a structured roadmap toward general embodied intelligence. The living survey is continuously maintained, with the 2026 research update currently in progress.
+
+## Publication metadata
+
+- Venue:
+- Publication status:
+- DOI:
+- Version date:
 
 ## Media
 
-- Raw materials: `../../assets/uploads/research/topic-01/`
-- Generated visuals: `../../assets/generated/research/topic-01/`
+- Manuscript: `../../assets/uploads/research/topic-01/vla-survey-manuscript.pdf`
+- Paper preview: `../../assets/generated/research/topic-01/paper-preview.png`
+- Additional figures: `../../assets/uploads/research/topic-01/figures/`
