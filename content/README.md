@@ -9,6 +9,8 @@ Keep profile text in this folder before placing it into the website layouts.
 - `projects.md`: project entries
 - `research/topic-01.md`: VLA living survey, paper metadata and research roadmap
 - `research/topic-02.md`: self-evolving data world research trajectory
+- `research/topic-03.md`: reserved content slot for the third research topic
+- `research/topic-04.md`: reserved content slot for the fourth research topic
 - `research/data_infrastructure_self_evolving_data_world_idea.md`: original self-evolving data world idea note
 
 Fill in any known fields and leave unknown fields blank. Media files should go in the matching folder under `assets/uploads/`.
