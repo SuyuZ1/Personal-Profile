@@ -4,6 +4,10 @@ This file is the editable source-of-truth for the public Education page. The Eng
 below intentionally follow the wording supplied in the CV rather than claiming an official degree
 title that has not yet been confirmed.
 
+## Hero statement
+
+从复杂计算系统的架构与工程方法，到人工智能对感知、推理与行动机制的探索；两段学习经历共同构建了我理解智能本质、设计通用智能系统并探索具身智能前沿的认知框架与技术基座。
+
 ## Postgraduate stage
 
 - Institution: The University of Melbourne
