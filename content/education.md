@@ -12,7 +12,7 @@ title that has not yet been confirmed.
 - Start date: 2023.03
 - End date: 2024.12
 - Selected coursework / foundations: 数学基础、计算机编程、计算机算法
-- Milestone: 专业排名前 20%
+- Milestone: 专业排名前 10%
 - Current page description: 硕士阶段进一步强化数学、编程与算法基础，并将学习重心延伸至智能系统的方法论与研究问题，为当前人工智能与具身智能方向建立更系统的技术底座。
 - Thesis: 待补充
 - Related media: `../assets/uploads/education/`
