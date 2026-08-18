@@ -20,6 +20,10 @@ Can an embodied agent move beyond recognizing an action to understand how, why, 
 
 现有具身 Benchmark 多聚焦高层规划、空间推理或第三人称粗粒度动作描述，却没有充分评估真实物理交互所需的细粒度动作智能。CFG-Bench 评估模型能否将视觉观察转化为可执行知识，包括物理交互细节、时间与因果关系、行为意图以及执行质量。
 
+## Motivation
+
+动作识别并不等于行动理解。只评估“发生了什么”会掩盖模型在接触方式、过程因果、行为意图和执行评价上的能力缺口，使 Benchmark 难以服务真实机器人学习与执行。
+
 ## One-sentence positioning
 
 以四层递进认知框架系统评估具身智能体的细粒度动作理解，让 Benchmark 从“描述发生了什么”走向“理解如何做、为何做以及做得如何”。
@@ -56,6 +60,12 @@ RESEARCH LEAD · END-TO-END OWNERSHIP
 ### Annotation responsibility
 
 具体数据标注由外包团队执行；本人负责标注规范设计、任务拆解、团队培训、过程审核与质量验收，对最终数据质量和认知任务一致性负责。
+
+## Industry impact
+
+- 将细粒度动作理解拆解为可诊断、可比较的能力维度
+- 为模型选择和高价值具身训练数据建设提供明确依据
+- 通过 CFG captions 的 SFT 验证，连接视觉观察与可用于行动学习的知识
 
 ## Media
 

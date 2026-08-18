@@ -3,227 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="数据能否学会自我生长？关于数据基础设施与自进化数据世界的研究。"
-    />
+    <meta name="description" content="Self-Evolving Data World：从固定数据流水线到能够理解、决策与持续演化的数据基础设施。" />
     <meta name="theme-color" content="#08090d" />
     <title>Can Data Learn How to Grow Itself? — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260818f" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260818g" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
-  <body class="content-page page-topic page-topic--two page-data-world">
+  <body class="content-page page-topic page-research-story story--data">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
-
     <div class="page-shell">
       <header class="site-header page-header">
-        <a class="wordmark" href="../home.html" aria-label="Suyu home">
-          <span class="wordmark-mark">S.</span>
-          <span class="wordmark-text">Suyu<br />Profile</span>
-        </a>
+        <a class="wordmark" href="../home.html" aria-label="Suyu home"><span class="wordmark-mark">S.</span><span class="wordmark-text">Suyu<br />Profile</span></a>
         <nav aria-label="Primary navigation">
-          <a href="../home.html">Home</a>
-          <a href="../about.html">Career</a>
-          <a href="../education.html">Education</a>
-          <a class="active" href="index.html">Research</a>
-          <a href="../projects.html">Projects</a>
+          <a href="../home.html">Home</a><a href="../about.html">Career</a><a href="../education.html">Education</a><a class="active" href="index.html">Research</a><a href="../projects.html">Projects</a>
         </nav>
-        <a class="header-contact" href="index.html">全部研究 <span>↗</span></a>
+        <a class="header-contact" href="https://github.com/SuyuZ1" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
       </header>
 
-      <main>
-        <section class="topic-detail-hero data-world-hero">
-          <a class="back-link" href="index.html">← 返回研究主页</a>
-
-          <div class="topic-detail-orbit data-world-hero__orbit" aria-hidden="true">
-            <div class="data-agent-core"><span></span><span></span><b>AI</b></div>
-            <i></i><i></i><i></i>
-            <em class="orbit-label orbit-label--one">理解</em>
-            <em class="orbit-label orbit-label--two">决策</em>
-            <em class="orbit-label orbit-label--three">编排</em>
+      <main class="research-story">
+        <section class="story-hero">
+          <a class="story-back" href="index.html">← RESEARCH ATLAS</a>
+          <div class="story-hero__status"><span><i></i> ACTIVE / RESEARCH DIRECTION</span><span>TOPIC 02</span></div>
+          <div class="story-hero__grid">
+            <div class="story-hero__copy">
+              <p class="story-kicker">DATA INFRASTRUCTURE</p>
+              <h1>Can Data Learn How to Grow Itself?</h1>
+              <p class="story-hero__subtitle">From Human-Designed Pipelines to Self-Evolving Data Worlds</p>
+              <p class="story-hero__lead">把数据系统从被动执行预设流程的基础设施，推进为能够理解自身状态、决定增长方向并从反馈中持续演化的智能系统。</p>
+              <div class="story-actions"><a href="#motivation">Read the Research Story <span>↓</span></a></div>
+            </div>
+            <div class="story-hero__visual story-visual story-visual--data" aria-hidden="true">
+              <div class="story-data-world"><span>DATA<br />WORLD</span><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="story-data-agent">DATA AGENT</div>
+              <div class="story-data-feedback"><span>UNDERSTAND</span><span>DECIDE</span><span>ORCHESTRATE</span><span>LEARN</span></div>
+            </div>
           </div>
-
-          <div class="topic-detail-hero__copy data-world-hero__copy">
-            <p class="eyebrow"><span></span> DATA INFRASTRUCTURE / 研究主题 02</p>
-            <h1>Can Data Learn<br />How to Grow<br />Itself?</h1>
-            <p>从人工设计的数据流水线，到自进化数据世界。</p>
-          </div>
+          <dl class="story-facts">
+            <div><dt>TYPE</dt><dd>Research Direction</dd></div>
+            <div><dt>CORE SYSTEM</dt><dd>Data Agent</dd></div>
+            <div><dt>FEEDBACK</dt><dd>World-State Driven</dd></div>
+            <div><dt>STATUS</dt><dd>Direction Building</dd></div>
+          </dl>
         </section>
 
-        <section class="content-section research-question-section">
-          <div class="content-label">研究问题 / 001</div>
-          <div class="research-question-content">
-            <p class="research-question-kicker">核心问题</p>
-            <h2>
-              数据系统能否理解自身所处的数据世界，识别限制增长的关键缺口，并自主组织下一阶段的演化？
-            </h2>
-            <p class="research-question-detail">
-              面对高质量数据获取日益昂贵、人工构建逐渐触及规模上限、多源数据彼此割裂且难以持续增值的共同瓶颈，
-              本研究试图探索：数据基础设施能否超越对人工预设流程的被动执行，通过持续反馈理解自身状态、判断生长方向，
-              并自主组织整个数据世界的演化过程。
-            </p>
+        <nav class="story-nav" aria-label="Research story sections">
+          <a href="#motivation"><span>01</span> Motivation</a><a href="#contribution"><span>02</span> Contribution</a><a href="#impact"><span>03</span> Industry Impact</a>
+        </nav>
 
-            <div class="research-frictions">
-              <article><span>01</span><h3>获取成本高</h3><p>高质量数据的获取成本难以随规模持续下降。</p></article>
-              <article><span>02</span><h3>能力彼此割裂</h3><p>不同数据来源与生产能力仍然相互孤立。</p></article>
-              <article><span>03</span><h3>依赖人工驱动</h3><p>固定流水线依赖预先定义的数据生长路径。</p></article>
+        <section class="story-chapter" id="motivation">
+          <div class="story-chapter__index">01 / MOTIVATION</div>
+          <div class="story-chapter__body">
+            <p class="story-kicker">WHY THIS DIRECTION MATTERS</p>
+            <h2>More data is not the same as a data system that knows how to improve.</h2>
+            <div class="story-chapter__copy">
+              <p>高质量数据获取越来越昂贵，人工构建逐渐触及规模上限；与此同时，多源数据、处理工具和评测信号仍分散在彼此割裂的流水线中。</p>
+              <p>真正的问题不只是如何生产更多数据，而是系统能否理解当前数据世界还缺什么、下一步应该增长什么，并根据结果修正演化路径。</p>
             </div>
-          </div>
-        </section>
-
-        <section class="evolution-blueprint-section" id="evolution-blueprint" aria-labelledby="blueprint-title">
-          <div class="blueprint-heading">
-            <div>
-              <p>演化蓝图 / 002</p>
-              <h2 id="blueprint-title">From Pipelines to an Evolving Data World.</h2>
-            </div>
-            <span>以 DATA INFRASTRUCTURE 作为统一载体</span>
-          </div>
-
-          <div class="evolution-blueprint">
-            <div class="blueprint-titlebar">
-              <span>自进化数据系统 / 概念图</span>
-              <span>理解 · 决策 · 编排 · 演化</span>
-            </div>
-
-            <div class="blueprint-flow">
-              <article class="blueprint-stage pipeline-stage">
-                <div class="blueprint-stage__heading">
-                  <span>当前 / 01</span>
-                  <h3>Human-Designed<br />Data Pipelines</h3>
-                </div>
-
-                <div class="human-controller">
-                  <i></i>
-                  <span>人工控制</span>
-                </div>
-                <div class="fixed-pipeline"><i></i><i></i><i></i><i></i><span>固定流水线</span></div>
-
-                <div class="source-cluster">
-                  <div><b>◆</b><span>空间<br />数据</span></div>
-                  <div><b>◉</b><span>机器人<br />数据</span></div>
-                  <div><b>△</b><span>仿真<br />数据</span></div>
-                  <div><b>✦</b><span>生成<br />数据</span></div>
-                  <div><b>▥</b><span>评测<br />数据</span></div>
-                </div>
-
-                <p class="stage-caption">固定 · 割裂 · 人工驱动</p>
-              </article>
-
-              <div class="blueprint-arrow" aria-hidden="true">
-                <span>割裂的<br />数据世界</span>
-                <svg viewBox="0 0 90 32"><path d="M3 16H79M66 5l13 11-13 11" /></svg>
-              </div>
-
-              <article class="blueprint-stage agent-stage">
-                <div class="blueprint-stage__heading blueprint-stage__heading--center">
-                  <span>DATA AGENT / 02</span>
-                  <h3>Composable<br />Evolution Loop</h3>
-                </div>
-
-                <div class="agent-loop">
-                  <div class="agent-action agent-action--understand"><b>◎</b><span>理解</span><small>当前数据世界</small></div>
-                  <div class="agent-action agent-action--decide"><b>◉</b><span>决策</span><small>下一步如何生长</small></div>
-                  <div class="agent-action agent-action--orchestrate"><b>⚙</b><span>编排</span><small>调整工作流</small></div>
-                  <div class="agent-action agent-action--learn"><b>↻</b><span>学习</span><small>吸收反馈信号</small></div>
-                  <div class="agent-avatar"><i></i><i></i><span>DATA<br />AGENT</span></div>
-                </div>
-
-                <div class="capability-grid">
-                  <div><span>01</span><b>经验<br />获取</b></div>
-                  <div><span>02</span><b>经验<br />多样化</b></div>
-                  <div><span>03</span><b>经验<br />整合</b></div>
-                  <div><span>04</span><b>演化<br />反馈</b></div>
-                </div>
-              </article>
-
-              <div class="blueprint-arrow blueprint-arrow--right" aria-hidden="true">
-                <span>持续<br />演化</span>
-                <svg viewBox="0 0 90 32"><path d="M3 16H79M66 5l13 11-13 11" /></svg>
-              </div>
-
-              <article class="blueprint-stage world-stage">
-                <div class="blueprint-stage__heading blueprint-stage__heading--center">
-                  <span>未来 / 03</span>
-                  <h3>Self-Evolving<br />Data World</h3>
-                </div>
-
-                <div class="world-network" aria-hidden="true">
-                  <svg viewBox="0 0 340 300" role="img">
-                    <circle class="world-ring" cx="170" cy="150" r="126" />
-                    <circle class="world-ring world-ring--inner" cx="170" cy="150" r="92" />
-                    <g class="world-links">
-                      <path d="M63 115L112 75L156 111L206 64L269 98L281 166L237 222L176 251L111 224L55 175Z" />
-                      <path d="M112 75L111 224M206 64L176 251M63 115L237 222M269 98L55 175M156 111L281 166L111 224L237 222L156 111Z" />
-                      <path d="M112 75L281 166M63 115L176 251M206 64L55 175M269 98L111 224" />
-                    </g>
-                    <g class="world-nodes world-nodes--blue">
-                      <circle cx="63" cy="115" r="7" /><circle cx="112" cy="75" r="5" /><circle cx="156" cy="111" r="8" /><circle cx="206" cy="64" r="6" />
-                    </g>
-                    <g class="world-nodes world-nodes--green">
-                      <circle cx="269" cy="98" r="7" /><circle cx="281" cy="166" r="6" /><circle cx="237" cy="222" r="8" />
-                    </g>
-                    <g class="world-nodes world-nodes--orange">
-                      <circle cx="176" cy="251" r="7" /><circle cx="111" cy="224" r="6" /><circle cx="55" cy="175" r="8" />
-                    </g>
-                    <g class="world-minor-nodes">
-                      <circle cx="94" cy="143" r="3" /><circle cx="136" cy="178" r="4" /><circle cx="190" cy="144" r="4" /><circle cx="222" cy="125" r="3" /><circle cx="217" cy="184" r="4" /><circle cx="159" cy="207" r="3" />
-                    </g>
-                  </svg>
-                  <div class="world-badge world-badge--one">◆<span>数据</span></div>
-                  <div class="world-badge world-badge--two">⚙<span>系统</span></div>
-                  <div class="world-badge world-badge--three">✦<span>增长</span></div>
-                </div>
-
-                <p class="stage-caption">互联 · 扩展 · 持续更新</p>
-              </article>
-            </div>
-
-            <div class="feedback-rail">
-              <span class="feedback-rail__label">持续反馈</span>
-              <div><b>◎</b><span>理解<br />数据世界</span></div>
-              <i>›</i>
-              <div><b>◉</b><span>决定<br />生长方向</span></div>
-              <i>›</i>
-              <div><b>⚙</b><span>编排<br />演化过程</span></div>
-              <i>›</i>
-              <div><b>↻</b><span>从反馈中<br />持续学习</span></div>
+            <div class="story-shift">
+              <article><span>CURRENT</span><h3>Fixed Pipelines</h3><p>由人工预设流程，局部优化且难以形成长期反馈。</p></article>
+              <i>→</i>
+              <article><span>PROPOSED</span><h3>Evolving Data World</h3><p>理解状态、判断缺口、编排能力并从反馈中学习。</p></article>
             </div>
           </div>
         </section>
 
-        <section class="content-section research-vision-section">
-          <div class="content-label">研究愿景 / 003</div>
-          <div class="research-vision-content">
-            <p>DATA INFRASTRUCTURE</p>
-            <h2>以统一的数据基础设施，组织整个数据世界的持续演化。</h2>
-            <div>
-              <p>
-                数据系统不再只是承载和处理已有数据，而是逐步学习理解自身数据世界的当前状态、决定下一步应如何生长，
-                并依据持续反馈不断调整演化路径。
-              </p>
-              <p>
-                各项能力按照继承关系与闭环协同逐步展开，最终推动被动的数据基础设施转变为能够自主组织、持续扩展和自我增值的智能数据世界。
-              </p>
+        <section class="story-chapter" id="contribution">
+          <div class="story-chapter__index">02 / CONTRIBUTION</div>
+          <div class="story-chapter__body">
+            <p class="story-kicker">THE RESEARCH THESIS</p>
+            <h2>A closed-loop architecture for organizing how data systems evolve.</h2>
+            <div class="story-contribution-grid story-contribution-grid--four">
+              <article><span>01</span><h3>Understand</h3><p>建立对当前数据组成、质量、覆盖范围与能力缺口的系统认知。</p></article>
+              <article><span>02</span><h3>Decide</h3><p>根据任务目标与边界判断下一轮最值得增长的数据与能力。</p></article>
+              <article><span>03</span><h3>Orchestrate</h3><p>组合获取、多样化、整合和评测能力，动态调整数据工作流。</p></article>
+              <article><span>04</span><h3>Learn</h3><p>利用模型表现和环境反馈更新判断，使数据世界持续增值。</p></article>
+            </div>
+            <aside class="story-role-note"><span>PUBLIC STATUS</span><p>当前公开的是研究命题与系统架构。论文、实验结果与个人贡献将在形成可验证成果后补充，本页不提前包装尚未完成的结论。</p></aside>
+          </div>
+        </section>
+
+        <section class="story-chapter story-chapter--impact" id="impact">
+          <div class="story-chapter__index">03 / INDUSTRY IMPACT</div>
+          <div class="story-chapter__body">
+            <p class="story-kicker">POTENTIAL SYSTEM VALUE</p>
+            <h2>Shift the bottleneck from manual throughput to intelligent data allocation.</h2>
+            <p class="story-impact-lead">如果数据基础设施能够形成稳定闭环，行业价值将不再只来自“生产得更多”，而来自更准确地判断什么数据值得生产、何时停止，以及如何让已有数据持续产生新价值。</p>
+            <div class="story-impact-grid">
+              <article><span>EFFICIENCY</span><h3>减少无效数据投入</h3><p>把数据预算优先分配给真正限制模型能力的覆盖缺口，而非平均扩张。</p></article>
+              <article><span>REUSE</span><h3>连接分散的数据能力</h3><p>将采集、生成、整合与评测组织为可复用的能力单元，而不是一次性流水线。</p></article>
+              <article><span>ADAPTATION</span><h3>跟随任务持续演化</h3><p>让数据策略能够根据模型和场景反馈调整，更适合长期运行的具身智能系统。</p></article>
             </div>
           </div>
         </section>
 
-        <section class="content-section topic-output-section data-world-outputs">
-          <div class="content-label">研究产出 / 004</div>
-          <div class="output-list">
-            <article><span>论文</span><h3>相关论文成果将在此关联。</h3><p>论文标题、发表信息、个人贡献与链接。</p></article>
-            <article><span>技术</span><h3>系统与技术成果。</h3><p>代码、数据集、基础设施与评测方法。</p></article>
+        <section class="story-evidence story-evidence--concept">
+          <div class="story-evidence__heading"><p>RESEARCH STATUS</p><h2>A direction under construction.</h2></div>
+          <div class="story-status-panel">
+            <span>PUBLIC SCOPE / 2026</span>
+            <p>当前页面保留最重要的研究命题、闭环结构与潜在行业价值。相关论文、系统与实证结果将在公开条件成熟后接入。</p>
+            <div><b>Research Question</b><b>System Architecture</b><b>Feedback Loop</b></div>
           </div>
         </section>
       </main>
 
-      <footer id="page-footer" class="page-footer">
-        <a href="topic-01.html">← 研究主题 01</a>
-        <a href="index.html">全部研究 <span>↗</span></a>
-        <p>© 2026</p>
-      </footer>
+      <footer id="page-footer" class="page-footer"><a href="topic-01.html">← Topic 01</a><a href="topic-03.html">Next — CFG-Bench <span>↗</span></a><p>© 2026</p></footer>
     </div>
   </body>
 </html>
