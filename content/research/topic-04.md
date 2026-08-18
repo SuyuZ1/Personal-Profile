@@ -1,37 +1,46 @@
-# Research Topic 04
+# Research Topic 04 — Policy Learning for Embodied Agents
 
 ## Status
 
-- Topic status: Reserved
-- Website preview: Visible as a placeholder
-- Detail page: Not created yet
+- Topic status: Structure ready; awaiting materials
+- Work period: SANY Group, 2025—Present
+- Planned outputs: Two related works
+- Website preview: Visible in the Research atlas
+- Detail page: `../../pages/research/topic-04.html`
 
-## Research Question
+## Shared Research Question
 
 
 ## One-Sentence Positioning
 
 
-## Problem
+## Technical Route
 
 
-## Approach
+## Relationship Between the Two Works
 
 
-## Key Contributions
+## Work 01
 
+- Title:
+- Problem:
+- Method:
+- Contribution:
+- Personal contribution:
+- Paper / code / demo:
 
-## Personal Contribution
+## Work 02
 
-
-## Outputs and Links
-
-- Paper:
-- Project:
-- Code:
+- Title:
+- Problem:
+- Method:
+- Contribution:
+- Personal contribution:
+- Paper / code / demo:
 
 ## Media
 
-- Cover image:
-- Framework figure:
-- Additional figures:
+- Topic cover:
+- Shared framework figure:
+- Work 01 figures:
+- Work 02 figures:

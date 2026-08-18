@@ -1,10 +1,11 @@
-# Research Topic 03
+# Research Topic 03 — Embodied Intelligence Benchmark
 
 ## Status
 
-- Topic status: Reserved
-- Website preview: Visible as a placeholder
-- Detail page: Not created yet
+- Topic status: Structure ready; awaiting materials
+- Work period: SANY Group, 2025—Present
+- Website preview: Visible in the Research atlas
+- Detail page: `../../pages/research/topic-03.html`
 
 ## Research Question
 
@@ -12,13 +13,20 @@
 ## One-Sentence Positioning
 
 
-## Problem
+## Benchmark Scope
 
+- Evaluation target:
+- Tasks:
+- Data / environments:
+- Capability dimensions:
 
-## Approach
+## Evaluation Protocol
 
+- Metrics:
+- Baselines:
+- Experimental protocol:
 
-## Key Contributions
+## Key Findings
 
 
 ## Personal Contribution
@@ -27,11 +35,11 @@
 ## Outputs and Links
 
 - Paper:
-- Project:
+- Benchmark website:
 - Code:
 
 ## Media
 
 - Cover image:
 - Framework figure:
-- Additional figures:
+- Results figure:
