@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="About Suyu and their research perspective." />
+    <meta
+      name="description"
+      content="About Suyu, selected visual AI experience and current research perspective."
+    />
     <meta name="theme-color" content="#08090d" />
     <title>About — Suyu</title>
     <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
@@ -56,24 +59,127 @@
           </div>
         </section>
 
-        <section class="content-section split-content">
-          <div class="content-label">PERSPECTIVE / 002</div>
-          <div class="split-content__grid">
-            <article>
-              <span>01</span>
-              <h3>Research motivation</h3>
-              <p>The questions, challenges and long-term goals that motivate the research.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Current focus</h3>
-              <p>The problems and technical directions currently receiving the most attention.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Beyond research</h3>
-              <p>Selected interests and experiences that add a more personal dimension.</p>
-            </article>
+        <section id="experience" class="content-section experience-section">
+          <div class="content-label">EXPERIENCE / 002</div>
+          <div class="experience-block">
+            <header class="experience-intro">
+              <div>
+                <p>SELECTED EXPERIENCE / VISUAL PRACTICE</p>
+                <h2>Evaluation, integration,<br />and visual learning.</h2>
+              </div>
+              <p>
+                两段以视觉数据为核心的基础工程实践，分别涉及生成式人像系统的质量评估与模型接入，以及弱监督动物姿态评分流程。
+              </p>
+            </header>
+
+            <div class="experience-grid">
+              <article id="facechain" class="experience-card experience-card--facechain">
+                <figure class="experience-visual">
+                  <img
+                    src="../assets/uploads/experience/facechain-v3-portraits.jpg"
+                    alt="FaceChain v3 generated portrait examples"
+                  />
+                  <div class="experience-scan" aria-hidden="true"></div>
+                  <figcaption>
+                    <span>GENERATIVE PORTRAIT SYSTEM</span>
+                    <span>01 / 02</span>
+                  </figcaption>
+                </figure>
+                <div class="experience-card__body">
+                  <div class="experience-meta">
+                    <span>ALIBABA · MODELSCOPE</span>
+                    <time datetime="2023-07">2023.07—2024.11</time>
+                  </div>
+                  <h3>Visual quality evaluation<br />&amp; model integration.</h3>
+                  <p>
+                    工作定位于生成式人像系统的评估与工程接入侧：参与面部曝光与可见度分析，并协助候选语言模型的测试、比较与接入，支持相关功能迭代。
+                  </p>
+                  <div class="experience-card__footer">
+                    <ul aria-label="My workstreams">
+                      <li>PORTRAIT QUALITY</li>
+                      <li>MODEL EVALUATION</li>
+                    </ul>
+                    <a
+                      href="https://github.com/modelscope/facechain"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="View FaceChain on GitHub"
+                    >
+                      GitHub <span>↗</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article id="cutecat" class="experience-card experience-card--cutecat">
+                <figure class="experience-visual">
+                  <img
+                    src="../assets/uploads/experience/cutecat-demo.jpeg"
+                    alt="Cat image from the CuteCat visual scoring project"
+                  />
+                  <div class="cat-detection-box" aria-hidden="true">
+                    <span>CAT · ROI 01</span>
+                  </div>
+                  <svg
+                    class="cat-pose-overlay"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                  >
+                    <path d="M51 23 L60 19 L67 23 L65 30 L58 35 L49 33 L42 28 Z" />
+                    <path d="M49 33 L40 39 L30 39 L22 35" />
+                    <path d="M40 39 L47 44 L57 45 L66 42" />
+                    <circle cx="51" cy="23" r="1.2" />
+                    <circle cx="60" cy="19" r="1.2" />
+                    <circle cx="67" cy="23" r="1.2" />
+                    <circle cx="65" cy="30" r="1.2" />
+                    <circle cx="58" cy="35" r="1.2" />
+                    <circle cx="49" cy="33" r="1.2" />
+                    <circle cx="42" cy="28" r="1.2" />
+                    <circle cx="40" cy="39" r="1.2" />
+                    <circle cx="30" cy="39" r="1.2" />
+                    <circle cx="22" cy="35" r="1.2" />
+                    <circle cx="47" cy="44" r="1.2" />
+                    <circle cx="57" cy="45" r="1.2" />
+                    <circle cx="66" cy="42" r="1.2" />
+                  </svg>
+                  <figcaption>
+                    <span>POSE-BASED SCORING</span>
+                    <span>02 / 02</span>
+                  </figcaption>
+                </figure>
+                <div class="experience-card__body">
+                  <div class="experience-meta">
+                    <span>SUES LAB</span>
+                    <time datetime="2024-11">2024.11—PRESENT</time>
+                  </div>
+                  <h3>Weakly supervised<br />pose scoring.</h3>
+                  <p>
+                    围绕弱监督视觉数据构建与下游姿态评分建模，串联视频采集、单猫检测、动物关键点提取、弱监督标签与图像／视频评分。
+                  </p>
+                  <div class="experience-card__footer">
+                    <ul aria-label="Technical methods">
+                      <li>YOLOv5</li>
+                      <li>MMPose</li>
+                      <li>WEAK SUPERVISION</li>
+                    </ul>
+                    <a
+                      href="https://github.com/SuyuZ1/CuteCat"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="View CuteCat on GitHub"
+                    >
+                      GitHub <span>↗</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <p class="experience-credit">
+              Visual sources: FaceChain v3.0.0 official repository (Apache-2.0) · CuteCat project repository.
+              Pose marks are a decorative pipeline visualization.
+            </p>
           </div>
         </section>
 

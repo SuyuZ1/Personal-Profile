@@ -6,6 +6,7 @@ Keep profile text in this folder before placing it into the website layouts.
 
 - `profile.md`: name, introduction, research statement and links
 - `education.md`: education history and academic focus
+- `experience.md`: compact FaceChain and CuteCat experience entries for the About page
 - `projects.md`: project entries
 - `research/topic-01.md`: VLA living survey, paper metadata and research roadmap
 - `research/topic-02.md`: self-evolving data world research trajectory
