@@ -26,7 +26,7 @@ details, system metrics and internal materials require an explicit public-releas
 ## FaceChain
 
 - Organization: 阿里巴巴达摩院 · ModelScope
-- Period: 2023.07—2024.11
+- Period: 2023.07—2023.11
 - Employment type: Internship
 - Work positioning: Visual Quality Evaluation & Model Integration
 - Public description: 工作定位于生成式人像系统的评估与工程接入侧：参与面部曝光与可见度分析，并协助候选语言模型的测试、比较与接入，支持相关功能迭代。
@@ -41,7 +41,7 @@ after this internship as a personal contribution.
 ## CuteCat
 
 - Organization: SUES Lab
-- Period: 2024.11—Present
+- Period: 2024.01—2024.08
 - Public organization name: 上海工程技术大学实验室
 - Employment type: Internship
 - Work positioning: Weakly Supervised Visual Learning & Pose-based Scoring

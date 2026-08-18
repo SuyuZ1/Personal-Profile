@@ -19,7 +19,7 @@ How can visual understanding become a reliable signal inside generative systems?
 ## Representative work — FaceChain
 
 - Organization: 阿里巴巴达摩院 · ModelScope
-- Period: 2023.07—2024.11
+- Period: 2023.07—2023.11
 - Employment type: 实习
 - Project: https://github.com/modelscope/facechain
 
