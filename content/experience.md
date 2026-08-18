@@ -3,6 +3,21 @@
 This file is the editable source-of-truth for the compact experience module on the About page.
 The public presentation intentionally distinguishes project-level capabilities from personal work.
 
+## Current full-time role
+
+- Organization: SANY Group
+- Period: 2025—Present
+- Employment type: Full-time
+- Public role label: Embodied Intelligence Research
+- Research focus: VLA for robotic welding; embodied intelligence; industrial robotics
+- Public description: 聚焦工业焊接场景下的 VLA 与具身智能研究，探索多模态感知、任务理解、动作生成与机器人执行在真实制造系统中的连接方式。
+- Detail routes: `pages/research/index.html`; `pages/projects.html`
+- Official job title: 待补充
+- Department: 待补充
+
+Only public, non-confidential research directions should be described on the website. Project-level
+details, system metrics and internal materials require an explicit public-release decision.
+
 ## Module introduction
 
 两段以视觉数据为核心的基础工程实践，分别涉及生成式人像系统的质量评估与模型接入，以及弱监督动物姿态评分流程。
@@ -11,6 +26,7 @@ The public presentation intentionally distinguishes project-level capabilities f
 
 - Organization: Alibaba · ModelScope
 - Period: 2023.07—2024.11
+- Employment type: Internship
 - Work positioning: Visual Quality Evaluation & Model Integration
 - Public description: 工作定位于生成式人像系统的评估与工程接入侧：参与面部曝光与可见度分析，并协助候选语言模型的测试、比较与接入，支持相关功能迭代。
 - My workstreams: Portrait Quality; Model Evaluation
@@ -25,6 +41,7 @@ after this internship as a personal contribution.
 
 - Organization: SUES Lab
 - Period: 2024.11—Present
+- Employment type: Research Internship
 - Work positioning: Weakly Supervised Visual Learning & Pose-based Scoring
 - Public description: 围绕弱监督视觉数据构建与下游姿态评分建模，串联视频采集、单猫检测、动物关键点提取、弱监督标签与图像／视频评分。
 - Methods: YOLOv5; MMPose; Weak Supervision
