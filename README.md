@@ -15,7 +15,10 @@ Personal Profile/
 │   └── research/
 │       ├── index.html
 │       ├── topic-01.html
-│       └── topic-02.html
+│       ├── topic-02.html
+│       ├── topic-03.html
+│       ├── topic-04.html
+│       └── topic-05.html
 ├── assets/
 │   ├── css/                    # Shared styles
 │   ├── js/                     # Shared interactions
@@ -28,7 +31,10 @@ Personal Profile/
     ├── projects.md
     └── research/
         ├── topic-01.md
-        └── topic-02.md
+        ├── topic-02.md
+        ├── topic-03.md
+        ├── topic-04.md
+        └── topic-05.md
 ```
 
 ## Adding new material

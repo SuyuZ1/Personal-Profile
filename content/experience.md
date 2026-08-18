@@ -1,6 +1,6 @@
-# Selected Experience
+# Career
 
-This file is the editable source-of-truth for the compact experience module on the About page.
+This file is the editable source-of-truth for the full-time and internship modules on the Career page.
 The public presentation intentionally distinguishes project-level capabilities from personal work.
 
 ## Current full-time role
@@ -9,8 +9,9 @@ The public presentation intentionally distinguishes project-level capabilities f
 - Period: 2025—Present
 - Employment type: Full-time
 - Public role label: Embodied Intelligence Research
-- Research focus: VLA for robotic welding; embodied intelligence; industrial robotics
-- Public description: 聚焦工业焊接场景下的 VLA 与具身智能研究，探索多模态感知、任务理解、动作生成与机器人执行在真实制造系统中的连接方式。
+- Work structure: Industrial Deployment + Frontier Research
+- Industrial deployment: 面向机器人焊接等复杂制造场景，连接多模态感知、工艺意图理解、动作生成、机器人执行与现场验证。
+- Frontier research: 围绕 VLA 系统认知、具身数据智能、细粒度认知评测与 Policy Learning 开展前沿预研。
 - Detail routes: `pages/research/index.html`; `pages/projects.html`
 - Official job title: 待补充
 - Department: 待补充
@@ -24,7 +25,7 @@ details, system metrics and internal materials require an explicit public-releas
 
 ## FaceChain
 
-- Organization: Alibaba · ModelScope
+- Organization: 阿里巴巴达摩院 · ModelScope
 - Period: 2023.07—2024.11
 - Employment type: Internship
 - Work positioning: Visual Quality Evaluation & Model Integration
@@ -41,7 +42,8 @@ after this internship as a personal contribution.
 
 - Organization: SUES Lab
 - Period: 2024.11—Present
-- Employment type: Research Internship
+- Public organization name: 上海工程技术大学实验室
+- Employment type: Internship
 - Work positioning: Weakly Supervised Visual Learning & Pose-based Scoring
 - Public description: 围绕弱监督视觉数据构建与下游姿态评分建模，串联视频采集、单猫检测、动物关键点提取、弱监督标签与图像／视频评分。
 - Methods: YOLOv5; MMPose; Weak Supervision

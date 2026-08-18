@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Suyu 的人类中心视觉感知与生成式人像系统研究方向，以及 FaceChain 代表性实践。"
+    />
+    <meta name="theme-color" content="#08090d" />
+    <title>Human-Centric Visual Intelligence — Suyu</title>
+    <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260818e" />
+    <script src="../../assets/js/script.js" defer></script>
+  </head>
+  <body class="content-page page-topic page-visual-intelligence">
+    <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+    <div class="page-shell">
+      <header class="site-header page-header">
+        <a class="wordmark" href="../home.html" aria-label="Suyu home">
+          <span class="wordmark-mark">S.</span>
+          <span class="wordmark-text">Suyu<br />Profile</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="../home.html">Home</a>
+          <a href="../about.html">Career</a>
+          <a href="../education.html">Education</a>
+          <a class="active" href="index.html">Research</a>
+          <a href="../projects.html">Projects</a>
+        </nav>
+        <a class="header-contact" href="https://github.com/modelscope/facechain" target="_blank" rel="noreferrer">
+          FaceChain <span>↗</span>
+        </a>
+      </header>
+
+      <main>
+        <section class="visual-research-hero">
+          <a class="back-link" href="index.html">← 返回研究主页</a>
+          <div class="visual-research-hero__grid">
+            <div class="visual-research-hero__copy">
+              <p class="eyebrow"><span></span> HUMAN-CENTRIC VISION / 研究主题 05</p>
+              <h1>Human-Centric<br /><span>Visual Intelligence.</span></h1>
+              <p class="visual-research-hero__subtitle">
+                Visual Perception, Quality Understanding &amp; Generative Portrait Systems
+              </p>
+              <p class="visual-research-hero__lead">
+                从“识别人像”进一步走向理解可见度、质量特征与生成结果，探索视觉感知如何成为生成式系统中
+                可量化、可比较、可接入的可靠能力。
+              </p>
+              <dl class="visual-research-meta">
+                <div><dt>Direction</dt><dd>Human-Centric Vision</dd></div>
+                <div><dt>Representative Work</dt><dd>FaceChain</dd></div>
+                <div><dt>Role</dt><dd>阿里巴巴达摩院 · 实习</dd></div>
+              </dl>
+            </div>
+
+            <figure class="visual-research-hero__figure">
+              <img
+                src="../../assets/uploads/experience/facechain-v3-portraits.jpg"
+                alt="FaceChain generated portrait examples"
+              />
+              <div class="visual-research-scan" aria-hidden="true"><span>FACE / QUALITY SIGNAL</span></div>
+              <figcaption><span>GENERATIVE PORTRAIT SYSTEM</span><span>2023.07—2024.11</span></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="visual-research-section visual-research-scope">
+          <div class="visual-research-index">研究视角 / 001</div>
+          <div class="visual-research-heading">
+            <div>
+              <p>THE RESEARCH PERSPECTIVE</p>
+              <h2>How can visual understanding become a reliable signal inside generative systems?</h2>
+            </div>
+            <p>
+              人类中心视觉系统不仅要识别人脸或生成图像，还需要判断输入是否可用、结果是否可信，以及不同模型是否适合被接入完整系统。
+              这一方向连接视觉识别、图像质量理解、模型评估与生成式视觉工程。
+            </p>
+          </div>
+
+          <div class="visual-research-pillars">
+            <article><span>01 / PERCEIVE</span><h3>Visual Recognition</h3><p>理解面部区域、可见度、曝光与影响人像质量的视觉特征。</p></article>
+            <article><span>02 / EVALUATE</span><h3>Quality &amp; Model Evaluation</h3><p>将视觉质量和模型表现转化为可比较的指标与测试结论。</p></article>
+            <article><span>03 / INTEGRATE</span><h3>System Integration</h3><p>让评估结果服务于模型选择、功能接入与生成系统迭代。</p></article>
+          </div>
+        </section>
+
+        <section class="visual-research-section visual-case-section">
+          <div class="visual-research-index">代表实践 / 002</div>
+          <div class="visual-case-grid">
+            <figure>
+              <div class="visual-case-figure__bar"><span>FACECHAIN / MODELSCOPE</span><span>GENERATIVE PORTRAIT SYSTEM</span></div>
+              <img
+                src="../../assets/uploads/experience/facechain-v3-portraits.jpg"
+                alt="FaceChain v3 portrait generation examples"
+                loading="lazy"
+              />
+              <figcaption>Visual source: FaceChain v3.0.0 official repository · Apache-2.0</figcaption>
+            </figure>
+
+            <div class="visual-case-copy">
+              <div class="visual-case-institution">
+                <img src="../../assets/uploads/experience/damo-academy.png" alt="DAMO Academy logo" />
+                <div><span>阿里巴巴达摩院</span><small>ALIBABA DAMO ACADEMY · MODELSCOPE</small></div>
+              </div>
+              <p>REPRESENTATIVE WORK / FACECHAIN</p>
+              <h2>Visual evaluation within a generative portrait pipeline.</h2>
+              <p class="visual-case-copy__lead">
+                实习工作位于生成式人像系统的评估与工程接入侧，参与面部曝光与可见度分析，
+                并协助候选语言模型的测试、比较与接入，为相关功能迭代提供基础支持。
+              </p>
+              <div class="visual-case-work">
+                <article><span>01</span><h3>人像质量分析</h3><p>围绕面部曝光与可见度，对输入人像的质量特征进行检测与量化。</p></article>
+                <article><span>02</span><h3>模型评估与接入</h3><p>协助候选语言模型测试、横向比较与工程接入，支持系统功能迭代。</p></article>
+              </div>
+              <div class="visual-case-actions">
+                <a href="https://github.com/modelscope/facechain" target="_blank" rel="noreferrer">Open FaceChain <span>↗</span></a>
+                <a href="../about.html#experience">View Career <span>↗</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="page-footer" class="page-footer">
+        <a href="topic-04.html">← Policy Learning</a>
+        <a href="../projects.html">Next — Projects <span>↗</span></a>
+        <p>© 2026</p>
+      </footer>
+    </div>
+  </body>
+</html>
