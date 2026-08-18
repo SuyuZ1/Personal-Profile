@@ -24,8 +24,8 @@
 
 .research-preview-list {
   display: grid;
-  gap: 54px;
-  margin-top: 18px;
+  gap: 42px;
+  margin-top: 32px;
 }
 
 .research-preview {
@@ -60,8 +60,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  min-height: 58px;
-  padding: 17px 28px;
+  min-height: 50px;
+  padding: 14px 24px;
   color: #777c89;
   font-family: var(--mono);
   font-size: 0.58rem;
@@ -89,7 +89,7 @@
 .research-preview__main {
   display: grid;
   grid-template-columns: minmax(0, 1.18fr) minmax(410px, 0.82fr);
-  min-height: clamp(510px, 42vw, 680px);
+  height: clamp(480px, 34.7vw, 520px);
 }
 
 .research-preview__visual,
@@ -119,8 +119,8 @@
 .research-preview__visual > p {
   position: absolute;
   z-index: 6;
-  top: 24px;
-  left: 28px;
+  top: 20px;
+  left: 24px;
   margin: 0;
   color: color-mix(in srgb, var(--preview-accent) 70%, #7b818c);
   font-family: var(--mono);
@@ -132,11 +132,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(44px, 5vw, 82px) clamp(32px, 4vw, 70px);
+  padding: clamp(38px, 4.2vw, 64px) clamp(28px, 3.5vw, 58px);
 }
 
 .research-preview__kicker {
-  margin: 0 0 23px;
+  margin: 0 0 18px;
   color: var(--preview-accent);
   font-family: var(--mono);
   font-size: 0.62rem;
@@ -146,36 +146,41 @@
 .research-preview__story h2 {
   max-width: 760px;
   margin: 0;
-  font-size: clamp(2.9rem, 4.4vw, 5.3rem);
+  font-size: clamp(2.65rem, 3.7vw, 4.8rem);
   font-weight: 480;
   line-height: 0.94;
   letter-spacing: -0.06em;
 }
 
+.research-preview--cfg .research-preview__story h2,
+.research-preview--vision .research-preview__story h2 {
+  font-size: clamp(2.55rem, 3.35vw, 4.4rem);
+}
+
 .research-preview__subtitle {
-  margin: 26px 0 0;
+  margin: 20px 0 0;
   color: #a6abb8;
   font-size: clamp(0.92rem, 1.2vw, 1.1rem);
 }
 
 .research-preview__summary {
   max-width: 680px;
-  margin: 40px 0 0;
+  margin: 28px 0 0;
   color: #878c98;
   font-size: clamp(0.96rem, 1.15vw, 1.08rem);
-  line-height: 1.85;
+  line-height: 1.75;
 }
 
 .research-preview__facts {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin: auto calc(clamp(32px, 4vw, 70px) * -1) calc(clamp(44px, 5vw, 82px) * -1);
-  padding-top: 50px;
+  margin: auto calc(clamp(28px, 3.5vw, 58px) * -1) calc(clamp(38px, 4.2vw, 64px) * -1);
+  padding-top: 30px;
 }
 
 .research-preview__facts div {
   min-width: 0;
-  padding: 24px clamp(24px, 3vw, 42px);
+  padding: 18px clamp(20px, 2.5vw, 34px);
   border-top: 1px solid var(--line);
   border-right: 1px solid var(--line);
 }
@@ -197,10 +202,25 @@
 }
 
 .research-preview__facts dd {
-  margin-top: 17px;
+  margin-top: 12px;
   color: #bdc2cf;
   font-size: 0.86rem;
   line-height: 1.5;
+}
+
+.research-preview__facts .research-preview__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.research-preview__tags span {
+  padding: 5px 7px;
+  border: 1px solid color-mix(in srgb, var(--preview-accent) 26%, transparent);
+  color: color-mix(in srgb, var(--preview-accent) 72%, #aeb3bf);
+  font-family: var(--mono);
+  font-size: 0.44rem;
+  letter-spacing: 0.06em;
 }
 
 .research-preview__footer {
@@ -1260,20 +1280,21 @@
 
   .research-preview__main {
     grid-template-columns: 1fr;
+    height: auto;
   }
 
   .research-preview__visual {
-    min-height: 450px;
+    min-height: 400px;
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
 
   .research-preview__story {
-    min-height: 520px;
+    min-height: 470px;
   }
 
   .research-preview__facts {
-    margin-top: 50px;
+    margin-top: 36px;
   }
 
   .story-hero__grid {
@@ -1347,7 +1368,7 @@
 
   .research-preview__top,
   .research-preview__footer {
-    padding: 15px 17px;
+    padding: 13px 17px;
     font-size: 0.48rem;
   }
 
@@ -10015,8 +10036,8 @@ main [id] {
   align-items: center;
   justify-content: space-between;
   gap: 25px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid var(--line);
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .research-atlas-label b {
@@ -10024,6 +10045,10 @@ main [id] {
   font-size: 0.48rem;
   font-weight: 500;
   letter-spacing: 0.09em;
+}
+
+.page-research .research-topics {
+  padding-top: clamp(72px, 7vw, 100px);
 }
 
 .page-research .research-topics .topic-grid {
