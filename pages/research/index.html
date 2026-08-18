@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#08090d" />
     <title>研究方向 — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260818c" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260818d" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
   <body class="content-page page-research">
@@ -52,8 +52,8 @@
               <h2>What I am building.</h2>
             </div>
             <div class="research-atlas-status" aria-label="Research topic status">
-              <span><i></i> 2 DOCUMENTED TOPICS</span>
-              <span>2 AWAITING MATERIALS</span>
+              <span><i></i> 3 DOCUMENTED TOPICS</span>
+              <span>1 AWAITING MATERIALS</span>
               <span>4 INDEPENDENT PAGES</span>
             </div>
           </div>
@@ -131,35 +131,41 @@
 
             <a
               id="benchmark"
-              class="topic-card topic-atlas-card topic-card--placeholder topic-card--three"
+              class="topic-card topic-atlas-card topic-card--three topic-card--cfg"
               href="topic-03.html"
             >
               <div class="topic-card__top">
-                <span>STRUCTURE READY / AWAITING MATERIALS</span>
+                <span><i class="topic-status-dot"></i> ECCV 2026 / BENCHMARK RELEASED</span>
                 <span>TOPIC 03</span>
               </div>
-              <div class="topic-card__visual-zone">
-                <span class="topic-card__visual-label">BENCHMARK / PAGE STRUCTURE READY</span>
-                <div class="topic-placeholder-visual" aria-hidden="true">
-                  <span>03</span>
-                  <small>BENCHMARK MATERIALS PENDING</small>
-                  <i></i><i></i><i></i>
+              <div class="topic-card__visual-zone topic-card__visual-zone--cfg">
+                <span class="topic-card__visual-label">CFG-BENCH / FOUR-TIER COGNITIVE FRAMEWORK</span>
+                <img
+                  class="cfg-card-preview"
+                  src="../../assets/uploads/research/cfg-bench/motivation.png"
+                  alt="CFG-Bench fine-grained embodied cognition framework preview"
+                  loading="lazy"
+                />
+                <div class="cfg-card-metrics" aria-hidden="true">
+                  <span><b>1,368</b> VIDEOS</span>
+                  <span><b>19,562</b> QA PAIRS</span>
+                  <span><b>11</b> TASKS</span>
                 </div>
               </div>
               <div class="topic-card__content">
                 <p>EMBODIED INTELLIGENCE EVALUATION / 研究主题 03</p>
-                <h2>Embodied Intelligence Benchmark</h2>
-                <span>评测对象、任务体系与指标设计等待研究素材。</span>
+                <h2>CFG-Bench: Beyond Description</h2>
+                <span>Cognitively Benchmarking Fine-Grained Action for Embodied Agents.</span>
                 <p class="topic-card__summary">
-                  独立页面已预留研究问题、Benchmark 范围、评测协议、基线系统与实验结论等内容位置。
+                  面向具身物理交互所需的细粒度动作智能，以四层认知框架评估模型能否将视觉观察转化为可执行知识，超越表层动作描述。
                 </p>
               </div>
               <div class="topic-card__signals">
-                <div><span>RESEARCH SCOPE</span><b>To be provided</b></div>
-                <div><span>PAGE STATUS</span><b>Independent page ready</b></div>
+                <div><span>COGNITIVE SCOPE</span><b>4 Abilities · 11 Tasks</b></div>
+                <div><span>MY ROLE</span><b>End-to-End Research Lead</b></div>
               </div>
               <div class="topic-card__footer">
-                <span>SANY GROUP</span><span>等待素材</span><b>↗</b>
+                <span>ECCV 2026</span><span>DATA · EVAL · SFT</span><b>↗</b>
               </div>
             </a>
 
@@ -199,15 +205,6 @@
           </div>
         </section>
 
-        <section class="content-section research-framework">
-          <div class="content-label">研究结构 / 002</div>
-          <div class="framework-grid">
-            <article><span>01</span><h3>研究问题</h3><p>研究所面对的问题、动机与价值。</p></article>
-            <article><span>02</span><h3>论文成果</h3><p>围绕该主题展开的论文与阶段性成果。</p></article>
-            <article><span>03</span><h3>研究方法</h3><p>模型、系统设计与实验方法。</p></article>
-            <article><span>04</span><h3>关键技术</h3><p>代码、数据集、基础设施与工具。</p></article>
-          </div>
-        </section>
       </main>
 
       <footer id="page-footer" class="page-footer">

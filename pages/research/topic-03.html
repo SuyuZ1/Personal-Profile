@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Suyu 的具身智能 Benchmark 研究主题占位页。" />
+    <meta
+      name="description"
+      content="CFG-Bench：面向具身智能体细粒度动作认知的四层 Benchmark，ECCV 2026。"
+    />
     <meta name="theme-color" content="#08090d" />
-    <title>Embodied Intelligence Benchmark — Suyu</title>
+    <title>CFG-Bench: Beyond Description — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260818c" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260818d" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
-  <body class="content-page page-work-placeholder page-research-placeholder">
+  <body class="content-page page-topic page-cfg-bench">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
 
     <div class="page-shell">
@@ -26,44 +29,257 @@
           <a class="active" href="index.html">Research</a>
           <a href="../projects.html">Projects</a>
         </nav>
-        <a class="header-contact" href="https://github.com/SuyuZ1" target="_blank" rel="noreferrer">
-          GitHub <span>↗</span>
+        <a class="header-contact" href="https://cfg-bench.github.io/" target="_blank" rel="noreferrer">
+          CFG-Bench <span>↗</span>
         </a>
       </header>
 
       <main>
-        <section class="work-detail-hero">
-          <a class="work-detail-back" href="index.html">← Research Atlas</a>
-          <div class="work-detail-hero__status">
-            <span>SANY GROUP / RESEARCH TOPIC 03</span>
-            <span><i></i> AWAITING MATERIALS</span>
+        <section class="cfg-hero">
+          <a class="back-link" href="index.html">← 返回研究主页</a>
+
+          <div class="cfg-hero__grid">
+            <div class="cfg-hero__copy">
+              <p class="eyebrow"><span></span> EMBODIED EVALUATION / 研究主题 03</p>
+              <h1>Beyond<br /><span>Description.</span></h1>
+              <p class="cfg-hero__subtitle">
+                Cognitively Benchmarking Fine-Grained Action for Embodied Agents
+              </p>
+              <p class="cfg-hero__lead">
+                CFG-Bench 不再只问模型“看见了什么”，而是进一步评估它能否理解物体如何被操作、
+                动作为何发生，以及执行是否正确——将视觉观察真正转化为具身智能体可使用的行动知识。
+              </p>
+              <div class="cfg-hero__actions">
+                <a href="#cfg-framework">Explore the Benchmark <span>↓</span></a>
+                <a href="https://cfg-bench.github.io/" target="_blank" rel="noreferrer">Official Website <span>↗</span></a>
+              </div>
+            </div>
+
+            <figure class="cfg-hero__figure">
+              <div class="cfg-hero__figure-bar">
+                <span>CFG-BENCH / MOTIVATION</span>
+                <span>ECCV 2026</span>
+              </div>
+              <img
+                src="../../assets/uploads/research/cfg-bench/motivation.png"
+                alt="CFG-Bench compares coarse third-person description with fine-grained actionable understanding"
+              />
+              <figcaption>FROM DESCRIPTIVE ACCURACY TO EMBODIED ACTION INTELLIGENCE</figcaption>
+            </figure>
           </div>
-          <h1>Embodied Intelligence<br /><span>Benchmark.</span></h1>
-          <p class="work-detail-hero__lead">
-            该页面用于承载具身智能 Benchmark 的完整研究叙事。目前仅建立信息结构；
-            研究对象、任务体系、评测指标与实验结论将在素材确认后补充。
-          </p>
-          <dl class="work-detail-meta">
-            <div><dt>Type</dt><dd>Research Topic</dd></div>
-            <div><dt>Work Period</dt><dd>SANY · 2025—Present</dd></div>
-            <div><dt>Status</dt><dd>Structure Ready</dd></div>
-          </dl>
+
+          <div class="cfg-hero__metrics" aria-label="CFG-Bench key facts">
+            <div><span>CURATED VIDEOS</span><b>1,368</b></div>
+            <div><span>THREE-MODALITY QA PAIRS</span><b>19,562</b></div>
+            <div><span>COGNITIVE ABILITIES</span><b>04</b></div>
+            <div><span>BENCHMARK TASKS</span><b>11</b></div>
+          </div>
         </section>
 
-        <section class="content-section work-detail-outline">
-          <div class="content-label">PAGE STRUCTURE / 001</div>
-          <div class="work-detail-outline__body">
-            <header class="work-detail-heading">
-              <h2>Prepared for the research materials.</h2>
-              <p>以下位置只定义未来页面需要回答的问题，不提前编造研究内容或实验结论。</p>
-            </header>
-            <div class="work-detail-grid">
-              <article><span>01</span><h3>Research Question</h3><p>核心问题、研究动机与 Benchmark 的必要性待补充。</p></article>
-              <article><span>02</span><h3>Benchmark Scope</h3><p>任务、数据、环境与评测对象的边界待补充。</p></article>
-              <article><span>03</span><h3>Evaluation Protocol</h3><p>指标体系、基线系统与实验协议待补充。</p></article>
-              <article><span>04</span><h3>Results &amp; Findings</h3><p>实验结果、关键发现与个人贡献待补充。</p></article>
+        <section class="cfg-section cfg-question-section">
+          <div class="cfg-section__index">研究问题 / 001</div>
+          <div class="cfg-question">
+            <div class="cfg-section-heading">
+              <p>THE CENTRAL QUESTION</p>
+              <h2>
+                Can an embodied agent move beyond recognizing an action to understand how, why,
+                and how well it is performed?
+              </h2>
+            </div>
+            <div class="cfg-question__copy">
+              <p>
+                现有具身 Benchmark 多聚焦高层规划、空间推理，或以第三人称粗粒度描述动作；但真实物理交互要求模型进一步理解
+                接触方式、操作顺序、因果关系、行为意图与执行质量。CFG-Bench 将这一被忽略的“细粒度动作智能”定义为独立评测对象。
+              </p>
+              <p>
+                核心目标不是增加另一套题库，而是建立一条从物理细节到高阶判断的认知阶梯，检验模型能否把视频内容转化为可执行、
+                可解释且可评价的具身知识。
+              </p>
+            </div>
+            <div class="cfg-question__shift">
+              <article><span>EXISTING FOCUS</span><h3>What happened?</h3><p>场景识别、动作分类、粗粒度第三人称描述。</p></article>
+              <i aria-hidden="true">→</i>
+              <article><span>CFG-BENCH FOCUS</span><h3>How, why, and how well?</h3><p>面向真实交互的物理细节、因果意图与执行评价。</p></article>
             </div>
           </div>
+        </section>
+
+        <section class="cfg-section cfg-framework-section" id="cfg-framework">
+          <div class="cfg-section__index">认知框架 / 002</div>
+          <div class="cfg-framework">
+            <div class="cfg-framework__heading">
+              <div>
+                <p>FOUR-TIER COGNITIVE FRAMEWORK</p>
+                <h2>From physical contact<br />to evaluative judgment.</h2>
+              </div>
+              <p>
+                四层能力并非平行标签，而是一条由动作事实走向高阶认知的递进链：先理解如何交互，
+                再重建时间与因果，进一步识别意图，最终判断行为是否有效。
+              </p>
+            </div>
+
+            <div class="cfg-tier-grid">
+              <article>
+                <span>TIER 01</span><b>PHYSICAL INTERACTION</b><h3>物理交互</h3>
+                <p>识别动作执行中的接触、受力、方向、姿态与操作细节。</p><i>HOW</i>
+              </article>
+              <article>
+                <span>TIER 02</span><b>TEMPORAL–CAUSAL</b><h3>时序与因果</h3>
+                <p>理解动作的先后关系、状态变化以及事件之间的因果依赖。</p><i>WHEN / BECAUSE</i>
+              </article>
+              <article>
+                <span>TIER 03</span><b>INTENTIONAL UNDERSTANDING</b><h3>意图理解</h3>
+                <p>从细粒度行为与上下文中推断执行者的目标与潜在意图。</p><i>WHY</i>
+              </article>
+              <article>
+                <span>TIER 04</span><b>EVALUATIVE JUDGMENT</b><h3>评价判断</h3>
+                <p>判断动作是否正确、有效、完整，并识别失败与改进空间。</p><i>HOW WELL</i>
+              </article>
+            </div>
+
+            <figure class="cfg-figure cfg-figure--wide">
+              <div class="cfg-figure__bar"><span>TASK DEMONSTRATION</span><span>4 ABILITIES · 11 TASKS</span></div>
+              <img
+                src="../../assets/uploads/research/cfg-bench/demonstration.png"
+                alt="CFG-Bench task demonstrations across four cognitive abilities and eleven tasks"
+                loading="lazy"
+              />
+              <figcaption>
+                CFG-Bench 将开放式与封闭式问题组织为三模态问答体系，系统覆盖四层认知能力与 11 类评测任务。
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="cfg-section cfg-data-section">
+          <div class="cfg-section__index">数据体系 / 003</div>
+          <div class="cfg-data">
+            <div class="cfg-framework__heading">
+              <div>
+                <p>DATASET &amp; EVALUATION DESIGN</p>
+                <h2>A benchmark built around actionable detail.</h2>
+              </div>
+              <p>
+                从多源视频筛选、细粒度动作描述到三模态 QA 构建，数据体系围绕“可用于物理交互的知识”展开，
+                并通过开放式生成与封闭式判断共同测量模型能力。
+              </p>
+            </div>
+
+            <div class="cfg-data-pipeline">
+              <article><span>01</span><h3>Curate</h3><p>筛选 1,368 个具有清晰物理交互过程的视频。</p></article>
+              <article><span>02</span><h3>Describe</h3><p>构建包含动作对象、接触方式与状态变化的细粒度描述。</p></article>
+              <article><span>03</span><h3>Question</h3><p>形成覆盖四层认知能力的 19,562 个三模态问答对。</p></article>
+              <article><span>04</span><h3>Evaluate</h3><p>联合开放式回答与封闭式选择，比较模型与人类表现。</p></article>
+            </div>
+
+            <figure class="cfg-figure cfg-figure--statistics">
+              <div class="cfg-figure__bar"><span>DATA STATISTICS</span><span>VIDEOS · TASKS · QUESTION LENGTH</span></div>
+              <img
+                src="../../assets/uploads/research/cfg-bench/data-statistics.png"
+                alt="CFG-Bench dataset statistics across video sources and cognitive task tiers"
+                loading="lazy"
+              />
+              <figcaption>
+                数据来源、视频时长以及四层任务分布。AW 表示问题的平均词数。
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="cfg-section cfg-findings-section">
+          <div class="cfg-section__index">实验发现 / 004</div>
+          <div class="cfg-findings">
+            <div class="cfg-framework__heading">
+              <div>
+                <p>WHAT THE EVALUATION REVEALS</p>
+                <h2>Strong perception does not equal action intelligence.</h2>
+              </div>
+              <p>
+                对领先 MLLM 的系统评测表明：模型可以识别显著动作，却仍难以给出足够细致的物理交互指令；
+                随着任务进入意图理解与评价判断，能力缺口进一步扩大。
+              </p>
+            </div>
+
+            <div class="cfg-finding-list">
+              <article><span>01 / INTERACTION</span><h3>细节不足</h3><p>生成结果往往停留在动作概述，缺少接触、方向、姿态与操作过程等可执行细节。</p></article>
+              <article><span>02 / REASONING</span><h3>高阶能力断层</h3><p>模型在意图理解和评价判断上的局限更为显著，难以稳定解释“为什么”与“做得如何”。</p></article>
+              <article><span>03 / TRANSFER</span><h3>细粒度监督有效</h3><p>使用 CFG captions 进行 SFT，可将更精细的动作表达能力迁移到既有具身 Benchmark。</p></article>
+            </div>
+
+            <div class="cfg-result-grid">
+              <figure class="cfg-figure">
+                <div class="cfg-figure__bar"><span>MODEL COMPARISON</span><span>LEADING MLLMs</span></div>
+                <img
+                  src="../../assets/uploads/research/cfg-bench/model-comparison.png"
+                  alt="Performance comparison of leading multimodal large language models on CFG-Bench"
+                  loading="lazy"
+                />
+                <figcaption>各认知层级与任务上的模型表现，并列出随机选择和人类表现作为参照。</figcaption>
+              </figure>
+              <figure class="cfg-figure cfg-figure--comparison">
+                <div class="cfg-figure__bar"><span>BENCHMARK COMPARISON</span><span>WHY CFG-BENCH</span></div>
+                <img
+                  src="../../assets/uploads/research/cfg-bench/benchmark-comparison.png"
+                  alt="Comparison between CFG-Bench and existing action and embodied benchmarks"
+                  loading="lazy"
+                />
+                <figcaption>与现有动作及具身评测相比，CFG-Bench 独特覆盖四层细粒度认知与三模态 QA。</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="cfg-section cfg-contribution-section">
+          <div class="cfg-section__index">个人贡献 / 005</div>
+          <div class="cfg-contribution">
+            <aside class="cfg-role-card">
+              <span>RESEARCH ROLE</span>
+              <h2>End-to-End<br />Ownership</h2>
+              <p>RESEARCH LEAD · CFG-BENCH</p>
+              <div><b>ECCV</b><small>2026</small></div>
+            </aside>
+
+            <div class="cfg-contribution__body">
+              <p>MY CONTRIBUTION</p>
+              <h2>Building the benchmark from research question to public research infrastructure.</h2>
+              <p class="cfg-contribution__lead">
+                主导研究问题定义、四层认知框架、Benchmark 与三模态问答体系设计，并推进数据构建、质量控制、实验方案、
+                模型评测、SFT 验证、结果分析以及论文与网站落地，形成从研究假设到公开评测资源的完整闭环。
+              </p>
+
+              <div class="cfg-contribution__grid">
+                <article><span>01</span><h3>Research Framing</h3><p>定义细粒度动作智能缺口，并构建四层认知能力与 11 类任务体系。</p></article>
+                <article><span>02</span><h3>Benchmark System</h3><p>设计数据、三模态 QA、评测协议、模型基线与结果分析流程。</p></article>
+                <article><span>03</span><h3>Validation &amp; Delivery</h3><p>完成质量控制、MLLM 评测、CFG-caption SFT 验证与公开资源落地。</p></article>
+              </div>
+
+              <div class="cfg-annotation-note">
+                <span>ANNOTATION RESPONSIBILITY</span>
+                <p>
+                  具体数据标注由外包团队执行；本人负责标注规范设计、任务拆解、团队培训、过程审核与质量验收，
+                  对最终数据质量和认知任务一致性负责。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cfg-resources-section">
+          <div class="cfg-resources__heading">
+            <p>OPEN RESEARCH INFRASTRUCTURE / 006</p>
+            <h2>Paper, code, dataset,<br />and the living benchmark.</h2>
+          </div>
+          <div class="cfg-resource-links">
+            <a href="https://www.arxiv.org/abs/2511.18685" target="_blank" rel="noreferrer"><span>01</span><b>Paper</b><small>arXiv:2511.18685</small><i>↗</i></a>
+            <a href="https://github.com/CFG-Bench/CFG-Bench" target="_blank" rel="noreferrer"><span>02</span><b>Code</b><small>GitHub Repository</small><i>↗</i></a>
+            <a href="https://huggingface.co/datasets/CFG-Bench/CFG-Bench" target="_blank" rel="noreferrer"><span>03</span><b>Dataset</b><small>Hugging Face</small><i>↗</i></a>
+            <a href="https://cfg-bench.github.io/" target="_blank" rel="noreferrer"><span>04</span><b>Official Site</b><small>Project &amp; Leaderboard</small><i>↗</i></a>
+          </div>
+          <p class="cfg-source-note">
+            本页研究图表来自
+            <a href="https://cfg-bench.github.io/" target="_blank" rel="noreferrer">CFG-Bench 官方项目页</a>；
+            数据集按官方 CC BY-NC-SA 4.0 条款发布。
+          </p>
         </section>
       </main>
 
