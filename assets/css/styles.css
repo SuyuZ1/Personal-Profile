@@ -12498,3 +12498,282 @@ main [id] {
     margin: 14px;
   }
 }
+
+/* Career standards and intellectual-property evidence */
+
+.current-role-evidence {
+  margin-top: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background: rgba(8, 10, 15, 0.62);
+}
+
+.current-role-evidence__heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 32px;
+  padding: clamp(28px, 3vw, 42px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  background:
+    linear-gradient(135deg, rgba(128, 240, 180, 0.04), transparent 38%),
+    rgba(10, 12, 18, 0.66);
+}
+
+.current-role-evidence__heading p {
+  margin: 0;
+  color: #80f0b4;
+  font-family: var(--mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.current-role-evidence__heading h3 {
+  margin: 20px 0 0;
+  color: #e0e2e8;
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-weight: 485;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.current-role-evidence__heading > span {
+  color: #747a86;
+  font-family: var(--mono);
+  font-size: 0.48rem;
+  letter-spacing: 0.09em;
+  white-space: nowrap;
+}
+
+.current-role-evidence__list a {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) auto 20px;
+  align-items: center;
+  gap: 22px;
+  min-width: 0;
+  padding: 22px clamp(20px, 2.4vw, 34px);
+  color: inherit;
+  background: rgba(8, 10, 15, 0.52);
+  transition: background 220ms ease, transform 220ms ease;
+}
+
+.current-role-evidence__list a + a {
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.current-role-evidence__list a:hover {
+  background: rgba(128, 240, 180, 0.035);
+  transform: translateX(3px);
+}
+
+.current-role-evidence__number {
+  color: #80f0b4;
+  font-family: var(--mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.09em;
+}
+
+.current-role-evidence__list a > div {
+  min-width: 0;
+}
+
+.current-role-evidence__list small {
+  color: #747b87;
+  font-family: var(--mono);
+  font-size: 0.42rem;
+  letter-spacing: 0.09em;
+}
+
+.current-role-evidence__list h4 {
+  margin: 9px 0 0;
+  color: #d2d6de;
+  font-size: clamp(0.98rem, 1.25vw, 1.3rem);
+  font-weight: 510;
+  line-height: 1.4;
+}
+
+.current-role-evidence__list p {
+  margin: 8px 0 0;
+  color: #6f7581;
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+.evidence-status {
+  padding: 8px 10px;
+  border: 1px solid rgba(112, 220, 255, 0.22);
+  color: #8ecddd;
+  font-family: var(--mono);
+  font-size: 0.43rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+}
+
+.evidence-status--review {
+  border-color: rgba(128, 240, 180, 0.24);
+  color: #9ed9b9;
+}
+
+.current-role-evidence__list i {
+  color: #80f0b4;
+  font-size: 0.78rem;
+  font-style: normal;
+}
+
+/* Project-level IP evidence */
+
+.project-ip-section {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 30px;
+}
+
+.project-ip-section__body {
+  min-width: 0;
+}
+
+.project-ip-list {
+  border-top: 1px solid var(--line);
+}
+
+.project-ip-list article,
+.project-ip-list > a {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr) auto 18px;
+  align-items: center;
+  gap: 30px;
+  min-width: 0;
+  padding: 30px 8px;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+}
+
+.project-ip-list article {
+  grid-template-columns: 130px minmax(0, 1fr) auto;
+}
+
+.project-ip-list > a:hover {
+  background: linear-gradient(90deg, rgba(112, 220, 255, 0.045), transparent);
+}
+
+.project-ip-list article > span,
+.project-ip-list > a > span,
+.project-ip-list small,
+.project-ip-list b {
+  font-family: var(--mono);
+  letter-spacing: 0.08em;
+}
+
+.project-ip-list article > span,
+.project-ip-list > a > span {
+  color: #70dcff;
+  font-size: 0.49rem;
+}
+
+.project-ip-list small {
+  color: #707783;
+  font-size: 0.43rem;
+}
+
+.project-ip-list h3 {
+  max-width: 900px;
+  margin: 9px 0 0;
+  font-size: clamp(1.35rem, 2.25vw, 2.6rem);
+  font-weight: 490;
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+}
+
+.project-ip-list p {
+  margin: 11px 0 0;
+  color: #777e8a;
+  line-height: 1.65;
+}
+
+.project-ip-list b {
+  padding: 8px 10px;
+  border: 1px solid rgba(112, 220, 255, 0.22);
+  color: #8fc5d4;
+  font-size: 0.43rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.project-ip-list i {
+  color: #70dcff;
+  font-style: normal;
+}
+
+@media (max-width: 900px) {
+  .current-role-evidence__heading {
+    grid-template-columns: 1fr;
+  }
+
+  .current-role-evidence__heading > span {
+    white-space: normal;
+  }
+
+  .current-role-evidence__list a {
+    grid-template-columns: 32px minmax(0, 1fr) 18px;
+  }
+
+  .current-role-evidence__list .evidence-status {
+    grid-column: 2;
+    width: fit-content;
+  }
+
+  .current-role-evidence__list i {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .project-ip-list article,
+  .project-ip-list > a {
+    grid-template-columns: 110px minmax(0, 1fr);
+  }
+
+  .project-ip-list b {
+    grid-column: 2;
+    width: fit-content;
+  }
+
+  .project-ip-list i {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .current-role-evidence__heading {
+    gap: 20px;
+    padding: 27px 20px;
+  }
+
+  .current-role-evidence__heading h3 {
+    font-size: clamp(2rem, 10.5vw, 2.65rem);
+  }
+
+  .current-role-evidence__list a {
+    grid-template-columns: 25px minmax(0, 1fr) 14px;
+    gap: 12px;
+    padding: 20px 14px;
+  }
+
+  .current-role-evidence__list h4 {
+    font-size: 0.95rem;
+  }
+
+  .current-role-evidence__list p {
+    font-size: 0.7rem;
+  }
+
+  .project-ip-list article,
+  .project-ip-list > a {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 26px 4px;
+  }
+
+  .project-ip-list b {
+    grid-column: 1;
+  }
+}
