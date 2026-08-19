@@ -889,6 +889,197 @@
   }
 }
 
+/* Career information map v2 */
+
+.current-role-map {
+  margin-top: 42px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  background:
+    linear-gradient(135deg, rgba(141, 124, 255, 0.04), transparent 42%),
+    rgba(8, 10, 15, 0.56);
+}
+
+.current-role-map__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  font-family: var(--mono);
+  letter-spacing: 0.09em;
+}
+
+.current-role-map__heading span {
+  color: #aaa2f0;
+  font-size: 0.5rem;
+}
+
+.current-role-map__heading b {
+  color: #8b919e;
+  font-size: 0.52rem;
+  font-weight: 500;
+}
+
+.current-role-map__tracks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.role-track {
+  --track-accent: #70dcff;
+  --track-accent-rgb: 112, 220, 255;
+  min-width: 0;
+  padding: clamp(30px, 3vw, 46px);
+  background:
+    linear-gradient(145deg, rgba(var(--track-accent-rgb), 0.045), transparent 48%),
+    rgba(10, 12, 18, 0.68);
+}
+
+.role-track + .role-track {
+  border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.role-track--research {
+  --track-accent: #9f91ff;
+  --track-accent-rgb: 159, 145, 255;
+}
+
+.role-track__intro > p {
+  margin: 0;
+  color: var(--track-accent);
+  font-family: var(--mono);
+  font-size: 0.51rem;
+  letter-spacing: 0.1em;
+}
+
+.role-track__intro h3 {
+  margin: 25px 0 0;
+  color: #e0e2e8;
+  font-size: clamp(2.2rem, 3.25vw, 3.8rem);
+  font-weight: 485;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.role-track__intro > span {
+  display: block;
+  max-width: 600px;
+  margin-top: 19px;
+  color: #858b97;
+  font-size: 0.9rem;
+  line-height: 1.72;
+}
+
+.role-track__links {
+  display: grid;
+  gap: 9px;
+  margin-top: 38px;
+}
+
+.role-track__links a {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  gap: 15px;
+  align-items: center;
+  min-width: 0;
+  padding: 17px 18px;
+  border: 1px solid rgba(var(--track-accent-rgb), 0.16);
+  color: inherit;
+  background: rgba(8, 10, 15, 0.72);
+  transition: border-color 220ms ease, background 220ms ease, transform 220ms ease;
+}
+
+.role-track__links a:hover {
+  border-color: rgba(var(--track-accent-rgb), 0.48);
+  background: rgba(var(--track-accent-rgb), 0.055);
+  transform: translateX(3px);
+}
+
+.role-track__links a > span {
+  color: var(--track-accent);
+  font-family: var(--mono);
+  font-size: 0.49rem;
+  letter-spacing: 0.08em;
+}
+
+.role-track__links a > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.role-track__links b {
+  color: #d1d5dd;
+  font-size: 0.98rem;
+  font-weight: 510;
+}
+
+.role-track__links small {
+  overflow: hidden;
+  color: #656b77;
+  font-family: var(--mono);
+  font-size: 0.42rem;
+  letter-spacing: 0.08em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.role-track__links i {
+  color: var(--track-accent);
+  font-size: 0.78rem;
+  font-style: normal;
+}
+
+@media (max-width: 900px) {
+  .current-role-map__tracks {
+    grid-template-columns: 1fr;
+  }
+
+  .role-track + .role-track {
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .current-role-map {
+    margin-top: 32px;
+  }
+
+  .current-role-map__heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+    padding: 16px 19px;
+  }
+
+  .role-track {
+    padding: 27px 20px 30px;
+  }
+
+  .role-track__intro h3 {
+    font-size: clamp(1.9rem, 9.5vw, 2.85rem);
+    white-space: nowrap;
+  }
+
+  .role-track__links {
+    margin-top: 30px;
+  }
+
+  .role-track__links a {
+    grid-template-columns: 27px minmax(0, 1fr) auto;
+    gap: 11px;
+    padding: 15px 13px;
+  }
+
+  .role-track__links small {
+    font-size: 0.37rem;
+  }
+}
+
 /* Research atlas previews and unified research-story template */
 
 .research-preview-list {
@@ -6722,7 +6913,7 @@ body.instant-entry .site-shell {
 }
 
 .current-role-card {
-  --role-red: #ff655f;
+  --role-red: #80f0b4;
   position: relative;
   display: block;
   min-width: 0;
@@ -8732,15 +8923,28 @@ body.instant-entry .site-shell {
 .page-about .experience-section,
 .page-work-placeholder .content-section {
   grid-template-columns: minmax(0, 1fr);
+}
+
+.page-about .profile-statement,
+.page-about .current-role-section,
+.page-work-placeholder .content-section {
   gap: 30px;
 }
 
 .page-about .profile-statement .content-label,
 .page-about .current-role-section .content-label,
-.page-about .experience-section .content-label,
 .page-work-placeholder .content-section .content-label {
   padding-bottom: 18px;
   border-bottom: 1px solid var(--line);
+}
+
+.page-about .experience-section {
+  gap: 20px;
+}
+
+.page-about .experience-section .content-label {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 /* Research Topic 03 — CFG-Bench */
@@ -9683,9 +9887,12 @@ body.instant-entry .site-shell {
 @media (max-width: 600px) {
   .page-about .profile-statement,
   .page-about .current-role-section,
-  .page-about .experience-section,
   .page-work-placeholder .content-section {
     gap: 22px;
+  }
+
+  .page-about .experience-section {
+    gap: 14px;
   }
 
   .cfg-hero {
@@ -10921,9 +11128,9 @@ main [id] {
 }
 
 .role-type--fulltime {
-  border-color: rgba(255, 101, 95, 0.3);
-  color: #ffc0bd;
-  background: rgba(255, 101, 95, 0.05);
+  border-color: rgba(128, 240, 180, 0.3);
+  color: #a9ebc8;
+  background: rgba(128, 240, 180, 0.05);
 }
 
 .role-type--fulltime i {
@@ -10931,8 +11138,8 @@ main [id] {
   height: 5px;
   margin-right: 8px;
   border-radius: 50%;
-  background: #ff655f;
-  box-shadow: 0 0 9px rgba(255, 101, 95, 0.78);
+  background: #80f0b4;
+  box-shadow: 0 0 9px rgba(128, 240, 180, 0.72);
 }
 
 .page-career .current-role-company {
