@@ -8777,6 +8777,14 @@ body.instant-entry .site-shell {
   --work-accent: #80f0b4;
 }
 
+.page-patent-detail .patent-detail-hero {
+  padding-bottom: 58px;
+}
+
+.page-patent-detail .patent-detail-overview {
+  padding-top: 52px;
+}
+
 .work-detail-hero {
   position: relative;
   padding: 190px var(--page-pad) 95px;
