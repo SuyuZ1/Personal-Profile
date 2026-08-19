@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#08090d" />
     <title>Policy Learning for Embodied Agents — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260819l" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260819m" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
   <body class="content-page page-topic page-research-story story--policy">
@@ -30,24 +30,57 @@
               <p class="story-kicker">EMBODIED POLICY LEARNING</p>
               <h1>Policy Learning for Embodied Agents</h1>
               <p class="story-hero__subtitle">Turning Multimodal Understanding into Reliable Action</p>
-              <p class="story-hero__lead">聚焦从感知、理解与推理到可执行策略之间的关键能力断层，以及策略如何在真实系统约束下稳定学习、适应与执行。</p>
-              <div class="story-actions"><a href="#motivation">Read the Research Story <span>↓</span></a></div>
+              <p class="story-hero__lead">以同一条能力演进路线组织策略学习研究：让 VLA 从一次性动作预测，逐步获得执行前审议、自适应决策与持续反馈修正能力。</p>
+              <div class="story-actions"><a href="#hai-series">Explore the HAI Series <span>↓</span></a><a href="#motivation">Research Rationale <span>↘</span></a></div>
             </div>
-            <div class="story-hero__visual story-visual story-visual--policy" aria-hidden="true">
-              <div class="story-policy-path"><span><b>01</b>OBSERVE</span><i></i><span><b>02</b>LEARN</span><i></i><span><b>03</b>ACT</span></div>
-              <div class="story-policy-works"><span>WORK 01</span><span>WORK 02</span></div>
-            </div>
+            <figure class="story-hero__visual story-visual story-visual--policy">
+              <div class="story-visual__top"><span>RESEARCH FIGURE / 04</span><b>HAI TRILOGY</b></div>
+              <div class="story-visual__image">
+                <img src="../../assets/uploads/research/topic-04/policy-learning.webp" alt="HAI-1, HAI-2 and HAI-3 progressive policy learning agenda" width="3840" height="2160" fetchpriority="high" />
+              </div>
+              <figcaption><span>HUMAN-LIKE ACTION INTELLIGENCE</span><b>HAI-1 → HAI-2 → HAI-3</b></figcaption>
+            </figure>
           </div>
           <dl class="story-facts">
             <div><dt>TYPE</dt><dd>Research Direction</dd></div>
             <div><dt>ORGANIZATION</dt><dd>SANY Group</dd></div>
-            <div><dt>STRUCTURE</dt><dd>Two Connected Works</dd></div>
-            <div><dt>PUBLIC STATUS</dt><dd>Summary in Preparation</dd></div>
+            <div><dt>STRUCTURE</dt><dd>HAI-1 → HAI-2 → HAI-3</dd></div>
+            <div><dt>PUBLIC STATUS</dt><dd>HAI-3 · Coming Soon</dd></div>
           </dl>
         </section>
 
+        <section class="policy-series" id="hai-series">
+          <div class="policy-series__heading">
+            <p>HAI SERIES / 01—03</p>
+            <div><h2>One agenda.<br />Three capability transitions.</h2><p>三项工作不是并列的项目，而是一条连续的策略能力演进路线：先在行动前比较与承诺，再学习何时需要审议，最终让感知、行动与反馈形成持续闭环。</p></div>
+          </div>
+          <div class="policy-series__grid">
+            <a class="policy-series__card policy-series__card--one" href="policy-hai-1.html">
+              <div class="policy-series__meta"><span>HAI-1</span><b>CURRENT WORK</b></div>
+              <p>PROSPECTIVE ACTION INTELLIGENCE</p>
+              <h3>Pre-Commitment Action Deliberation</h3>
+              <small>从单步动作预测走向执行前的候选形成、比较与承诺。</small>
+              <div><span>COMPARE BEFORE COMMITMENT</span><i>↗</i></div>
+            </a>
+            <a class="policy-series__card policy-series__card--two" href="policy-hai-2.html">
+              <div class="policy-series__meta"><span>HAI-2</span><b>CURRENT WORK</b></div>
+              <p>ADAPTIVE ACTION INTELLIGENCE</p>
+              <h3>Learning How to Decide</h3>
+              <small>根据当前 decision state，学习何时直接行动、何时继续审议。</small>
+              <div><span>DECIDE WHEN TO DELIBERATE</span><i>↗</i></div>
+            </a>
+            <a class="policy-series__card policy-series__card--three" href="policy-hai-3.html">
+              <div class="policy-series__meta"><span>HAI-3</span><b>COMING SOON</b></div>
+              <p>CLOSED-LOOP ACTION INTELLIGENCE</p>
+              <h3>Closing the Perception–Action–Feedback Loop</h3>
+              <small>让策略在持续行动中主动获取证据、更新决策并恢复执行。</small>
+              <div><span>OBSERVE · REVISE · RECOVER</span><i>↗</i></div>
+            </a>
+          </div>
+        </section>
+
         <nav class="story-nav" aria-label="Research story sections">
-          <a href="#motivation"><span>01</span> Motivation</a><a href="#contribution"><span>02</span> Contribution</a><a href="#impact"><span>03</span> Industry Impact</a>
+          <a href="#motivation"><span>01</span> Motivation</a><a href="#contribution"><span>02</span> Research Agenda</a>
         </nav>
 
         <section class="story-chapter" id="motivation">
@@ -71,27 +104,13 @@
           <div class="story-chapter__index">02 / CONTRIBUTION</div>
           <div class="story-chapter__body">
             <p class="story-kicker">PUBLIC RESEARCH STRUCTURE</p>
-            <h2>One research question, developed through two connected works.</h2>
+            <h2>One research question, developed through three capability transitions.</h2>
             <div class="story-contribution-grid">
-              <article><span>01</span><h3>Shared Question</h3><p>两项工作围绕同一条能力链组织，而不是作为互不相关的项目并列展示。</p></article>
-              <article><span>02</span><h3>Progressive Route</h3><p>通过前后递进的研究结构呈现策略学习能力如何被建立与扩展。</p></article>
-              <article><span>03</span><h3>System Validation</h3><p>最终评价将面向真实系统约束，而不只停留在离线指标。</p></article>
+              <article><span>HAI-1</span><h3>Deliberate Before Acting</h3><p>保留候选、预判结果，并在执行前完成比较与承诺。</p></article>
+              <article><span>HAI-2</span><h3>Decide How to Decide</h3><p>让策略根据证据充分度、风险与成本选择合适的决策过程。</p></article>
+              <article><span>HAI-3</span><h3>Keep the Loop Alive</h3><p>把观察、执行、反馈与修正组织为持续运行的行动闭环。</p></article>
             </div>
             <aside class="story-role-note story-role-note--restricted"><span>DISCLOSURE NOTE</span><p>当前仅公开研究动机与组织方式。具体方法、实验结果和个人贡献尚未达到公开条件，因此不在此提前描述；公开后会按同一模板补充可验证信息。</p></aside>
-          </div>
-        </section>
-
-        <section class="story-chapter story-chapter--impact" id="impact">
-          <div class="story-chapter__index">03 / INDUSTRY IMPACT</div>
-          <div class="story-chapter__body">
-            <p class="story-kicker">WHY POLICY LEARNING MATTERS IN INDUSTRY</p>
-            <h2>The value of embodied intelligence is realized at the point of execution.</h2>
-            <p class="story-impact-lead">在工业场景中，策略学习的意义不只是生成动作，而是让机器人在数据有限、环境变化和执行误差并存的条件下，仍能把任务意图转化为稳定且可持续改进的行为。</p>
-            <div class="story-impact-grid">
-              <article><span>RELIABILITY</span><h3>从演示效果走向稳定执行</h3><p>关注策略在状态扰动、视觉变化与长期任务中的一致性，而非单次成功。</p></article>
-              <article><span>DATA EFFICIENCY</span><h3>降低真实机器人学习成本</h3><p>更有效地利用有限示范、反馈与失败数据，是规模化部署的重要前提。</p></article>
-              <article><span>INTEGRATION</span><h3>连接模型能力与工业系统</h3><p>让多模态理解、规划、控制和安全约束能够在一条执行链中协同工作。</p></article>
-            </div>
           </div>
         </section>
 
@@ -99,7 +118,7 @@
           <div class="story-evidence__heading"><p>PUBLIC STATUS</p><h2>Details follow evidence.</h2></div>
           <div class="story-status-panel">
             <span>SELECTIVE DISCLOSURE</span>
-            <p>页面先明确“为什么做”和“行业为什么需要”，具体工作将在具备可公开的方法、结果与归属信息后加入。这样可以保持专业叙事，也避免用占位内容冒充成果。</p>
+            <p>页面先明确“为什么做”、三项工作如何继承，以及每一阶段新增什么策略能力。具体方法、结果与归属信息会在具备公开条件后补充。</p>
             <div><b>Motivation Public</b><b>Research Structure Public</b><b>Methods Pending</b></div>
           </div>
         </section>

@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="CFG-Bench：细粒度具身动作认知 Benchmark 的研究动机、核心贡献与行业影响。" />
+    <meta name="description" content="CFG-Bench：细粒度具身动作认知 Benchmark 的研究动机、认知框架与核心贡献。" />
     <meta name="theme-color" content="#08090d" />
     <title>CFG-Bench: Beyond Description — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260819l" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260819m" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
   <body class="content-page page-topic page-research-story story--cfg">
@@ -36,10 +36,13 @@
                 <a href="https://cfg-bench.github.io/" target="_blank" rel="noreferrer">Official Website <span>↗</span></a>
               </div>
             </div>
-            <div class="story-hero__visual story-visual story-visual--cfg" aria-hidden="true">
-              <div class="story-cfg-mark"><strong>CFG</strong><span>BENCH</span><small>BEYOND DESCRIPTION</small></div>
-              <i></i><i></i><i></i><i></i>
-            </div>
+            <figure class="story-hero__visual story-visual story-visual--cfg">
+              <div class="story-visual__top"><span>RESEARCH FIGURE / 03</span><b>FULL FRAME</b></div>
+              <div class="story-visual__image">
+                <img src="../../assets/uploads/research/cfg-bench/demonstration.png" alt="CFG-Bench four fine-grained embodied cognition abilities and example tasks" width="2338" height="1339" fetchpriority="high" />
+              </div>
+              <figcaption><span>CFG-BENCH / ECCV 2026</span><b>4 ABILITIES · 11 DIAGNOSTIC TASKS</b></figcaption>
+            </figure>
           </div>
           <dl class="story-facts">
             <div><dt>VENUE</dt><dd>ECCV 2026</dd></div>
@@ -50,7 +53,7 @@
         </section>
 
         <nav class="story-nav" aria-label="Research story sections">
-          <a href="#motivation"><span>01</span> Motivation</a><a href="#contribution"><span>02</span> Contribution</a><a href="#impact"><span>03</span> Industry Impact</a>
+          <a href="#motivation"><span>01</span> Motivation</a><a href="#contribution"><span>02</span> Contribution</a>
         </nav>
 
         <section class="story-chapter" id="motivation">
@@ -82,20 +85,6 @@
               <article><span>04</span><h3>Evaluative Judgment</h3><p>判断执行是否正确、有效和完整，并识别改进空间。</p></article>
             </div>
             <aside class="story-role-note"><span>MY CONTRIBUTION</span><p>主导研究问题定义、四层认知框架、Benchmark 与三模态问答体系设计，以及数据流程、质量控制、模型评测、SFT 验证、结果分析和公开资源落地。具体标注由外包团队执行，本人负责规范、培训、审核与质量验收。</p></aside>
-          </div>
-        </section>
-
-        <section class="story-chapter story-chapter--impact" id="impact">
-          <div class="story-chapter__index">03 / INDUSTRY IMPACT</div>
-          <div class="story-chapter__body">
-            <p class="story-kicker">FROM SCORE TO SYSTEM DECISION</p>
-            <h2>A benchmark should reveal what prevents models from becoming useful agents.</h2>
-            <p class="story-impact-lead">CFG-Bench 的行业价值在于把“动作理解不够细”拆解为可诊断、可比较的能力缺口，使模型选择、数据建设与训练优化能够围绕真实交互需求展开。</p>
-            <div class="story-impact-grid">
-              <article><span>MODEL SELECTION</span><h3>识别被总分掩盖的能力断层</h3><p>区分模型是看不清动作、理不清因果，还是无法判断意图与执行质量。</p></article>
-              <article><span>DATA STRATEGY</span><h3>指导高价值训练数据建设</h3><p>将数据投入指向接触细节、过程描述和评价反馈，而非继续扩张粗粒度标签。</p></article>
-              <article><span>ROBOT LEARNING</span><h3>连接视觉观察与行动知识</h3><p>实验表明 CFG captions 的细粒度监督能够改善既有具身 Benchmark 表现，为策略学习前端提供更丰富的认知信号。</p></article>
-            </div>
           </div>
         </section>
 
