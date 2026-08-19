@@ -9,9 +9,8 @@ The public presentation intentionally distinguishes project-level capabilities f
 - Period: 2025—Present
 - Employment type: Full-time
 - Public role label: Embodied Intelligence Research
-- Work structure: Industrial Deployment + Frontier Research
-- Industrial deployment: 面向机器人焊接等复杂制造场景，连接多模态感知、工艺意图理解、动作生成、机器人执行与现场验证。
-- Frontier research: 围绕 VLA 系统认知、具身数据智能、细粒度认知评测与 Policy Learning 开展前沿预研。
+- Work structure: Frontier Research → Capability Building → Industrial Validation
+- Public description: 围绕机器人焊接等真实制造问题，以前沿研究驱动具身智能能力构建；从 VLA 系统认知、具身数据、细粒度评测与 Policy Learning 出发，形成多模态感知、工艺理解、动作生成与执行能力，并在现场验证中持续迭代为可部署的工业智能系统。
 - Detail routes: `pages/research/index.html`; `pages/projects.html`
 - Official job title: 待补充
 - Department: 待补充

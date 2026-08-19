@@ -52,5 +52,6 @@ System, code, datasets and evaluation artifacts will be added here.
 
 ## Media
 
+- Research overview: `../../assets/uploads/research/topic-02/data-motivation.webp`
 - Raw materials: `../../assets/uploads/research/topic-02/`
 - Generated visuals: `../../assets/generated/research/topic-02/`

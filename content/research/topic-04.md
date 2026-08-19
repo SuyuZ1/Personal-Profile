@@ -55,7 +55,7 @@ Turning multimodal understanding into reliable action.
 
 ## Media
 
-- Topic cover:
-- Shared framework figure:
+- Topic cover: `../../assets/uploads/research/topic-04/policy-learning.webp`
+- Shared framework figure: `../../assets/uploads/research/topic-04/policy-learning.webp`
 - Work 01 figures:
 - Work 02 figures:
