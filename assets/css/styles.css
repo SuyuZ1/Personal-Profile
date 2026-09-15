@@ -1174,6 +1174,224 @@
   }
 }
 
+/* Projects / flagship embodied welding program */
+
+.content-section.project-spotlight {
+  grid-template-columns: minmax(150px, 0.28fr) minmax(0, 1fr);
+  background:
+    linear-gradient(135deg, rgba(112, 220, 255, 0.035), transparent 34%),
+    rgba(8, 10, 15, 0.34);
+}
+
+.project-spotlight__body {
+  min-width: 0;
+}
+
+.project-spotlight__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  align-items: end;
+  gap: clamp(40px, 6vw, 90px);
+  padding-bottom: clamp(48px, 6vw, 82px);
+}
+
+.project-spotlight__kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 24px;
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.11em;
+}
+
+.project-spotlight__kicker i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 12px rgba(112, 220, 255, 0.9);
+}
+
+.project-spotlight__intro h2 {
+  margin: 0;
+  font-size: clamp(2.7rem, 4.9vw, 5.8rem);
+  font-weight: 480;
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.project-spotlight__intro h2 span {
+  color: #777d89;
+}
+
+.project-spotlight__intro > p {
+  margin: 0 0 4px;
+  color: #969ba7;
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+.project-impact {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.project-impact article {
+  position: relative;
+  min-width: 0;
+  min-height: 220px;
+  padding: clamp(22px, 2.2vw, 32px);
+  overflow: hidden;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(12, 15, 21, 0.7);
+}
+
+.project-impact article::after {
+  content: "";
+  position: absolute;
+  right: -36px;
+  bottom: -52px;
+  width: 130px;
+  height: 130px;
+  border: 1px solid rgba(112, 220, 255, 0.1);
+  border-radius: 50%;
+}
+
+.project-impact strong {
+  display: block;
+  color: #eafaff;
+  font-size: clamp(2.55rem, 4vw, 4.8rem);
+  font-weight: 460;
+  line-height: 1;
+  letter-spacing: -0.065em;
+}
+
+.project-impact strong span {
+  color: #9adff1;
+  font-family: var(--mono);
+  font-size: 0.2em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-impact p {
+  margin: 38px 0 8px;
+  color: #c4c8d1;
+  font-size: 0.88rem;
+}
+
+.project-impact small {
+  color: #666e7a;
+  font-family: var(--mono);
+  font-size: 0.43rem;
+  letter-spacing: 0.09em;
+}
+
+.project-contributions {
+  margin-top: clamp(58px, 7vw, 96px);
+  border-top: 1px solid var(--line);
+}
+
+.project-contributions article {
+  display: grid;
+  grid-template-columns: minmax(100px, 0.22fr) minmax(0, 1fr);
+  gap: clamp(30px, 5vw, 80px);
+  padding: clamp(34px, 4vw, 58px) 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-contributions__index {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-contributions__index span {
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+}
+
+.project-contributions__index small,
+.project-contributions article > div:last-child > p:first-child {
+  color: #69717d;
+  font-family: var(--mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.project-contributions article > div:last-child > p:first-child {
+  margin: 0 0 16px;
+  color: #75cce4;
+}
+
+.project-contributions h3 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 3.5rem);
+  font-weight: 480;
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+
+.project-contributions article > div:last-child > p:last-child {
+  max-width: 890px;
+  margin: 24px 0 0;
+  color: #8e949f;
+  font-size: 0.93rem;
+  line-height: 1.85;
+}
+
+@media (max-width: 1050px) {
+  .content-section.project-spotlight {
+    grid-template-columns: 1fr;
+  }
+
+  .project-spotlight__intro {
+    grid-template-columns: 1fr;
+  }
+
+  .project-spotlight__intro > p {
+    max-width: 760px;
+  }
+
+  .project-impact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .project-spotlight__intro h2 {
+    font-size: clamp(2.4rem, 12vw, 3.35rem);
+  }
+
+  .project-impact {
+    grid-template-columns: 1fr;
+  }
+
+  .project-impact article {
+    min-height: 180px;
+  }
+
+  .project-contributions article {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+
+  .project-contributions__index {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 /* Research atlas previews and unified research-story template */
 
 .research-preview-list {
