@@ -22,7 +22,7 @@ Turning multimodal understanding into reliable action.
 
 ## Contribution
 
-当前公开的是研究组织方式与 HAI-3/VLA2.0 的 high-level feature work：HAI-1 处理执行前审议，HAI-2 学习何时审议，HAI-3/VLA2.0 将 Action-aware 大脑、本体感知小脑和执行反馈组织为持续闭环。具体方法、实验结果与个人贡献将在满足公开条件后补充。
+当前公开的是研究组织方式与 HAI-3/VLA2.0 的 high-level feature work：HAI-1 处理执行前审议，HAI-2 学习何时审议，HAI-3/VLA2.0 进一步把当前工作闭环，并提出由 Action-aware 大脑、本体感知小脑和执行反馈构成的整体设计方向。这一表述不代表完整系统已经实现，具体方法、实验结果与个人贡献将在满足公开条件后补充。
 
 ## Industry impact
 
@@ -38,10 +38,11 @@ Turning multimodal understanding into reliable action.
 ## HAI-3 / VLA2.0
 
 - Motivation: VLA 能感知与规划，但大小脑模态未对齐，细粒度动作逻辑、本体能力与执行反馈尚未统一建模。
-- Architecture: Action-aware 多模态大模型 + 本体感知小脑 + 反馈重规划。
+- Overall design: Action-aware 多模态大模型 + 本体感知小脑 + 反馈重规划。
 - Position in HAI: 将 HAI-1/2 的执行前决策推进到 Perception → Action → Feedback 的持续行动闭环。
-- Scope: 简历与面试展示中的 high-level feature work；方法、实验结果与个人贡献待后续公开。
-- Media: `../../assets/uploads/research/topic-04/hai3-vla20-motivation.png`, `../../assets/uploads/research/topic-04/hai3-vla20-architecture.png`
+- Application scenarios: 焊接机器人与装载机。
+- Scope: 简历与面试展示中的 high-level feature work 与整体设计方向，不代表完整系统已完成；方法、实验结果与个人贡献待后续公开。
+- Media: `../../assets/uploads/research/topic-04/hai3-vla20-motivation.png`, `../../assets/uploads/research/topic-04/hai3-vla20-design.png`
 
 ## Work 01
 

@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="HAI-3: VLA2.0：以 Action-aware 大脑、本体感知小脑与执行反馈构成持续行动闭环。" />
+    <meta name="description" content="HAI-3: VLA2.0：把现有工作闭环后的整体设计方向，连接 Action-aware 大脑、本体感知小脑与执行反馈。" />
     <meta name="theme-color" content="#08090d" />
     <title>HAI-3: VLA2.0 · Closed-Loop Action Intelligence — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260918h" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260918j" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
   <body class="content-page page-topic page-research-story story--policy policy-work-page policy-vla20-page">
@@ -37,7 +37,7 @@
           </div>
           <dl class="policy-work-facts">
             <div><dt>CAPABILITY SHIFT</dt><dd>Staged Decision → Continuous Action Loop</dd></div>
-            <div><dt>ARCHITECTURE</dt><dd>Action-aware Brain · Body-aware Small Brain · Feedback</dd></div>
+            <div><dt>OVERALL DESIGN</dt><dd>Action-aware Brain · Body-aware Small Brain · Feedback</dd></div>
             <div><dt>PUBLIC STATUS</dt><dd>High-level feature work</dd></div>
           </dl>
         </section>
@@ -66,15 +66,15 @@
           </div>
         </section>
 
-        <section class="policy-work-section policy-vla20-section" id="architecture">
-          <div class="policy-work-section__index">02 / VLA2.0 ARCHITECTURE</div>
+        <section class="policy-work-section policy-vla20-section" id="overall-design">
+          <div class="policy-work-section__index">02 / VLA2.0 OVERALL DESIGN</div>
           <div class="policy-work-section__body">
-            <p class="story-kicker">ACTION-AWARE + BODY-AWARE</p>
+            <p class="story-kicker">ACTION-AWARE + BODY-AWARE DESIGN</p>
             <h2>Action-aware brain. Body-aware small brain. Feedback that can trigger re-planning.</h2>
-            <p class="policy-vla20-lead">VLA2.0 是 HAI-3 的系统级表达：用 Action-aware 多模态大模型理解任务与细粒度动作逻辑，用本体感知小脑解释当前身体状态，再把执行结果反馈给重规划与下一步行动。</p>
-            <figure class="policy-vla20-figure policy-vla20-figure--architecture">
-              <img src="../../assets/uploads/research/topic-04/hai3-vla20-architecture.png" alt="VLA2.0 architecture with an action-aware multimodal brain, a body-aware small brain, proprioception and feedback re-planning" width="1600" height="900" loading="lazy" />
-              <figcaption><span>APPLICATION ARCHITECTURE / WEEKLY TECHNICAL UPDATE 1028 · SLIDE 9</span><b>让策略在感知、执行、反馈与重规划之间保持连续运行。</b></figcaption>
+            <p class="policy-vla20-lead">VLA2.0 是 HAI-3 的整体设计方向：把现有焊接、装载机等工作放回同一条闭环，用 Action-aware 多模态大模型理解任务与动作逻辑，用本体感知小脑解释当前身体状态，再让执行反馈影响下一步行动。</p>
+            <figure class="policy-vla20-figure policy-vla20-figure--design">
+              <img src="../../assets/uploads/research/topic-04/hai3-vla20-design.png" alt="VLA2.0 overall design with an action-aware multimodal brain, a body-aware small brain, proprioception and feedback re-planning" width="1600" height="756" loading="lazy" />
+              <figcaption><span>OVERALL DESIGN / WEEKLY TECHNICAL UPDATE 1028 · SLIDE 9</span><b>让策略在感知、执行、反馈与重规划之间保持连续运行。</b></figcaption>
             </figure>
           </div>
         </section>
@@ -90,7 +90,20 @@
               <article><span>HAI-3 / VLA2.0</span><h3>Keep the Loop Alive</h3><p>把动作理解、本体感知、执行验证和反馈重规划组织成持续运行的闭环。</p></article>
               <article><span>DATA ENGINE</span><h3>Learn from the Next Failure</h3><p>将执行中的偏差、恢复与成功证据回流到数据引擎，并由 CFG-Bench 继续诊断能力缺口。</p></article>
             </div>
-            <aside class="story-role-note story-role-note--restricted"><span>SCOPE NOTE</span><p>HAI-3/VLA2.0 目前作为简历与面试展示中的 high-level feature work，用于表达完整的研究动机与应用架构；具体方法、实验结果和个人贡献将在具备公开条件后补充。</p></aside>
+            <aside class="story-role-note story-role-note--restricted"><span>SCOPE NOTE</span><p>HAI-3/VLA2.0 目前作为简历与面试展示中的 high-level feature work，用于表达如何把当前工作闭环并形成 VLA2.0 的整体设计方向；这不等同于完整系统已经实现。具体方法、实验结果和个人贡献将在具备公开条件后补充。</p></aside>
+          </div>
+        </section>
+
+        <section class="policy-work-section policy-vla20-section" id="application-scenarios">
+          <div class="policy-work-section__index">04 / APPLICATION SCENARIOS</div>
+          <div class="policy-work-section__body">
+            <p class="story-kicker">WELDING + LOADER</p>
+            <h2>Two application scenarios keep the overall design grounded.</h2>
+            <p class="policy-vla20-lead">HAI-3/VLA2.0 不停留在抽象路线图。焊接与装载机提供两个明确场景，用于检验同一套闭环设计如何覆盖精细操作与移动作业，同时保留各自的本体约束和执行反馈。</p>
+            <div class="policy-vla20-cards policy-vla20-applications">
+              <article><span>APPLICATION 01</span><h3>Robotic Welding</h3><p>面向高精度连续控制，将焊缝与熔池感知、轨迹执行、在线调整及质量反馈连接为闭环。</p></article>
+              <article><span>APPLICATION 02</span><h3>Autonomous Loader</h3><p>面向移动作业，将环境理解、路径与装载动作、本体状态及执行反馈纳入同一设计。</p></article>
+            </div>
           </div>
         </section>
 
@@ -98,8 +111,8 @@
           <div class="story-evidence__heading"><p>PUBLIC STATUS</p><h2>Details follow evidence.</h2></div>
           <div class="story-status-panel">
             <span>SELECTIVE DISCLOSURE</span>
-            <p>当前公开 HAI-3/VLA2.0 的 motivation、系统架构与研究位置；具体训练方法、实验结果与归属信息仍待后续材料确认。</p>
-            <div><b>Motivation Public</b><b>Architecture Concept Public</b><b>Methods Pending</b></div>
+            <p>当前公开 HAI-3/VLA2.0 的 motivation、整体设计与研究位置；具体训练方法、实验结果与归属信息仍待后续材料确认。</p>
+            <div><b>Motivation Public</b><b>Overall Design Public</b><b>Methods Pending</b></div>
           </div>
         </section>
       </main>
