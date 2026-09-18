@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="HAI-3：闭合 Vision-Language-Action Policies 的 Perception–Action–Feedback Loop。Coming Soon。" />
+    <meta name="description" content="HAI-3: VLA2.0：以 Action-aware 大脑、本体感知小脑与执行反馈构成持续行动闭环。" />
     <meta name="theme-color" content="#08090d" />
-    <title>HAI-3 · Closing the Action Loop — Coming Soon</title>
+    <title>HAI-3: VLA2.0 · Closed-Loop Action Intelligence — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../assets/css/styles.css?v=20260819s" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
-  <body class="content-page page-topic page-research-story story--policy policy-work-page">
+  <body class="content-page page-topic page-research-story story--policy policy-work-page policy-vla20-page">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
     <div class="page-shell">
       <header class="site-header page-header">
@@ -22,42 +22,84 @@
       </header>
 
       <main class="research-story">
-        <section class="policy-work-hero policy-work-hero--soon">
+        <section class="policy-work-hero policy-work-hero--vla20">
           <a class="story-back" href="topic-04.html#hai-series">← POLICY LEARNING / HAI SERIES</a>
-          <div class="story-hero__status"><span><i></i> HAI-3 / COMING SOON</span><span>SERIES 03 OF 03</span></div>
+          <div class="story-hero__status"><span><i></i> HAI-3 / VLA2.0 · FEATURE WORK</span><span>SERIES 03 OF 03</span></div>
           <div class="policy-work-hero__grid">
             <div class="policy-work-hero__copy">
-              <p class="story-kicker">CLOSED-LOOP ACTION INTELLIGENCE</p>
-              <h1>Closing the Perception–Action–Feedback Loop</h1>
-              <p>For Vision-Language-Action Policies. HAI-3 将把前两阶段的执行前决策扩展为持续运行的行动闭环，使策略能够在环境变化与新证据到来时继续、调整或恢复行动。</p>
+              <p class="story-kicker">HAI-3 / ACTION-AWARE VLA 2.0</p>
+              <h1>HAI-3: VLA2.0</h1>
+              <p>HAI-3 把 HAI-1 的执行前审议与 HAI-2 的状态自适应决策继续向执行过程推进：让 VLA 在真实环境中同时理解动作逻辑、本体能力与新到来的反馈，并据此继续、调整或恢复行动。</p>
             </div>
             <aside class="policy-work-hero__mark policy-work-hero__mark--three">
-              <span>HAI</span><strong>03</strong><small>OBSERVE<br />REVISE<br />RECOVER</small>
+              <span>HAI</span><strong>03</strong><small>ALIGN<br />ACT<br />ADAPT</small>
             </aside>
           </div>
           <dl class="policy-work-facts">
             <div><dt>CAPABILITY SHIFT</dt><dd>Staged Decision → Continuous Action Loop</dd></div>
-            <div><dt>CORE LOOP</dt><dd>Perception · Action · Feedback</dd></div>
-            <div><dt>PUBLIC STATUS</dt><dd>Coming Soon</dd></div>
+            <div><dt>ARCHITECTURE</dt><dd>Action-aware Brain · Body-aware Small Brain · Feedback</dd></div>
+            <div><dt>PUBLIC STATUS</dt><dd>High-level feature work</dd></div>
           </dl>
         </section>
 
         <nav class="policy-work-route" aria-label="HAI series navigation">
           <a href="policy-hai-1.html"><span>HAI-1</span><b>Pre-Commitment Deliberation</b><i>←</i></a>
           <a href="policy-hai-2.html"><span>HAI-2</span><b>Learning How to Decide</b><i>←</i></a>
-          <a class="active" href="policy-hai-3.html"><span>HAI-3</span><b>Close the Action Loop</b><i>●</i></a>
+          <a class="active" href="policy-hai-3.html"><span>HAI-3</span><b>VLA2.0 · Close the Action Loop</b><i>●</i></a>
         </nav>
 
-        <section class="policy-coming-soon">
-          <div class="policy-coming-soon__index">03 / COMING SOON</div>
-          <div class="policy-coming-soon__body">
-            <p class="story-kicker">NEXT CAPABILITY TRANSITION</p>
-            <h2>The loop is the research object.</h2>
-            <p>当前保留三部曲中的位置与核心问题，不提前填充尚未完成的方法和结果。后续公开内容将围绕策略如何主动获取新证据、依据反馈更新决策，以及在偏离预期时继续或恢复执行展开。</p>
-            <div class="policy-coming-soon__loop" aria-label="Perception action feedback loop">
-              <span>PERCEIVE</span><i>→</i><span>ACT</span><i>→</i><span>FEEDBACK</span><i>→</i><span>REVISE</span>
+        <section class="policy-work-section policy-vla20-section" id="motivation">
+          <div class="policy-work-section__index">01 / MOTIVATION</div>
+          <div class="policy-work-section__body">
+            <p class="story-kicker">THE ACTION GAP</p>
+            <h2>VLA can describe an action. Reliable robots must understand how that action can actually happen.</h2>
+            <div class="policy-vla20-split">
+              <div class="policy-vla20-copy">
+                <p>双周技术汇报中的挑战图把问题压缩成一个直观对照：VLA 的“大脑”可以感知场景、理解指令并规划动作，但机器人还需要“小脑”提供本体状态、身体协调与执行反馈。</p>
+                <p>CFG-Bench 用细粒度动作任务暴露了这类理解缺口；HAI-1 与 HAI-2 先处理执行前的候选比较和 decision state 选择，HAI-3 则把能力推进到持续执行中的反馈闭环。</p>
+              </div>
+              <figure class="policy-vla20-figure">
+                <img src="../../assets/uploads/research/topic-04/hai3-vla20-motivation.png" alt="VLA core technology challenges: mismatch between the large and small brains, weak generalization and low success rate" width="1600" height="900" loading="lazy" />
+                <figcaption><span>MOTIVATION FIGURE / WEEKLY TECHNICAL UPDATE 1028 · SLIDE 5</span><b>大小脑模态对齐，是从动作预测走向可靠执行的前提。</b></figcaption>
+              </figure>
             </div>
-            <a href="topic-04.html#hai-series">Return to the HAI Trilogy <span>↗</span></a>
+          </div>
+        </section>
+
+        <section class="policy-work-section policy-vla20-section" id="architecture">
+          <div class="policy-work-section__index">02 / VLA2.0 ARCHITECTURE</div>
+          <div class="policy-work-section__body">
+            <p class="story-kicker">ACTION-AWARE + BODY-AWARE</p>
+            <h2>Action-aware brain. Body-aware small brain. Feedback that can trigger re-planning.</h2>
+            <p class="policy-vla20-lead">VLA2.0 是 HAI-3 的系统级表达：用 Action-aware 多模态大模型理解任务与细粒度动作逻辑，用本体感知小脑解释当前身体状态，再把执行结果反馈给重规划与下一步行动。</p>
+            <figure class="policy-vla20-figure policy-vla20-figure--architecture">
+              <img src="../../assets/uploads/research/topic-04/hai3-vla20-architecture.png" alt="VLA2.0 architecture with an action-aware multimodal brain, a body-aware small brain, proprioception and feedback re-planning" width="1600" height="900" loading="lazy" />
+              <figcaption><span>APPLICATION ARCHITECTURE / WEEKLY TECHNICAL UPDATE 1028 · SLIDE 9</span><b>让策略在感知、执行、反馈与重规划之间保持连续运行。</b></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="policy-work-section policy-vla20-section" id="research-positioning">
+          <div class="policy-work-section__index">03 / RESEARCH POSITIONING</div>
+          <div class="policy-work-section__body">
+            <p class="story-kicker">FROM BENCHMARK TO CLOSED LOOP</p>
+            <h2>HAI-3 closes the capability gap left by HAI-1 and HAI-2.</h2>
+            <div class="policy-vla20-cards">
+              <article><span>HAI-1</span><h3>Deliberate Before Acting</h3><p>在承诺动作之前保留候选、比较潜在结果，形成可解释的执行前审议。</p></article>
+              <article><span>HAI-2</span><h3>Decide How to Decide</h3><p>根据 decision state、风险与证据充分度，学习何时直接行动、何时继续审议。</p></article>
+              <article><span>HAI-3 / VLA2.0</span><h3>Keep the Loop Alive</h3><p>把动作理解、本体感知、执行验证和反馈重规划组织成持续运行的闭环。</p></article>
+              <article><span>DATA ENGINE</span><h3>Learn from the Next Failure</h3><p>将执行中的偏差、恢复与成功证据回流到数据引擎，并由 CFG-Bench 继续诊断能力缺口。</p></article>
+            </div>
+            <aside class="story-role-note story-role-note--restricted"><span>SCOPE NOTE</span><p>HAI-3/VLA2.0 目前作为简历与面试展示中的 high-level feature work，用于表达完整的研究动机与应用架构；具体方法、实验结果和个人贡献将在具备公开条件后补充。</p></aside>
+          </div>
+        </section>
+
+        <section class="story-evidence story-evidence--concept">
+          <div class="story-evidence__heading"><p>PUBLIC STATUS</p><h2>Details follow evidence.</h2></div>
+          <div class="story-status-panel">
+            <span>SELECTIVE DISCLOSURE</span>
+            <p>当前公开 HAI-3/VLA2.0 的 motivation、系统架构与研究位置；具体训练方法、实验结果与归属信息仍待后续材料确认。</p>
+            <div><b>Motivation Public</b><b>Architecture Concept Public</b><b>Methods Pending</b></div>
           </div>
         </section>
       </main>

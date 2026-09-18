@@ -694,6 +694,119 @@
 
 .policy-coming-soon__body > a span { color: #9b83ff; }
 
+.policy-vla20-page .policy-work-hero--vla20 .policy-work-hero__copy h1 {
+  max-width: 720px;
+  letter-spacing: -0.055em;
+}
+
+.policy-vla20-page .policy-work-hero--vla20 .policy-work-hero__mark {
+  background:
+    linear-gradient(rgba(155, 131, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(155, 131, 255, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 50% 45%, rgba(155, 131, 255, 0.16), transparent 28%);
+  background-size: 34px 34px, 34px 34px, auto;
+}
+
+.policy-vla20-section { background: linear-gradient(135deg, rgba(155, 131, 255, 0.035), transparent 32%); }
+
+.policy-vla20-split {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(28px, 5vw, 82px);
+  align-items: start;
+  margin-top: 66px;
+}
+
+.policy-vla20-copy {
+  display: grid;
+  gap: 24px;
+  color: #959ba7;
+  line-height: 1.9;
+}
+
+.policy-vla20-copy p { margin: 0; }
+
+.policy-vla20-lead {
+  max-width: 980px;
+  margin: 46px 0 0;
+  color: #959ba7;
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  line-height: 1.9;
+}
+
+.policy-vla20-figure {
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid rgba(155, 131, 255, 0.25);
+  background: rgba(10, 12, 18, 0.82);
+}
+
+.policy-vla20-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.policy-vla20-figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 3px 2px;
+  color: #7f8693;
+  font-family: var(--mono);
+  font-size: 0.48rem;
+  line-height: 1.55;
+  letter-spacing: 0.08em;
+}
+
+.policy-vla20-figure figcaption b {
+  max-width: 56%;
+  color: #c1b9f4;
+  font-weight: 500;
+  text-align: right;
+}
+
+.policy-vla20-figure--architecture { margin-top: 62px; }
+
+.policy-vla20-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 66px;
+  background: var(--line);
+}
+
+.policy-vla20-cards article {
+  min-width: 0;
+  min-height: 260px;
+  padding: clamp(24px, 2.5vw, 38px);
+  background: #0b0d13;
+}
+
+.policy-vla20-cards span {
+  color: #b9adfa;
+  font-family: var(--mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.09em;
+}
+
+.policy-vla20-cards h3 {
+  margin: 48px 0 16px;
+  color: #d6d9e1;
+  font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.policy-vla20-cards p {
+  margin: 0;
+  color: #878d99;
+  line-height: 1.75;
+}
+
 @media (max-width: 1180px) {
   .story-hero__grid {
     grid-template-columns: minmax(360px, 0.78fr) minmax(460px, 1.22fr);
@@ -771,9 +884,12 @@
   .policy-work-route a:last-child { border-bottom: 0; }
 
   .policy-work-shift,
-  .policy-work-principles {
+  .policy-work-principles,
+  .policy-vla20-split {
     grid-template-columns: 1fr;
   }
+
+  .policy-vla20-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .policy-work-shift > i {
     transform: rotate(90deg);
@@ -887,6 +1003,11 @@
     justify-self: center;
     transform: rotate(90deg);
   }
+
+  .policy-vla20-figure figcaption { display: grid; }
+  .policy-vla20-figure figcaption b { max-width: none; text-align: left; }
+
+  .policy-vla20-cards { grid-template-columns: 1fr; }
 }
 
 /* Career information map v2 */

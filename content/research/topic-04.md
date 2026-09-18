@@ -2,19 +2,19 @@
 
 ## Status
 
-- Topic status: Structure ready; awaiting materials
+- Topic status: HAI-3/VLA2.0 high-level feature work added; methods and results remain selective
 - Work period: SANY Group, 2025—Present
-- Planned outputs: Two related works
+- Planned outputs: HAI-1 → HAI-2 → HAI-3/VLA2.0 capability progression
 - Website preview: Visible in the Research atlas
 - Detail page: `../../pages/research/topic-04.html`
 
 ## Motivation
 
-多模态模型已经能够识别场景、理解指令并生成推理，但机器人系统最终必须把这些能力转化为连续、可执行且可恢复的策略。真实环境中的数据成本、状态变化、执行误差和安全约束，使“理解正确”与“行动可靠”之间仍存在显著距离。
+多模态模型已经能够识别场景、理解指令并生成推理，但机器人系统最终必须把这些能力转化为连续、可执行且可恢复的策略。双周技术汇报中的 VLA 挑战图将问题概括为大小脑模态未对齐、泛化性差与成功率低：Action-aware 的“大脑”还需要本体感知、身体协调与反馈重规划的“小脑”共同完成可靠执行。
 
 ## Shared Research Question
 
-具身智能体如何在真实系统约束下，将多模态理解转化为稳定、可适应并可持续改进的执行策略？
+具身智能体如何在真实系统约束下，将多模态理解、动作逻辑、本体状态与执行反馈统一为稳定、可适应并可持续改进的执行策略？
 
 ## One-Sentence Positioning
 
@@ -22,7 +22,7 @@ Turning multimodal understanding into reliable action.
 
 ## Contribution
 
-当前公开的是研究组织方式：两项关联工作围绕同一能力链展开，并按问题与能力递进关系组织。具体方法、实验结果与个人贡献将在满足公开条件后补充。
+当前公开的是研究组织方式与 HAI-3/VLA2.0 的 high-level feature work：HAI-1 处理执行前审议，HAI-2 学习何时审议，HAI-3/VLA2.0 将 Action-aware 大脑、本体感知小脑和执行反馈组织为持续闭环。具体方法、实验结果与个人贡献将在满足公开条件后补充。
 
 ## Industry impact
 
@@ -32,8 +32,16 @@ Turning multimodal understanding into reliable action.
 
 ## Relationship Between the Two Works
 
-两项工作共享研究问题，并以能力递进方式组织；具体关系等待公开材料。
+三项能力共享同一研究问题，并以“执行前决策 → 状态自适应决策 → 执行中闭环”的方式递进；CFG-Bench 负责暴露细粒度动作理解缺口，数据引擎负责把失败、恢复与成功证据回流到下一轮训练与评测。
 
+
+## HAI-3 / VLA2.0
+
+- Motivation: VLA 能感知与规划，但大小脑模态未对齐，细粒度动作逻辑、本体能力与执行反馈尚未统一建模。
+- Architecture: Action-aware 多模态大模型 + 本体感知小脑 + 反馈重规划。
+- Position in HAI: 将 HAI-1/2 的执行前决策推进到 Perception → Action → Feedback 的持续行动闭环。
+- Scope: 简历与面试展示中的 high-level feature work；方法、实验结果与个人贡献待后续公开。
+- Media: `../../assets/uploads/research/topic-04/hai3-vla20-motivation.png`, `../../assets/uploads/research/topic-04/hai3-vla20-architecture.png`
 
 ## Work 01
 
