@@ -1,8 +1,8 @@
 # SANY Embodied Welding Robot Project
 
 The public Projects index presents the embodied welding robot program with four core contributions
-and two invention patents. The former three placeholder module entries have been replaced by this
-project content. Only add details that are approved for public disclosure.
+and two invention patents. The project cases below distinguish the public VLA welding modules from
+the still-placeholder data-collection module. Only add details that are approved for public disclosure.
 
 ## Flagship Project Overview
 
@@ -23,34 +23,34 @@ project content. Only add details that are approved for public disclosure.
 
 ## VLA Welding Project 01
 
-- Public title: VLA Welding Project 01
+- Public title: VLA 打底 · Multi-view Temporal Welding Model
 - Organization: SANY Group
 - Period: 2025—Present
-- Status: Structure ready; awaiting materials
+- Status: Public case ready; field video included
 - Detail page: `../pages/projects/vla-welding-01.html`
-- Project context:
-- System approach:
-- Personal contribution:
-- Technologies:
-- Results / evidence:
-- Related research topic:
+- Project context: 面向非标间隙打底自动化的端到端 VLA。
+- System approach: 多相机视觉感知、时序状态建模、动作生成与机器人执行决策统一到 VLA 框架，并接入熔池理解与过程反馈。
+- Personal contribution: 独立研发多视角时序焊接模型，完成感知、决策与执行接口联调。
+- Technologies: Multi-view perception; temporal state modeling; VLA; VLM; reinforcement-learning feedback
+- Results / evidence: 焊接成功率 90%，约 50% 为人工基准；任务范围、样本量及成功判定口径待补充。
+- Related research topic: Policy Learning for Embodied Agents
 - GitHub URL:
 - Demo URL:
-- Related media: `../assets/uploads/projects/`
+- Related media: `../assets/uploads/projects/welding/root-pass.mp4`
 
 ## VLA Welding Project 02
 
-- Public title: VLA Welding Project 02
+- Public title: VLA 盖面 · Visual Seam Tracking
 - Organization: SANY Group
 - Period: 2025—Present
-- Status: Structure ready; awaiting materials
+- Status: Public case ready; field video included
 - Detail page: `../pages/projects/vla-welding-02.html`
-- Project context:
-- System approach:
-- Personal contribution:
-- Technologies:
-- Results / evidence:
+- Project context: 面向复杂工业场景的无人化焊接盖面。
+- System approach: 基于分割大模型构建焊缝区域感知、轨迹提取、位姿估计、在线纠偏与异常处理链路。
+- Personal contribution: 负责算法研发与核心推进，协调算法、设备与现场工艺联调。
+- Technologies: Segmentation foundation model; seam tracking; trajectory planning; pose estimation; online correction
+- Results / evidence: 支撑连续稳定生产、工艺参数适配与目标工位无人化运行。
 - Related research topic:
 - GitHub URL:
 - Demo URL:
-- Related media: `../assets/uploads/projects/`
+- Related media: `../assets/uploads/projects/welding/cover-pass.mp4`

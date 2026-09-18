@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Suyu 在三一集团的工业 VLA 盖面项目占位页。" />
+    <meta name="description" content="Suyu 在三一集团面向复杂工业场景的无人化焊接盖面项目与视觉巡缝算法体系。" />
     <meta name="theme-color" content="#08090d" />
     <title>VLA 盖面 — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260819s" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260918b" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
-  <body class="content-page page-work-placeholder page-project-placeholder">
+  <body class="content-page page-work-project page-project-detail">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
 
     <div class="page-shell">
@@ -33,43 +33,71 @@
 
       <main>
         <section class="work-detail-hero">
-          <a class="work-detail-back" href="../projects.html">← Project Index</a>
+          <a class="work-detail-back" href="../projects.html">← Project Cover</a>
           <div class="work-detail-hero__status">
             <span>SANY GROUP / INDUSTRIAL VLA / 02</span>
-            <span><i></i> AWAITING MATERIALS</span>
+            <span><i></i> VIDEO + CASE STUDY</span>
           </div>
           <h1>VLA<br /><span>盖面.</span></h1>
           <p class="work-detail-hero__lead">
-            该页面已为 VLA 盖面模块建立独立结构。该模块将保持独立的问题定义、技术方案与成果叙事，
-            具体内容将在素材确认后补充。
+            面向复杂工业场景的无人化焊接盖面。负责算法研发与核心推进，统筹从立项论证、技术路线设计到现场部署和生产落地的完整流程。
           </p>
           <dl class="work-detail-meta">
             <div><dt>Type</dt><dd>Industrial R&amp;D Project</dd></div>
             <div><dt>Work Period</dt><dd>SANY · 2025—Present</dd></div>
-            <div><dt>Status</dt><dd>Structure Ready</dd></div>
+            <div><dt>Focus</dt><dd>Seam tracking + trajectory planning</dd></div>
           </dl>
         </section>
 
+        <section class="content-section work-detail-media">
+          <div class="content-label">FIELD VIDEO / 001</div>
+          <div class="work-detail-media__body">
+            <div class="work-detail-heading">
+              <h2>From seam perception to stable production.</h2>
+              <p>视频素材对应 PPT 第 4–7 页的盖面项目展示，呈现工业焊接现场和视觉巡缝算法链路。</p>
+            </div>
+            <video class="work-detail-video" controls preload="metadata" playsinline>
+              <source src="../../assets/uploads/projects/welding/cover-pass.mp4" type="video/mp4" />
+              当前浏览器不支持视频播放。
+            </video>
+          </div>
+        </section>
+
         <section class="content-section work-detail-outline">
-          <div class="content-label">CASE STRUCTURE / 001</div>
+          <div class="content-label">CASE STRUCTURE / 002</div>
           <div class="work-detail-outline__body">
             <header class="work-detail-heading">
-              <h2>Prepared as an independent project case.</h2>
-              <p>页面只预留项目叙事结构，不展示未经确认的内部信息。</p>
+              <h2>以视觉巡缝为核心的工业焊接算法体系。</h2>
+              <p>项目将焊缝感知、轨迹规划、位姿估计和在线纠偏连接到真实生产流程。</p>
             </header>
             <div class="work-detail-grid">
-              <article><span>01</span><h3>Project Context</h3><p>工业场景、业务问题与项目目标待补充。</p></article>
-              <article><span>02</span><h3>System Approach</h3><p>VLA 系统方案、模块与技术路线待补充。</p></article>
-              <article><span>03</span><h3>My Contribution</h3><p>个人职责、负责模块与关键工作待补充。</p></article>
-              <article><span>04</span><h3>Results &amp; Evidence</h3><p>可公开结果、演示与技术证据待补充。</p></article>
+              <article>
+                <span>01 / SCOPE</span>
+                <h3>从立项到生产落地</h3>
+                <p>覆盖立项论证、技术路线设计、算法开发、系统集成、现场部署与性能验证。</p>
+              </article>
+              <article>
+                <span>02 / ALGORITHM</span>
+                <h3>视觉巡缝与轨迹规划</h3>
+                <p>基于分割大模型打通焊缝区域感知、轨迹提取、位姿估计、在线纠偏与异常处理。</p>
+              </article>
+              <article>
+                <span>03 / INTEGRATION</span>
+                <h3>面向真实工艺联调</h3>
+                <p>协调算法、设备与现场工艺联调，通过数据闭环、模型迭代与鲁棒性优化适应复杂焊接场景。</p>
+              </article>
+              <article>
+                <span>04 / RESULTS</span>
+                <h3>支撑无人化运行</h3>
+                <p>推动焊接机器人由实验室原型走向工业级无人化应用，支撑连续稳定生产、工艺参数适配与目标工位无人化运行。</p>
+              </article>
             </div>
           </div>
         </section>
       </main>
 
       <footer id="page-footer" class="page-footer">
-        <a href="../projects.html">← Projects</a>
-        <a href="vla-data-collection.html">Next — VLA 数采 <span>↗</span></a>
+        <a href="../projects.html">← Project Cover</a>
         <p>© 2026</p>
       </footer>
     </div>

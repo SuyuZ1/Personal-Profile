@@ -7077,6 +7077,21 @@ body.instant-entry .site-shell {
   padding-bottom: 72px;
 }
 
+.page-projects .page-hero {
+  min-height: 48svh;
+  padding-top: 142px;
+  padding-bottom: 54px;
+}
+
+.page-projects .page-hero__meta {
+  margin-bottom: 26px;
+}
+
+.page-projects .page-hero__lead {
+  max-width: 680px;
+  margin-top: 30px;
+}
+
 .page-hero > * {
   position: relative;
   z-index: 2;
@@ -7844,6 +7859,27 @@ body.instant-entry .site-shell {
   border-top: 1px solid var(--line);
 }
 
+.project-directory-section {
+  background:
+    linear-gradient(135deg, rgba(112, 220, 255, 0.035), transparent 34%),
+    rgba(8, 10, 15, 0.34);
+}
+
+.page-projects .project-directory-section,
+.page-projects .patent-index-section {
+  gap: 26px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background:
+    linear-gradient(135deg, rgba(112, 220, 255, 0.035), transparent 34%),
+    rgba(8, 10, 15, 0.34);
+}
+
+.page-projects .patent-index-section {
+  border-top: 0;
+  padding-top: 28px;
+}
+
 .project-index__entry {
   display: grid;
   grid-template-columns: 80px 1fr 0.35fr auto;
@@ -7915,6 +7951,35 @@ body.instant-entry .site-shell {
   max-width: 900px;
   font-size: clamp(1.45rem, 2.45vw, 3rem);
   line-height: 1.2;
+}
+
+.project-index--modules .project-index__entry:hover {
+  background: linear-gradient(90deg, rgba(112, 220, 255, 0.055), transparent);
+}
+
+.project-index__entry--module {
+  min-height: 158px;
+}
+
+.project-index__entry--module h2 {
+  max-width: 900px;
+  font-size: clamp(1.35rem, 2.25vw, 2.75rem);
+  line-height: 1.2;
+}
+
+.page-projects .project-index__entry--patent {
+  min-height: 158px;
+}
+
+.page-projects .project-index__entry--patent h2 {
+  font-size: clamp(1.35rem, 2.25vw, 2.75rem);
+}
+
+.page-projects .project-index__entry {
+  gap: 20px;
+  min-height: 136px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .topic-detail-hero {
@@ -8982,12 +9047,16 @@ body.instant-entry .site-shell {
   }
 }
 
-/* Independent research and project placeholder pages */
+/* Independent research and project detail pages */
 .page-work-placeholder {
   --work-accent: var(--violet);
 }
 
 .page-project-placeholder {
+  --work-accent: var(--cyan);
+}
+
+.page-work-project {
   --work-accent: var(--cyan);
 }
 
@@ -9007,6 +9076,54 @@ body.instant-entry .site-shell {
   position: relative;
   padding: 190px var(--page-pad) 95px;
   border-bottom: 1px solid var(--line);
+}
+
+.work-detail-media {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+.work-detail-media__body {
+  min-width: 0;
+}
+
+.work-detail-video {
+  display: block;
+  width: 100%;
+  max-height: 720px;
+  margin-top: 32px;
+  border: 1px solid var(--line);
+  background: #050608;
+  object-fit: contain;
+}
+
+.work-detail-video:focus-visible {
+  outline: 1px solid var(--cyan);
+  outline-offset: 4px;
+}
+
+.work-detail-note {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+  padding: 20px 24px;
+  border: 1px solid rgba(143, 197, 212, 0.18);
+  background: rgba(143, 197, 212, 0.035);
+}
+
+.work-detail-note > span {
+  color: var(--work-accent);
+  font-family: var(--mono);
+  font-size: 0.48rem;
+  letter-spacing: 0.1em;
+}
+
+.work-detail-note p {
+  margin: 0;
+  color: #858b97;
+  font-size: 0.82rem;
+  line-height: 1.7;
 }
 
 .work-detail-back {
@@ -9063,6 +9180,10 @@ body.instant-entry .site-shell {
 }
 
 .page-project-placeholder .work-detail-hero h1 span {
+  color: #8fc5d4;
+}
+
+.page-project-detail .work-detail-hero h1 span {
   color: #8fc5d4;
 }
 
@@ -9327,6 +9448,17 @@ body.instant-entry .site-shell {
 
   .work-detail-grid article {
     min-height: 165px;
+  }
+
+  .work-detail-media {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .work-detail-note {
+    grid-template-columns: 1fr;
+    gap: 11px;
+    padding: 20px;
   }
 
   .work-detail-list article {

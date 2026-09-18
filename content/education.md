@@ -4,7 +4,7 @@ This file is the editable source-of-truth for the public Education page. The Eng
 below intentionally follow the wording supplied in the CV rather than claiming an official degree
 title that has not yet been confirmed.
 
-- Public University of Melbourne period: 2020—2025
+- Public University of Melbourne period: 2020—2024
 
 ## Hero statement
 
@@ -16,7 +16,7 @@ title that has not yet been confirmed.
 - Public label: Master’s Study · Computer Science & Technology
 - Location: Melbourne, Australia
 - Start date: 2023.03
-- End date: 2025 (exact month to be confirmed)
+- End date: 2024 (exact month to be confirmed)
 - Selected coursework / foundations: 数学基础、计算机编程、计算机算法
 - Milestone: 专业排名前 10%
 - Current page description: 硕士阶段进一步强化数学、编程与算法基础，并将学习重心延伸至智能系统的方法论与研究问题，为当前人工智能与具身智能方向建立更系统的技术底座。

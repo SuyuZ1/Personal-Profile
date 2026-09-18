@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Suyu 在三一集团开展的具身焊接机器人、工业 VLA 与多模态焊接项目。" />
+    <meta name="description" content="Suyu 的三项工业焊接 VLA 项目与两项焊接发明专利。" />
     <meta name="theme-color" content="#08090d" />
     <title>Projects — Suyu</title>
     <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../assets/css/styles.css?v=20260915a" />
+    <link rel="stylesheet" href="../assets/css/styles.css?v=20260918b" />
     <script src="../assets/js/script.js" defer></script>
   </head>
   <body class="content-page page-projects">
@@ -35,105 +35,41 @@
         <section class="page-hero page-hero--projects">
           <div class="page-hero__meta">
             <p class="eyebrow"><span></span> 04 / PROJECTS</p>
-            <p>SANY GROUP · ROBOTIC WELDING · 02 PATENTS</p>
+            <p>SANY GROUP · WELDING ROBOT OVERVIEW · 03 PROJECTS · 02 PATENTS</p>
           </div>
-          <h1>Industrial VLA.<br /><span>Projects &amp; protected innovation.</span></h1>
+          <h1>焊接机器人总览.<br /><span>Projects &amp; protected innovation.</span></h1>
           <p class="page-hero__lead">
-            从项目立项、算法研发到现场部署与规模化生产，围绕工业焊接构建感知、
-            理解、决策与机器人执行的完整闭环。
+            围绕焊接感知、工艺理解、动作决策与机器人执行，形成三个独立项目和两项焊接发明专利。
           </p>
         </section>
 
-        <section id="flagship-project" class="content-section project-spotlight">
-          <div class="content-label">FLAGSHIP PROJECT / 001</div>
-          <div class="project-spotlight__body">
-            <header class="project-spotlight__intro">
+        <section id="project-index" class="content-section projects-content project-directory-section">
+          <div class="content-label">WELDING ROBOT PROJECTS / 001</div>
+          <div class="project-index project-index--modules">
+            <a class="project-index__entry project-index__entry--module" href="projects/vla-welding-01.html">
+              <div class="project-index__number">01</div>
               <div>
-                <p class="project-spotlight__kicker"><i></i> SANY GROUP · INDUSTRIAL DEPLOYMENT</p>
-                <h2>具身焊接机器人.<br /><span>From prototype to production.</span></h2>
+                <p>INDUSTRIAL VLA · PPT 08–11</p>
+                <h2>VLA 打底 · 非标间隙自动化</h2>
               </div>
-              <p>
-                担任算法负责人及核心推动者，主导项目从立项论证、技术路线设计、算法研发、
-                系统集成、现场部署到规模化生产落地的全流程，推动焊接机器人从实验室原型
-                走向工业级无人化生产。
-              </p>
-            </header>
-
-            <div class="project-impact" aria-label="Key project outcomes">
-              <article>
-                <strong>6<span> months</span></strong>
-                <p>连续稳定生产</p>
-                <small>INDUSTRIAL STABILITY</small>
-              </article>
-              <article>
-                <strong>90<span>%</span></strong>
-                <p>模型焊接成功率</p>
-                <small>WELDING SUCCESS RATE</small>
-              </article>
-              <article>
-                <strong>0→1</strong>
-                <p>非标间隙打底突破</p>
-                <small>TECHNICAL BREAKTHROUGH</small>
-              </article>
-              <article>
-                <strong>FULL</strong>
-                <p>目标工位无人化</p>
-                <small>UNMANNED OPERATION</small>
-              </article>
-            </div>
-
-            <div class="project-contributions">
-              <article>
-                <div class="project-contributions__index"><span>01</span><small>OWNERSHIP</small></div>
-                <div>
-                  <p>PROJECT LEADERSHIP · END-TO-END DELIVERY</p>
-                  <h3>全流程技术与落地负责</h3>
-                  <p>
-                    负责集团具身焊接机器人项目，担任算法负责人及核心推动者。
-                    主导从技术路线、研发与集成到现场交付的全链路，并支撑产品对外销售。
-                  </p>
-                </div>
-              </article>
-
-              <article>
-                <div class="project-contributions__index"><span>02</span><small>PERCEPTION</small></div>
-                <div>
-                  <p>SEGMENTATION FOUNDATION MODEL · VISUAL SEAM TRACKING</p>
-                  <h3>从零构建视觉巡缝算法体系</h3>
-                  <p>
-                    基于分割大模型，面向复杂焊接场景，实现焊缝区域感知、轨迹提取、位姿估计与在线纠偏。
-                    通过数据闭环、模型迭代和现场鲁棒性优化，达到连续稳定生产 6 个月的工业级要求，
-                    实现目标工位完全无人化作业。
-                  </p>
-                </div>
-              </article>
-
-              <article>
-                <div class="project-contributions__index"><span>03</span><small>VLA</small></div>
-                <div>
-                  <p>MULTI-VIEW TEMPORAL MODEL · END-TO-END CONTROL</p>
-                  <h3>自研多视角时序端到端焊接模型</h3>
-                  <p>
-                    独立自研多视角时序端到端焊接模型，将多相机视觉感知、时序状态建模与机器人动作决策统一到端到端框架中，
-                    探索面向焊接任务的 VLA 技术路线。攻克非标间隙打底自动化难题，实现技术“从 0 到 1”的突破；
-                    模型焊接成功率达到 90%，较人工操作约 50% 的基准水平大幅提升。
-                  </p>
-                </div>
-              </article>
-
-              <article>
-                <div class="project-contributions__index"><span>04</span><small>VLM + RL</small></div>
-                <div>
-                  <p>MULTIMODAL UNDERSTANDING · CLOSED-LOOP OPTIMIZATION</p>
-                  <h3>VLM 熔池理解与动作闭环</h3>
-                  <p>
-                    研发面向焊接场景的 VLM 熔池理解模型，使系统具备对熔池形态、焊接状态、
-                    缺陷趋势和工艺质量的多模态理解能力。进一步将感知结果接入机器人控制与强化学习闭环，
-                    实现“视觉理解—动作调整”的闭环优化。
-                  </p>
-                </div>
-              </article>
-            </div>
+              <span>FIELD VIDEO · CASE STUDY</span><i>↗</i>
+            </a>
+            <a class="project-index__entry project-index__entry--module" href="projects/vla-welding-02.html">
+              <div class="project-index__number">02</div>
+              <div>
+                <p>INDUSTRIAL VLA · PPT 04–07</p>
+                <h2>VLA 盖面 · 视觉巡缝与轨迹规划</h2>
+              </div>
+              <span>FIELD VIDEO · CASE STUDY</span><i>↗</i>
+            </a>
+            <a class="project-index__entry project-index__entry--module" href="projects/vla-data-collection.html">
+              <div class="project-index__number">03</div>
+              <div>
+                <p>INDUSTRIAL VLA · DATA ENGINE</p>
+                <h2>VLA 数采 · 焊接多模态数据</h2>
+              </div>
+              <span>PROJECT MODULE · MATERIALS PENDING</span><i>↗</i>
+            </a>
           </div>
         </section>
 
