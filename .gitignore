@@ -1,2 +1,7 @@
 .DS_Store
 .env.local
+
+# Local source archive; keep these out of the public GitHub Pages repository.
+DOCS/
+image2_usage.txt
+material/焊接项目/
