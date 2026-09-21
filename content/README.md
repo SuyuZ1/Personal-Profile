@@ -12,7 +12,7 @@ Keep profile text in this folder before placing it into the website layouts.
 - `research/topic-02.md`: self-evolving data world research trajectory
 - `research/topic-03.md`: fine-grained embodied cognition direction and CFG-Bench
 - `research/topic-04.md`: Policy Learning topic containing two related work slots
-- `research/topic-05.md`: human-centric visual intelligence and FaceChain representative work
+- `research/topic-05.md`: AffAlign cross-backbone alignment for fine-grained affordance understanding
 - `research/data_infrastructure_self_evolving_data_world_idea.md`: original self-evolving data world idea note
 
 Fill in any known fields and leave unknown fields blank. Media files should go in the matching folder under `assets/uploads/`.

@@ -1728,6 +1728,7 @@
 .research-preview--cfg { --preview-accent: #77d3b4; }
 .research-preview--policy { --preview-accent: #d39a69; }
 .research-preview--vision { --preview-accent: #df817d; }
+.research-preview--affalign { --preview-accent: #9b83ff; }
 
 .research-preview__top,
 .research-preview__footer {
@@ -1830,7 +1831,8 @@
 }
 
 .research-preview--cfg .research-preview__story h2,
-.research-preview--vision .research-preview__story h2 {
+.research-preview--vision .research-preview__story h2,
+.research-preview--affalign .research-preview__story h2 {
   font-size: clamp(2.55rem, 3.35vw, 4.4rem);
 }
 
@@ -2329,6 +2331,161 @@
   text-align: center;
 }
 
+.preview-affalign {
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(155, 131, 255, 0.11), transparent 34%),
+    linear-gradient(135deg, rgba(155, 131, 255, 0.045), transparent 55%),
+    #0b0d15;
+}
+
+.preview-affalign::before,
+.story-visual--affalign .story-visual__image::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 14% 10%;
+  border: 1px solid rgba(155, 131, 255, 0.16);
+  border-radius: 50%;
+  box-shadow: 0 0 70px rgba(155, 131, 255, 0.08);
+}
+
+.affalign-diagram {
+  position: relative;
+  z-index: 3;
+  width: min(92%, 640px);
+  height: 270px;
+  padding: 44px 22px 38px;
+  border: 1px solid rgba(155, 131, 255, 0.25);
+  background:
+    linear-gradient(rgba(155, 131, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(155, 131, 255, 0.045) 1px, transparent 1px),
+    rgba(7, 9, 15, 0.76);
+  background-size: 28px 28px, 28px 28px, auto;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+}
+
+.affalign-diagram::before,
+.affalign-diagram::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 48%;
+  width: 21%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(155, 131, 255, 0.66), transparent);
+}
+
+.affalign-diagram::before { left: 20%; }
+.affalign-diagram::after { right: 20%; }
+
+.affalign-diagram__label,
+.affalign-diagram__footer {
+  position: absolute;
+  z-index: 4;
+  color: #8e83bd;
+  font-family: var(--mono);
+  font-size: 0.46rem;
+  letter-spacing: 0.12em;
+}
+
+.affalign-diagram__label { top: 16px; left: 18px; }
+.affalign-diagram__footer { right: 18px; bottom: 15px; color: #727789; }
+
+.affalign-diagram__backbone,
+.affalign-diagram__semantics {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  gap: 8px;
+  border: 1px solid rgba(155, 131, 255, 0.28);
+  background: rgba(15, 16, 28, 0.92);
+}
+
+.affalign-diagram__backbone {
+  top: 78px;
+  width: 25%;
+  min-height: 92px;
+  align-content: center;
+  padding: 16px;
+}
+
+.affalign-diagram__backbone--one { left: 5%; }
+.affalign-diagram__backbone--two { right: 5%; border-color: rgba(112, 220, 255, 0.3); }
+
+.affalign-diagram__backbone small,
+.affalign-diagram__semantics small {
+  color: #7e759f;
+  font-family: var(--mono);
+  font-size: 0.42rem;
+  letter-spacing: 0.1em;
+}
+
+.affalign-diagram__backbone--two small { color: #6da5b8; }
+
+.affalign-diagram__backbone b {
+  color: #e4e1f2;
+  font-size: 0.8rem;
+  font-weight: 520;
+  line-height: 1.05;
+}
+
+.affalign-diagram__bridge {
+  position: absolute;
+  z-index: 3;
+  top: 88px;
+  left: 50%;
+  display: grid;
+  width: 82px;
+  height: 82px;
+  place-items: center;
+  align-content: center;
+  border: 1px solid rgba(155, 131, 255, 0.7);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(155, 131, 255, 0.24), rgba(17, 15, 33, 0.94) 64%);
+  box-shadow: 0 0 28px rgba(155, 131, 255, 0.18);
+  transform: translateX(-50%);
+}
+
+.affalign-diagram__bridge strong {
+  color: #f2efff;
+  font-size: 1.7rem;
+  font-weight: 560;
+  letter-spacing: -0.08em;
+}
+
+.affalign-diagram__bridge span {
+  color: #a697dc;
+  font-family: var(--mono);
+  font-size: 0.4rem;
+  letter-spacing: 0.13em;
+}
+
+.affalign-diagram__semantics {
+  right: 22%;
+  bottom: 34px;
+  left: 22%;
+  min-height: 48px;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 11px 15px;
+  border-color: rgba(112, 220, 255, 0.27);
+  background: rgba(8, 18, 25, 0.9);
+}
+
+.affalign-diagram__semantics small { color: #6da5b8; }
+
+.affalign-diagram__semantics b {
+  color: #c3edf4;
+  font-family: var(--mono);
+  font-size: 0.48rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+}
+
 .preview-vision > img {
   position: absolute;
   z-index: 0;
@@ -2401,6 +2558,7 @@
 .story--cfg { --story-accent: #77d3b4; --story-accent-rgb: 119, 211, 180; }
 .story--policy { --story-accent: #d39a69; --story-accent-rgb: 211, 154, 105; }
 .story--vision { --story-accent: #df817d; --story-accent-rgb: 223, 129, 125; }
+.story--affalign { --story-accent: #9b83ff; --story-accent-rgb: 155, 131, 255; }
 
 .research-story {
   min-width: 0;
@@ -2743,6 +2901,17 @@
 
 .story-visual--vision {
   margin: 0;
+}
+
+.story-visual--affalign {
+  margin: 0;
+}
+
+.story-visual--affalign .story-visual__image {
+  padding: 0;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(155, 131, 255, 0.1), transparent 34%),
+    #0b0d15;
 }
 
 .story-visual--vision > img {
@@ -3295,6 +3464,20 @@
   .preview-policy__works { right: 12%; bottom: 10%; left: 12%; }
 
   .preview-vision__scan { width: 48%; }
+
+  .preview-affalign { padding: 12px; }
+  .affalign-diagram { width: 96%; height: 220px; padding: 36px 10px 30px; }
+  .affalign-diagram__label { top: 12px; left: 12px; font-size: 0.39rem; }
+  .affalign-diagram__footer { right: 12px; bottom: 11px; font-size: 0.36rem; }
+  .affalign-diagram__backbone { top: 66px; width: 29%; min-height: 68px; padding: 9px; }
+  .affalign-diagram__backbone b { font-size: 0.62rem; }
+  .affalign-diagram__backbone small,
+  .affalign-diagram__semantics small { font-size: 0.34rem; }
+  .affalign-diagram__bridge { top: 71px; width: 62px; height: 62px; }
+  .affalign-diagram__bridge strong { font-size: 1.25rem; }
+  .affalign-diagram__bridge span { font-size: 0.34rem; }
+  .affalign-diagram__semantics { right: 11%; bottom: 27px; left: 11%; grid-template-columns: 1fr; gap: 4px; min-height: 42px; padding: 8px 9px; }
+  .affalign-diagram__semantics b { font-size: 0.38rem; }
 
   .story-hero {
     padding-top: 116px;
