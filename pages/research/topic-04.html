@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#08090d" />
     <title>Policy Learning for Embodied Agents — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260920t" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260921b" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
   <body class="content-page page-topic page-research-story story--policy">
@@ -54,7 +54,7 @@
             <p>HAI SERIES / THREE WORKS</p>
             <div>
               <h2>Three distinct works.<br />One progressive agenda.</h2>
-              <p>HAI-1、HAI-2 与 HAI-3 是三个可分别进入的独立工作，同时构成一条递进的能力路线：从执行前审议，到状态自适应决策，再到持续反馈闭环。</p>
+              <p>HAI-1、HAI-2 与 HAI-3 是三个可分别进入的独立工作，同时构成一条递进的能力路线：先用 IntentDelib-VLA 做执行前候选比较，再学习状态自适应的决策能力编排，最后走向持续反馈闭环。</p>
               <span class="policy-series__hint">SELECT ONE OF THE THREE WORKS BELOW TO OPEN ITS STANDALONE PAGE</span>
             </div>
           </div>
@@ -66,9 +66,9 @@
               <div class="policy-series__work-index"><span>WORK 01 / 03</span><strong>独立研究工作</strong></div>
               <div class="policy-series__meta"><span>HAI-1</span><b>ICRA 2027 SUBMISSION</b></div>
               <p>PROSPECTIVE ACTION INTELLIGENCE</p>
-              <h3>Pre-Commitment Action Deliberation</h3>
-              <small>从单步动作预测走向执行前的候选形成、比较与承诺。</small>
-              <div class="policy-series__transition"><span>CAPABILITY SHIFT</span><b>Prediction → Deliberation</b></div>
+              <h3>IntentDelib-VLA</h3>
+              <small>IntentDelib-VLA: Pre-Commitment Action Deliberation through Intent-Grounded Latent Futures。</small>
+              <div class="policy-series__transition"><span>CAPABILITY SHIFT</span><b>Prediction → Pre-Commitment Comparison</b></div>
               <div class="policy-series__open"><span>OPEN HAI-1 WORK PAGE</span><i>↗</i></div>
             </a>
             <a class="policy-series__card policy-series__card--two" href="policy-hai-2.html" data-work="02" aria-label="Open HAI-2 standalone work page">
@@ -76,8 +76,8 @@
               <div class="policy-series__meta"><span>HAI-2</span><b>ICRA 2027 SUBMISSION</b></div>
               <p>ADAPTIVE ACTION INTELLIGENCE</p>
               <h3>Learning How to Decide</h3>
-              <small>根据当前 decision state，学习何时直接行动、何时继续审议。</small>
-              <div class="policy-series__transition"><span>CAPABILITY SHIFT</span><b>Deliberation → Adaptation</b></div>
+              <small>HAI-2: Learning How to Decide in Vision-Language-Action Policies。</small>
+              <div class="policy-series__transition"><span>CAPABILITY SHIFT</span><b>Fixed Process → State-Adaptive Orchestration</b></div>
               <div class="policy-series__open"><span>OPEN HAI-2 WORK PAGE</span><i>↗</i></div>
             </a>
             <a class="policy-series__card policy-series__card--three" href="policy-hai-3.html" data-work="03" aria-label="Open HAI-3 VLA2.0 standalone work page">
@@ -119,8 +119,8 @@
             <p class="story-kicker">PUBLIC RESEARCH STRUCTURE</p>
             <h2>One research question, developed through three capability transitions.</h2>
             <div class="story-contribution-grid">
-              <article><span>HAI-1</span><h3>Deliberate Before Acting</h3><p>保留候选、预判结果，并在执行前完成比较与承诺。</p></article>
-              <article><span>HAI-2</span><h3>Decide How to Decide</h3><p>让策略根据证据充分度、风险与成本选择合适的决策过程。</p></article>
+              <article><span>HAI-1 / INTENTDELIB-VLA</span><h3>Deliberate Before Acting</h3><p>共享 transition intent 组织多个 actor-consistent 候选，再用多时间尺度未来对齐证据完成保守承诺。</p></article>
+              <article><span>HAI-2 / LEARNING HOW TO DECIDE</span><h3>Orchestrate Decision Support</h3><p>在冻结 VLA 内区分动作支持不足与选择证据不足，状态自适应地选择 Commit、Reformulate 或 Prospect。</p></article>
               <article><span>HAI-3</span><h3>Keep the Loop Alive</h3><p>把观察、执行、反馈与修正组织为持续运行的行动闭环。</p></article>
             </div>
             <aside class="story-role-note story-role-note--restricted"><span>DISCLOSURE NOTE</span><p>当前仅公开研究动机与组织方式。具体方法、实验结果和个人贡献尚未达到公开条件，因此不在此提前描述；公开后会按同一模板补充可验证信息。</p></aside>

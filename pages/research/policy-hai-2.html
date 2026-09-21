@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="HAI-2：让 Vision-Language-Action Policies 学会根据决策状态选择行动形成过程。" />
+    <meta name="description" content="HAI-2：在冻结 VLA 中学习状态自适应的决策能力编排，选择直接执行、动作重构或前瞻评估。" />
     <meta name="theme-color" content="#08090d" />
-    <title>HAI-2 · Learning How to Decide — Suyu</title>
+    <title>HAI-2: Learning How to Decide in Vision-Language-Action Policies — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260819s" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260921b" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
   <body class="content-page page-topic page-research-story story--policy policy-work-page">
@@ -27,23 +27,23 @@
           <div class="story-hero__status"><span><i></i> HAI-2 / ICRA 2027 SUBMISSION</span><span>SERIES 02 OF 03</span></div>
           <div class="policy-work-hero__grid">
             <div class="policy-work-hero__copy">
-              <p class="story-kicker">ADAPTIVE ACTION INTELLIGENCE</p>
-              <h1>Learning How to Decide</h1>
-              <p>In Vision-Language-Action Policies. 把“当前应该采用何种决策过程”本身纳入 Policy Learning：根据 decision state 判断是直接行动，还是继续形成候选、比较、细化与前瞻。</p>
+              <p class="story-kicker">STATE-ADAPTIVE DECISION CAPABILITY ORCHESTRATION</p>
+              <h1>HAI-2: Learning How to Decide in Vision-Language-Action Policies</h1>
+              <p>在冻结 VLA 中学习状态自适应的决策能力编排：根据当前 decision state，判断需要直接执行、扩展动作支持，还是在固定候选集上增强选择证据。</p>
             </div>
             <aside class="policy-work-hero__mark policy-work-hero__mark--two">
               <span>HAI</span><strong>02</strong><small>DECIDE<br />WHEN TO<br />DELIBERATE</small>
             </aside>
           </div>
           <dl class="policy-work-facts">
-            <div><dt>CAPABILITY SHIFT</dt><dd>Fixed Deliberation → State-Adaptive Decision</dd></div>
-            <div><dt>CORE SIGNAL</dt><dd>Decision State · Evidence · Risk</dd></div>
+            <div><dt>CAPABILITY SHIFT</dt><dd>Fixed Process → State-Adaptive Orchestration</dd></div>
+            <div><dt>CORE MECHANISM</dt><dd>Commit · Reformulate · Prospect</dd></div>
             <div><dt>PUBLICATION STATUS</dt><dd>ICRA 2027 · Submission</dd></div>
           </dl>
         </section>
 
         <nav class="policy-work-route" aria-label="HAI series navigation">
-          <a href="policy-hai-1.html"><span>HAI-1</span><b>Pre-Commitment Deliberation</b><i>←</i></a>
+          <a href="policy-hai-1.html"><span>HAI-1</span><b>IntentDelib-VLA</b><i>←</i></a>
           <a class="active" href="policy-hai-2.html"><span>HAI-2</span><b>Learning How to Decide</b><i>●</i></a>
           <a href="policy-hai-3.html"><span>HAI-3</span><b>VLA2.0 · Close the Action Loop</b><i>→</i></a>
         </nav>
@@ -51,16 +51,16 @@
         <section class="policy-work-section">
           <div class="policy-work-section__index">01 / RESEARCH FOCUS</div>
           <div class="policy-work-section__body">
-            <p class="story-kicker">THE FIXED-REASONING PROBLEM</p>
-            <h2>Different decision states should not trigger the same reasoning process.</h2>
+            <p class="story-kicker">TWO DECISION GAPS</p>
+            <h2>Different states need different forms of decision support.</h2>
             <div class="policy-work-shift">
-              <article><span>FIXED POLICY</span><h3>Reason the same way every time</h3><p>明确状态可能进行不必要的推理，困难状态又可能在证据不足时过早提交动作。</p></article>
+              <article><span>ACTION SUPPORT INSUFFICIENCY</span><h3>Useful action is missing</h3><p>当前候选集没有足够好的动作，需要 Reformulate 扩展可用的 action support。</p></article>
               <i>→</i>
-              <article><span>HAI-2</span><h3>Adapt the decision process</h3><p>依据当前证据、风险与计算成本，选择直接行动或进一步审议。</p></article>
+              <article><span>SELECTION EVIDENCE INSUFFICIENCY</span><h3>Useful action is hard to select</h3><p>候选动作已经存在，但 Direct 证据不足，需要 Prospect 强化固定候选集上的选择。</p></article>
             </div>
             <figure class="policy-work-figure">
               <div class="policy-work-figure__frame"><img src="../../assets/uploads/research/hai-2/fig-01.png" alt="HAI-2 motivation: different states need different support and available actions are not always realized" width="1774" height="887" loading="lazy" /></div>
-              <figcaption><span>FIG. 01 / STATE-ADAPTIVE MOTIVATION</span><p>HAI-2 关注“可用动作”与“实际选中动作”之间的缺口：不同决策状态需要不同证据支持，而不是固定使用同一种过程。</p></figcaption>
+              <figcaption><span>FIG. 01 / STATE-ADAPTIVE MOTIVATION</span><p>论文区分 action support insufficiency 与 selection evidence insufficiency，并据此组织不同的决策能力。</p></figcaption>
             </figure>
           </div>
         </section>
@@ -68,16 +68,16 @@
         <section class="policy-work-section">
           <div class="policy-work-section__index">02 / POLICY MECHANISM</div>
           <div class="policy-work-section__body">
-            <p class="story-kicker">STATE-ADAPTIVE POLICY / PUBLIC FRAMING</p>
-            <h2>Make decision strategy part of the learned policy.</h2>
+            <p class="story-kicker">HAI-2 / PAPER MECHANISM</p>
+            <h2>Learn which bounded capability the current state needs.</h2>
             <div class="policy-work-principles">
-              <article><span>01</span><h3>Assess the State</h3><p>判断当前证据是否足以支持可靠行动，并识别不确定性与潜在风险。</p></article>
-              <article><span>02</span><h3>Select the Process</h3><p>在直接行动、候选扩展、内部细化、比较与前瞻之间自适应选择。</p></article>
-              <article><span>03</span><h3>Balance Cost &amp; Quality</h3><p>避免把更多推理等同于更好决策，让可靠性与计算效率共同进入策略目标。</p></article>
+              <article><span>01</span><h3>Commit</h3><p>直接执行当前 Base action，在现有候选证据足够时停止额外决策。</p></article>
+              <article><span>02</span><h3>Reformulate</h3><p>生成残差动作，扩展 action support；Base action 仍作为动作先验保留。</p></article>
+              <article><span>03</span><h3>Prospect</h3><p>在固定候选集上增强选择证据，并由 bounded orchestrator 按状态与成本重新路由。</p></article>
             </div>
             <figure class="policy-work-figure">
               <div class="policy-work-figure__frame"><img src="../../assets/uploads/research/hai-2/fig-02.png" alt="HAI-2 mechanism: online orchestration, reformulation and prospecting with expanded action support" width="1942" height="809" loading="lazy" /></div>
-              <figcaption><span>FIG. 02 / ONLINE ORCHESTRATION</span><p>状态自适应策略在直接执行、动作重构与前瞻证据之间路由，并以成本感知的选择机制平衡可靠性与计算开销。</p></figcaption>
+              <figcaption><span>FIG. 02 / ONLINE ORCHESTRATION</span><p>冻结 VLA 提供 Base action 与内部表征，HAI-2 在 Probe 后重新评估 Direct、Reformulate、Prospect 路径，并用真实选中动作的同状态结果学习编排。</p></figcaption>
             </figure>
             <aside class="story-role-note story-role-note--restricted"><span>DISCLOSURE NOTE</span><p>本页仅公开研究问题与能力演进关系。具体方法、实验结果与归属信息将在具备公开条件后补充。</p></aside>
           </div>

@@ -22,7 +22,7 @@ Turning multimodal understanding into reliable action.
 
 ## Contribution
 
-当前公开的是研究组织方式与 HAI-3/VLA2.0 的整体设计方向：HAI-1 处理执行前审议，HAI-2 学习何时审议，HAI-3/VLA2.0 进一步把当前工作闭环，并提出由 Action-aware 大脑、本体感知小脑和执行反馈构成的整体设计。这一表述不代表完整系统已经实现，具体方法、实验结果与个人贡献将在满足公开条件后补充。
+当前公开的是研究组织方式与 HAI-3/VLA2.0 的整体设计方向：HAI-1（IntentDelib-VLA）以共享 transition intent 组织多个 actor-consistent 候选，并用多时间尺度未来对齐潜在证据完成保守的执行前比较；HAI-2 在冻结 VLA 内学习状态自适应的决策能力编排，区分动作支持不足与选择证据不足，选择 Commit、Reformulate 或 Prospect；HAI-3/VLA2.0 再把当前工作推进到持续反馈闭环。这一表述不代表完整系统已经实现，具体方法、实验结果与个人贡献将在满足公开条件后补充。
 
 ## Industry impact
 
@@ -32,7 +32,7 @@ Turning multimodal understanding into reliable action.
 
 ## Relationship Between the Two Works
 
-三项能力共享同一研究问题，并以“执行前决策 → 状态自适应决策 → 执行中闭环”的方式递进；CFG-Bench 负责暴露细粒度动作理解缺口，数据引擎负责把失败、恢复与成功证据回流到下一轮训练与评测。
+三项能力共享同一研究问题，并以“执行前候选比较 → 状态自适应决策编排 → 执行中闭环”的方式递进；CFG-Bench 负责暴露细粒度动作理解缺口，数据引擎负责把失败、恢复与成功证据回流到下一轮训练与评测。
 
 
 ## HAI-3 / VLA2.0
@@ -46,19 +46,19 @@ Turning multimodal understanding into reliable action.
 
 ## Work 01
 
-- Title:
-- Problem:
-- Method:
-- Contribution:
+- Title: IntentDelib-VLA: Pre-Commitment Action Deliberation through Intent-Grounded Latent Futures
+- Problem: VLA 在执行前缺少 transition intent、候选保留和未来对齐的比较证据。
+- Method: 共享 transition intent；LAIA 保留 actor-consistent 候选；PLFD 进行多时间尺度未来对齐潜在比较；保守门控决定是否替换默认动作。
+- Contribution: 在不重建视觉未来 rollout 的前提下，把未来结构化证据带入执行前动作承诺。
 - Personal contribution:
 - Paper / code / demo:
 
 ## Work 02
 
-- Title:
-- Problem:
-- Method:
-- Contribution:
+- Title: HAI-2: Learning How to Decide in Vision-Language-Action Policies
+- Problem: 不同状态分别面临 action support insufficiency 或 selection evidence insufficiency。
+- Method: 在冻结 VLA 内组织 Commit、Reformulate、Prospect，并以同状态实际选中动作的结果学习 bounded orchestration。
+- Contribution: 学习当前状态需要哪一种决策支持，同时平衡动作质量、风险与额外计算成本。
 - Personal contribution:
 - Paper / code / demo:
 
