@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AffAlign：通过跨视觉骨干对齐与多模态语义融合，研究细粒度 affordance 理解。" />
+    <meta name="description" content="AffAlign 研究页面正在准备公开材料，Coming Soon。" />
     <meta name="theme-color" content="#08090d" />
-    <title>AffAlign: Cross-Backbone Alignment — Suyu</title>
+    <title>AffAlign · Coming Soon — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260921a" />
+    <link rel="stylesheet" href="../../assets/css/styles.css?v=20260922a" />
     <script src="../../assets/js/script.js" defer></script>
   </head>
-  <body class="content-page page-topic page-research-story story--standalone story--affalign">
+  <body class="content-page page-topic page-research-story story--standalone story--affalign coming-soon-page">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
     <div class="page-shell">
       <header class="site-header page-header">
@@ -24,73 +24,46 @@
       <main class="research-story">
         <section class="story-hero">
           <a class="story-back" href="index.html">← RESEARCH ATLAS</a>
-          <div class="story-hero__status"><span><i></i> FINE-GRAINED AFFORDANCE / ICLR 2027 SUBMISSION</span><span>TOPIC 05</span></div>
+          <div class="story-hero__status"><span><i></i> FINE-GRAINED AFFORDANCE / COMING SOON</span><span>TOPIC 05</span></div>
           <div class="story-hero__grid">
             <div class="story-hero__copy">
               <p class="story-kicker">FINE-GRAINED AFFORDANCE UNDERSTANDING</p>
               <h1>AffAlign: Cross-Backbone Alignment</h1>
               <p class="story-hero__subtitle">For Fine-Grained Affordance Understanding</p>
-              <p class="story-hero__lead">研究如何在视觉骨干差异与标注噪声下，对齐可交互区域与对应语义，提升细粒度 affordance 理解的精确性与可迁移性。</p>
+              <p class="story-hero__lead">面向细粒度 affordance 理解的跨骨干对齐研究。公开图、方法说明与实验材料正在整理中。</p>
               <div class="story-actions">
-                <a href="#motivation">Read the Research Story <span>↓</span></a>
-                <a href="#contribution">Research Framing <span>↘</span></a>
+                <a href="#coming-soon">View Status <span>↓</span></a>
               </div>
             </div>
             <figure class="story-hero__visual story-visual story-visual--affalign">
-              <div class="story-visual__top"><span>RESEARCH FIGURE / 05</span><b>AFFORDANCE ALIGNMENT</b></div>
+              <div class="story-visual__top"><span>RESEARCH TOPIC / 05</span><b>PUBLIC MATERIALS PENDING</b></div>
               <div class="story-visual__image story-visual__image--affalign">
-                <div class="affalign-diagram" role="img" aria-label="Conceptual view of cross-backbone alignment between dense visual features and multimodal semantics">
-                  <span class="affalign-diagram__label">CONCEPTUAL ALIGNMENT MAP</span>
-                  <div class="affalign-diagram__backbone affalign-diagram__backbone--one"><small>BACKBONE A</small><b>DENSE<br />FEATURES</b></div>
-                  <div class="affalign-diagram__backbone affalign-diagram__backbone--two"><small>BACKBONE B</small><b>REGION<br />EVIDENCE</b></div>
-                  <div class="affalign-diagram__bridge"><strong>AFF</strong><span>ALIGN</span></div>
-                  <div class="affalign-diagram__semantics"><small>MULTIMODAL SEMANTICS</small><b>REGION ↔ ACTIONABILITY</b></div>
-                  <span class="affalign-diagram__footer">ALIGN · LOCALIZE · UNDERSTAND</span>
+                <div class="coming-soon-visual" role="img" aria-label="AffAlign research materials coming soon">
+                  <span>TOPIC 05</span><strong>COMING<br />SOON</strong><p>AFFALIGN · FINE-GRAINED AFFORDANCE</p>
                 </div>
               </div>
-              <figcaption><span>AFFALIGN / ICLR 2027</span><b>DENSE VISUAL EVIDENCE ↔ ACTIONABLE SEMANTICS</b></figcaption>
+              <figcaption><span>AFFALIGN</span><b>RESEARCH PAGE IN PREPARATION</b></figcaption>
             </figure>
           </div>
           <dl class="story-facts">
             <div><dt>RESEARCH AREA</dt><dd>Fine-Grained Affordance Understanding</dd></div>
             <div><dt>CORE METHOD</dt><dd>Cross-Backbone Alignment</dd></div>
-            <div><dt>PUBLICATION STATUS</dt><dd>ICLR 2027 · Submission</dd></div>
+            <div><dt>PUBLIC STATUS</dt><dd>Coming Soon</dd></div>
             <div><dt>SUPPORTING PROCESS</dt><dd>Semi-Automatic Affordance Annotation</dd></div>
           </dl>
         </section>
 
-        <nav class="story-nav" aria-label="Research story sections">
-          <a href="#motivation"><span>01</span> Motivation</a><a href="#contribution"><span>02</span> Contribution</a>
+        <nav class="story-nav story-nav--single" aria-label="Research story sections">
+          <a href="#coming-soon"><span>01</span> Coming Soon</a>
         </nav>
 
-        <section class="story-chapter" id="motivation">
-          <div class="story-chapter__index">01 / MOTIVATION</div>
-          <div class="story-chapter__body">
-            <p class="story-kicker">THE AFFORDANCE GAP</p>
-            <h2>A region is not actionable until its meaning is aligned.</h2>
-            <div class="story-chapter__copy">
-              <p>细粒度 affordance 理解不仅要定位可交互区域，还要判断该区域对应的动作可能性与语义角色。</p>
-              <p>视觉骨干的表征差异和标注噪声会让区域级视觉特征与多模态语义难以对齐，导致模型能够“看见”目标，却难以稳定理解它如何被使用。</p>
-            </div>
-            <div class="story-shift">
-              <article><span>VISUAL REPRESENTATION</span><h3>Locate the region</h3><p>从密集视觉特征中识别可能承载动作的局部区域。</p></article>
-              <i>→</i>
-              <article><span>AFFORDANCE UNDERSTANDING</span><h3>Align region and meaning</h3><p>把区域证据与多模态语义连接为可解释的动作可能性。</p></article>
-            </div>
-          </div>
-        </section>
-
-        <section class="story-chapter" id="contribution">
-          <div class="story-chapter__index">02 / CONTRIBUTION</div>
-          <div class="story-chapter__body">
-            <p class="story-kicker">AFFALIGN / PUBLIC FRAMING</p>
-            <h2>Align dense visual evidence with multimodal semantics.</h2>
-            <div class="story-contribution-grid">
-              <article><span>01</span><h3>Cross-Backbone Alignment</h3><p>在不同视觉骨干之间建立可迁移的区域级对齐关系，减少表征差异带来的学习不稳定。</p></article>
-              <article><span>02</span><h3>Fine-Grained Semantics</h3><p>将多模态语义表征与密集视觉特征结合，联合建模可交互区域及其语义。</p></article>
-              <article><span>03</span><h3>Semi-Automatic Annotation</h3><p>配套半自动 affordance 标注流程，降低细粒度区域与动作语义的标注成本。</p></article>
-            </div>
-            <aside class="story-role-note story-role-note--restricted"><span>RESEARCH STATUS</span><p>当前公开研究问题与方法方向；实验结果、数据规模和个人贡献将在论文公开后补充。</p></aside>
+        <section class="launch-coming-soon launch-coming-soon--research" id="coming-soon">
+          <div class="launch-coming-soon__index">TOPIC 05 / STATUS</div>
+          <div class="launch-coming-soon__body">
+            <p class="story-kicker">RESEARCH MATERIALS IN PREPARATION</p>
+            <h2>Coming Soon.</h2>
+            <p>AffAlign 的论文图、方法架构与实验结果将在满足公开条件后统一发布。当前页面仅保留研究方向入口，不使用概念图代替真实研究证据。</p>
+            <a href="index.html">BACK TO RESEARCH ATLAS <span>↗</span></a>
           </div>
         </section>
       </main>
