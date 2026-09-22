@@ -47,6 +47,60 @@ document.querySelectorAll('a[href$=".html"]').forEach((link) => {
 
 window.addEventListener("pageshow", () => body.classList.remove("page-leaving"));
 
+// Keep scientific figures fitted in the article; inspect native resolution on demand.
+const researchFigures = document.querySelectorAll(
+  ".story-hero__visual, .policy-work-figure, .data-engine-figure, .policy-vla20-figure, .story-evidence__grid figure"
+);
+if (researchFigures.length && typeof HTMLDialogElement !== "undefined") {
+  const viewer = document.createElement("dialog");
+  viewer.className = "figure-viewer";
+  viewer.setAttribute("aria-label", "高清研究图");
+  viewer.innerHTML = '<div class="figure-viewer__toolbar"><p>高清研究图 · 可按 Esc 关闭</p><button type="button" data-zoom aria-pressed="false">原始尺寸</button><a target="_blank" rel="noopener noreferrer">打开原图 ↗</a><button type="button" data-close autofocus>关闭 ×</button></div><div class="figure-viewer__viewport"><img alt="" /></div>';
+  body.append(viewer);
+  const viewport = viewer.querySelector(".figure-viewer__viewport");
+  const enlarged = viewport.querySelector("img");
+  const zoom = viewer.querySelector("[data-zoom]");
+  let opener;
+  function closeFigure() { viewer.close(); }
+  function openFigure(img, button) {
+    opener = button;
+    enlarged.src = img.currentSrc || img.src;
+    enlarged.alt = img.alt;
+    viewer.querySelector("a").href = enlarged.src;
+    viewport.classList.remove("is-zoomed");
+    zoom.textContent = "原始尺寸";
+    zoom.setAttribute("aria-pressed", "false");
+    viewer.showModal();
+    body.classList.add("figure-viewer-open");
+    viewport.scrollTo(0, 0);
+  }
+  zoom.addEventListener("click", () => {
+    const expanded = viewport.classList.toggle("is-zoomed");
+    zoom.textContent = expanded ? "适应窗口" : "原始尺寸";
+    zoom.setAttribute("aria-pressed", String(expanded));
+  });
+  viewer.querySelector("[data-close]").addEventListener("click", closeFigure);
+  viewer.addEventListener("click", event => { if (event.target === viewer) closeFigure(); });
+  viewer.addEventListener("close", () => {
+    body.classList.remove("figure-viewer-open");
+    opener?.focus({ preventScroll: true });
+  });
+  researchFigures.forEach(figure => {
+    const img = figure.querySelector("img");
+    if (!img) return;
+    const caption = figure.querySelector("figcaption") || figure.appendChild(document.createElement("figcaption"));
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "figure-open";
+    button.textContent = "查看高清图 ⤢";
+    button.setAttribute("aria-label", "查看高清图：" + img.alt);
+    caption.append(button);
+    img.dataset.figureImage = "";
+    button.addEventListener("click", () => openFigure(img, button));
+    img.addEventListener("click", () => openFigure(img, button));
+  });
+}
+
 function revealHashTarget() {
   if (!window.location.hash) return;
 

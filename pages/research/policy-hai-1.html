@@ -8,9 +8,10 @@
     <title>IntentDelib-VLA: Pre-Commitment Action Deliberation through Intent-Grounded Latent Futures — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../assets/css/styles.css?v=20260922b" />
-    <script src="../../assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="../../assets/css/reading.css?v=20260922c" />
+    <script src="../../assets/js/script.js?v=20260922c" defer></script>
   </head>
-  <body class="content-page page-topic page-research-story story--policy policy-work-page">
+  <body class="content-page page-topic page-research-story story--policy policy-work-page policy-work-page--media-first">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
     <div class="page-shell">
       <header class="site-header page-header">
@@ -31,9 +32,13 @@
               <h1>IntentDelib-VLA: Pre-Commitment Action Deliberation through Intent-Grounded Latent Futures</h1>
               <p>面向 Vision-Language-Action Policies，在执行前保留同一流策略生成的多个动作候选，并用共享 transition intent 与多时间尺度、未来对齐的潜在证据完成比较。</p>
             </div>
-            <aside class="policy-work-hero__mark">
-              <span>HAI</span><strong>01</strong><small>COMPARE<br />BEFORE<br />COMMITMENT</small>
-            </aside>
+            <figure class="policy-work-video policy-work-video--hero">
+              <video controls preload="metadata" playsinline>
+                <source src="../../assets/uploads/research/hai-1/hai-1-robot-demo.mp4" type="video/mp4" />
+                当前浏览器不支持视频播放。
+              </video>
+              <figcaption><span>VIDEO / HAI-1 ROBOT DEMO</span><p>真机演示用于呈现 IntentDelib-VLA 从候选保留、未来证据比较到动作承诺的实际执行过程。</p></figcaption>
+            </figure>
           </div>
           <dl class="policy-work-facts">
             <div><dt>CAPABILITY SHIFT</dt><dd>Predict &amp; Execute → Deliberate &amp; Commit</dd></div>
@@ -52,16 +57,16 @@
           <div class="policy-work-section__index">01 / RESEARCH FOCUS</div>
           <div class="policy-work-section__body">
             <p class="story-kicker">THE PRE-COMMITMENT GAP</p>
-            <h2>A plausible action is not yet a considered action.</h2>
+            <h2>Why deliberate before acting?</h2>
+            <figure class="policy-work-figure">
+              <div class="policy-work-figure__frame"><img src="../../assets/uploads/research/hai-1/fig-01.png" alt="HAI-1 motivation: limited transition grounding, single-sample commitment and costly visual rollouts" width="1672" height="941" loading="lazy" /></div>
+              <figcaption><span>FIG. 01 / MOTIVATION + DECISION GAP</span><p>论文将问题拆成 transition grounding、single-sample commitment 与 costly visual rollouts 三个瓶颈。</p></figcaption>
+            </figure>
             <div class="policy-work-shift">
               <article><span>CURRENT VLA</span><h3>One-shot commitment</h3><p>从当前上下文直接保留一个动作实现，缺少对短期交互变化和备选结果的执行前比较。</p></article>
               <i>→</i>
               <article><span>INTENTDELIB-VLA</span><h3>Deliberate before acting</h3><p>用共享 transition intent 组织多个 actor-consistent 候选，再用未来对齐证据比较后承诺执行。</p></article>
             </div>
-            <figure class="policy-work-figure">
-              <div class="policy-work-figure__frame"><img src="../../assets/uploads/research/hai-1/fig-01.png" alt="HAI-1 motivation: limited transition grounding, single-sample commitment and costly visual rollouts" width="1672" height="941" loading="lazy" /></div>
-              <figcaption><span>FIG. 01 / MOTIVATION + DECISION GAP</span><p>论文将问题拆成 transition grounding、single-sample commitment 与 costly visual rollouts 三个瓶颈。</p></figcaption>
-            </figure>
           </div>
         </section>
 
@@ -69,34 +74,20 @@
           <div class="policy-work-section__index">02 / POLICY MECHANISM</div>
           <div class="policy-work-section__body">
             <p class="story-kicker">INTENTDELIB-VLA / PAPER MECHANISM</p>
-            <h2>Use intent-grounded latent futures to compare before commitment.</h2>
+            <h2>Intent-grounded latent futures.</h2>
+            <figure class="policy-work-figure">
+              <div class="policy-work-figure__frame"><img src="../../assets/uploads/research/hai-1/fig-02.png" alt="HAI-1 IntentDelib-VLA method: intent prediction, latent future alignment, shared scoring and commitment" width="1983" height="793" loading="lazy" /></div>
+              <figcaption><span>FIG. 02 / INTENTDELIB-VLA</span><p>推理时只使用当前上下文、预测 intent、actor candidates 与 PLFD evidence；示范未来观测仅作为训练锚点。</p></figcaption>
+            </figure>
             <div class="policy-work-principles">
               <article><span>01</span><h3>Shared Transition Intent</h3><p>从当前 task-conditioned context 预测短期 interaction change，并同时约束候选生成与比较。</p></article>
               <article><span>02</span><h3>LAIA + PLFD</h3><p>LAIA 保留同一 flow actor 的多个候选，PLFD 将候选映射到多时间尺度、未来对齐的潜在表示。</p></article>
               <article><span>03</span><h3>Conservative Commitment</h3><p>只有在候选优势充分且跨时间尺度证据一致时，才替换默认动作。</p></article>
             </div>
-            <figure class="policy-work-figure">
-              <div class="policy-work-figure__frame"><img src="../../assets/uploads/research/hai-1/fig-02.png" alt="HAI-1 IntentDelib-VLA method: intent prediction, latent future alignment, shared scoring and commitment" width="1983" height="793" loading="lazy" /></div>
-              <figcaption><span>FIG. 02 / INTENTDELIB-VLA</span><p>推理时只使用当前上下文、预测 intent、actor candidates 与 PLFD evidence；示范未来观测仅作为训练锚点。</p></figcaption>
-            </figure>
-            <aside class="story-role-note story-role-note--restricted"><span>PUBLIC SCOPE</span><p>该工作已完成并投稿 ICRA 2027；本页公开研究问题、核心机制与论文图，投稿阶段不展开实验细节或项目归属信息。</p></aside>
           </div>
         </section>
 
-        <section class="policy-work-section policy-work-section--demo">
-          <div class="policy-work-section__index">03 / REAL-ROBOT DEMO</div>
-          <div class="policy-work-section__body">
-            <p class="story-kicker">REAL-WORLD EXECUTION EVIDENCE</p>
-            <h2>Pre-commitment deliberation on a real robot.</h2>
-            <figure class="policy-work-video">
-              <video controls preload="metadata" playsinline>
-                <source src="../../assets/uploads/research/hai-1/hai-1-robot-demo.mp4" type="video/mp4" />
-                当前浏览器不支持视频播放。
-              </video>
-              <figcaption><span>VIDEO / HAI-1 ROBOT DEMO</span><p>真机演示用于呈现 IntentDelib-VLA 从候选保留、未来证据比较到动作承诺的实际执行过程。</p></figcaption>
-            </figure>
-          </div>
-        </section>
+
       </main>
 
       <footer id="page-footer" class="page-footer"><a href="topic-04.html#hai-series">← HAI Series</a><a href="policy-hai-2.html">Next — HAI-2 <span>↗</span></a><p>© 2026</p></footer>
