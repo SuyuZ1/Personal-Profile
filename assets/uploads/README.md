@@ -1,6 +1,8 @@
 # Uploaded materials
 
-Place original materials here, grouped by website section.
+Place public website images here, grouped by website section. Keep videos only in
+`material/` and reference their approved canonical paths directly; do not copy
+videos here. Private papers, CVs and presentation files belong in local `DOCS/`.
 
 - `home/`: homepage media
 - `about/`: portraits and personal images
@@ -10,6 +12,6 @@ Place original materials here, grouped by website section.
 - `research/topic-02/`: papers, figures and source images for topic 02
 - `research/topic-04/`: papers, figures and source images for topic 04
 - `research/cfg-bench/`: official CFG-Bench project figures
-- `projects/`: screenshots, demos and project media
+- `projects/`: public project screenshots and poster images
 
 Use descriptive lowercase filenames such as `robot-policy-overview-v1.png`. Never store API keys or private documents here.

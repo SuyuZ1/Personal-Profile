@@ -26,7 +26,7 @@ the still-placeholder data-collection module. Only add details that are approved
 - Public title: VLA 打底 · Multi-view Temporal Welding Model
 - Organization: SANY Group
 - Period: 2025—Present
-- Status: Public case ready; field video included
+- Status: Public case ready; inline video playback paused
 - Detail page: `../pages/projects/vla-welding-01.html`
 - Project context: 面向非标间隙打底自动化的端到端 VLA。
 - System approach: 多相机视觉感知、时序状态建模、动作生成与机器人执行决策统一到 VLA 框架，并接入熔池理解与过程反馈。
@@ -36,14 +36,14 @@ the still-placeholder data-collection module. Only add details that are approved
 - Related research topic: Policy Learning for Embodied Agents
 - GitHub URL:
 - Demo URL:
-- Related media: `../assets/uploads/projects/welding/root-pass.mp4`
+- Related media: `../material/焊接项目/打底.mp4` (inline playback remains paused)
 
 ## VLA Welding Project 02
 
 - Public title: VLA 盖面 · Visual Seam Tracking
 - Organization: SANY Group
 - Period: 2025—Present
-- Status: Public case ready; field video included
+- Status: Public case ready; inline video playback paused
 - Detail page: `../pages/projects/vla-welding-02.html`
 - Project context: 面向复杂工业场景的无人化焊接盖面。
 - System approach: 基于分割大模型构建焊缝区域感知、轨迹提取、位姿估计、在线纠偏与异常处理链路。
@@ -53,4 +53,4 @@ the still-placeholder data-collection module. Only add details that are approved
 - Related research topic:
 - GitHub URL:
 - Demo URL:
-- Related media: `../assets/uploads/projects/welding/cover-pass.mp4`
+- Related media: `../material/焊接项目/盖面.mp4` (inline playback remains paused)

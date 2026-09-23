@@ -1,9 +1,18 @@
 .DS_Store
 .env.local
 
-# Local source archive; keep these out of the public GitHub Pages repository.
+# Private documents and source archives stay local. Only approved videos below
+# are published directly from material/; never whitelist the whole archive.
 DOCS/
 image2_usage.txt
-material/焊接项目/
+material/焊接项目/*
+!material/焊接项目/打底.mp4
+!material/焊接项目/盖面.mp4
 material/论文图片/
-material/research素材/
+material/research素材/*
+!material/research素材/HAI1/
+material/research素材/HAI1/*
+!material/research素材/HAI1/HAI-1_demo.mp4
+!material/research素材/HAI2/
+material/research素材/HAI2/*
+!material/research素材/HAI2/showcas(best).mp4

@@ -7,7 +7,7 @@ Multi-page research profile for SuyuZ1, hosted with GitHub Pages.
 ```text
 Personal Profile/
 ├── index.html                  # Interactive entrance
-├── material/                   # Public project videos and source material
+├── material/                   # Canonical videos; private sources ignored, public files allowlisted
 ├── pages/                      # Website pages
 │   ├── home.html
 │   ├── about.html
@@ -41,11 +41,28 @@ Personal Profile/
 ## Adding new material
 
 1. Add text to the matching Markdown template in `content/`.
-2. Put original images, PDFs or videos in the matching `assets/uploads/` folder.
+2. Keep videos in `material/` as their single source; do not duplicate them in `assets/uploads/`.
+   Keep private documents in `DOCS/`. Existing public website images stay in `assets/uploads/`.
 3. Put final Image2-generated visuals in the matching `assets/generated/` folder.
 4. Update only the relevant page under `pages/`.
 
 Use versioned, descriptive filenames and never commit API keys or private data.
+
+### Video publishing boundary
+
+The website references approved video files directly in `material/`. `.gitignore`
+allows only these four videos within the otherwise private source folders:
+
+- `material/焊接项目/打底.mp4`
+- `material/焊接项目/盖面.mp4`
+- `material/research素材/HAI1/HAI-1_demo.mp4`
+- `material/research素材/HAI2/showcas(best).mp4`
+
+When replacing a video, update this canonical file only. Before adding another
+public video, confirm its publication scope and add an exact-file exception;
+never unignore the entire source directory. Other research material and `DOCS/`
+must remain local. The welding pages intentionally keep inline playback paused;
+this is a presentation choice, not access control for files in the public repository.
 
 ## Content source hierarchy
 
