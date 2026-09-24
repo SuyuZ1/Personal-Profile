@@ -1,13 +1,11 @@
 .DS_Store
 .env.local
 
-# Private documents and source archives stay local. Only approved videos below
-# are published directly from material/; never whitelist the whole archive.
+# Private documents and source archives stay local. Only approved research videos
+# below are published directly from material/; never whitelist the whole archive.
 DOCS/
 image2_usage.txt
 material/焊接项目/*
-!material/焊接项目/打底.mp4
-!material/焊接项目/盖面.mp4
 material/论文图片/
 material/research素材/*
 !material/research素材/HAI1/
