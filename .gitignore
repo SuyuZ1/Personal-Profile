@@ -1,7 +1,7 @@
 .DS_Store
 .env.local
 
-# Private documents and source archives stay local. Only approved research videos
+# Private documents and source archives stay local. Only approved research media
 # below are published directly from material/; never whitelist the whole archive.
 DOCS/
 image2_usage.txt
@@ -14,3 +14,6 @@ material/research素材/HAI1/*
 !material/research素材/HAI2/
 material/research素材/HAI2/*
 !material/research素材/HAI2/showcas(best).mp4
+!material/research素材/HAI3/
+material/research素材/HAI3/*
+!material/research素材/HAI3/hai3-vla20-concept-v2.png
