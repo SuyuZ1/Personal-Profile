@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="HAI-3: VLA2.0 研究页面正在准备中，Coming Soon。" />
+    <meta name="description" content="HAI-3: VLA2.0 整体设计预览。探索动作理解、本体能力与执行反馈的协同，连接 CFG-Bench、HAI-1/2 和数据引擎。方法与验证结果 Coming Soon。" />
     <meta name="theme-color" content="#08090d" />
-    <title>HAI-3: VLA2.0 · Coming Soon — Suyu</title>
+    <title>HAI-3: VLA2.0 · Design Preview — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../assets/css/styles.css?v=20260922a" />
     <link rel="stylesheet" href="../../assets/css/reading.css?v=20260922c" />
+    <link rel="stylesheet" href="../../assets/css/hai3.css?v=20261004a" />
     <script src="../../assets/js/script.js?v=20260922c" defer></script>
   </head>
-  <body class="content-page page-topic page-research-story story--policy policy-work-page policy-vla20-page is-coming-soon">
+  <body class="content-page page-topic page-research-story story--policy policy-work-page policy-vla20-page is-coming-soon vla-preview">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
     <div class="page-shell">
       <header class="site-header page-header">
@@ -25,102 +26,86 @@
       <main class="research-story">
         <section class="policy-work-hero policy-work-hero--vla20">
           <a class="story-back" href="topic-04.html#hai-series">← POLICY LEARNING / HAI SERIES</a>
-          <div class="story-hero__status"><span><i></i> HAI-3 / VLA2.0 · COMING SOON</span><span>SERIES 03 OF 03</span></div>
+          <div class="story-hero__status"><span><i></i> HAI-3 / DESIGN PREVIEW</span><span>METHODS &amp; RESULTS · COMING SOON</span></div>
           <div class="policy-work-hero__grid">
             <div class="policy-work-hero__copy">
-              <p class="story-kicker">HAI-3 / ACTION-AWARE VLA 2.0</p>
+              <p class="story-kicker">CLOSED-LOOP ACTION INTELLIGENCE</p>
               <h1>HAI-3: VLA2.0</h1>
-              <p>HAI-3 将在 HAI-1 的执行前审议与 HAI-2 的状态自适应决策基础上，继续探索面向持续执行反馈的 VLA2.0 整体设计。公开内容正在整理中。</p>
+              <h2 class="vla-subtitle">让动作理解与身体能力<br />在执行反馈中对齐</h2>
+              <p>在执行前审议与状态自适应决策的基础上，探索把动作理解、本体能力判断与执行反馈组织为统一的 VLA2.0 设计，让下一步决策持续受到真实执行结果的约束。</p>
+              <p class="vla-stage">整体设计方向 · 方法与系统验证 Coming Soon</p>
             </div>
-            <aside class="policy-work-hero__mark policy-work-hero__mark--three">
-              <span>HAI</span><strong>03</strong><small>ALIGN<br />ACT<br />ADAPT</small>
-            </aside>
-          </div>
-          <dl class="policy-work-facts">
-            <div><dt>CAPABILITY SHIFT</dt><dd>Staged Decision → Continuous Action Loop</dd></div>
-            <div><dt>OVERALL DESIGN</dt><dd>Action-aware Brain · Body-aware Small Brain · Feedback</dd></div>
-            <div><dt>PUBLIC STATUS</dt><dd>Coming Soon</dd></div>
-          </dl>
-        </section>
-
-        <nav class="policy-work-route" aria-label="HAI series navigation">
-          <a href="policy-hai-1.html"><span>HAI-1</span><b>Pre-Commitment Deliberation</b><i>←</i></a>
-          <a href="policy-hai-2.html"><span>HAI-2</span><b>Learning How to Decide</b><i>←</i></a>
-          <a class="active" href="policy-hai-3.html"><span>HAI-3</span><b>VLA2.0 · Coming Soon</b><i>●</i></a>
-        </nav>
-
-        <section class="policy-coming-soon">
-          <div class="policy-coming-soon__index">HAI-3 / STATUS</div>
-          <div class="policy-coming-soon__body">
-            <p class="story-kicker">VLA2.0 / NEXT CAPABILITY TRANSITION</p>
-            <h2>Coming Soon.</h2>
-            <p>HAI-1 与 HAI-2 已形成独立研究工作；HAI-3/VLA2.0 将继续把执行前审议、状态自适应决策与真实机器人反馈连接为持续闭环。正式架构与验证材料将在准备完成后发布。</p>
-            <div class="policy-coming-soon__loop"><span>DELIBERATE</span><i>→</i><span>ADAPT</span><i>→</i><span>ACT</span><i>→</i><span>FEEDBACK</span></div>
-            <a href="topic-04.html#hai-series">BACK TO HAI SERIES <span>↗</span></a>
-          </div>
-        </section>
-
-        <section class="policy-work-section policy-vla20-section" id="motivation">
-          <div class="policy-work-section__index">01 / MOTIVATION</div>
-          <div class="policy-work-section__body">
-            <p class="story-kicker">THE ACTION GAP</p>
-            <h2>VLA can describe an action. Reliable robots must understand how that action can actually happen.</h2>
-            <div class="policy-vla20-split">
-              <div class="policy-vla20-copy">
-                <p>现有 VLA 的“大脑”可以感知场景、理解指令并规划动作，但真实机器人还需要“小脑”提供本体状态、身体协调与执行反馈。</p>
-                <p>CFG-Bench 用细粒度动作任务暴露了这类理解缺口；HAI-1 与 HAI-2 先处理执行前的候选比较和 decision state 选择，HAI-3 则把能力推进到持续执行中的反馈闭环。</p>
-              </div>
-              <figure class="policy-vla20-figure">
-                <img src="../../assets/uploads/research/topic-04/hai3-vla20-motivation.png" alt="VLA core technology challenges: mismatch between the large and small brains, weak generalization and low success rate" width="1600" height="900" loading="lazy" />
-              <figcaption><span>MOTIVATION FIGURE / ACTION–BODY ALIGNMENT</span><b>大小脑模态对齐，是从动作预测走向可靠执行的前提。</b></figcaption>
-              </figure>
-            </div>
-          </div>
-        </section>
-
-        <section class="policy-work-section policy-vla20-section" id="overall-design">
-          <div class="policy-work-section__index">02 / VLA2.0 OVERALL DESIGN</div>
-          <div class="policy-work-section__body">
-            <p class="story-kicker">ACTION-AWARE + BODY-AWARE DESIGN</p>
-            <h2>Action-aware brain. Body-aware small brain. Feedback that can trigger re-planning.</h2>
-            <p class="policy-vla20-lead">VLA2.0 是 HAI-3 的整体设计方向：把现有焊接、装载机等工作放回同一条闭环，用 Action-aware 多模态大模型理解任务与动作逻辑，用本体感知小脑解释当前身体状态，再让执行反馈影响下一步行动。</p>
-            <figure class="policy-vla20-figure policy-vla20-figure--design">
-              <img src="../../assets/uploads/research/topic-04/hai3-vla20-design.png" alt="VLA2.0 overall design with an action-aware multimodal brain, a body-aware small brain, proprioception and feedback re-planning" width="1600" height="756" loading="lazy" />
-              <figcaption><span>OVERALL DESIGN / CLOSED-LOOP VLA 2.0</span><b>让策略在感知、执行、反馈与重规划之间保持连续运行。</b></figcaption>
+            <figure class="vla-loop" aria-label="VLA2.0 概念闭环：动作理解、本体能力判断、执行观察、反馈修正">
+              <figcaption>VLA2.0 / CONCEPTUAL LOOP</figcaption>
+              <ol>
+                <li><span>01</span><div><strong>理解动作</strong><small>任务意图、动作细节与预期结果</small></div></li>
+                <li><span>02</span><div><strong>判断可执行性</strong><small>当前状态、身体约束与能力边界</small></div></li>
+                <li><span>03</span><div><strong>执行与观察</strong><small>动作结果、状态变化与执行偏差</small></div></li>
+                <li><span>04</span><div><strong>反馈与修正</strong><small>更新判断，继续执行或重新规划</small></div></li>
+              </ol>
+              <p>↺ 执行证据返回下一轮决策</p>
             </figure>
           </div>
         </section>
 
-        <section class="policy-work-section policy-vla20-section" id="research-positioning">
-          <div class="policy-work-section__index">03 / RESEARCH POSITIONING</div>
-          <div class="policy-work-section__body">
-            <p class="story-kicker">FROM BENCHMARK TO CLOSED LOOP</p>
-            <h2>HAI-3 closes the capability gap left by HAI-1 and HAI-2.</h2>
-            <div class="policy-vla20-cards">
-              <article><span>HAI-1</span><h3>Deliberate Before Acting</h3><p>在承诺动作之前保留候选、比较潜在结果，形成可解释的执行前审议。</p></article>
-              <article><span>HAI-2</span><h3>Decide How to Decide</h3><p>根据 decision state、风险与证据充分度，学习何时直接行动、何时继续审议。</p></article>
-              <article><span>HAI-3 / VLA2.0</span><h3>Keep the Loop Alive</h3><p>把动作理解、本体感知、执行验证和反馈重规划组织成持续运行的闭环。</p></article>
-              <article><span>DATA ENGINE</span><h3>Learn from the Next Failure</h3><p>将执行中的偏差、恢复与成功证据回流到数据引擎，并由 CFG-Bench 继续诊断能力缺口。</p></article>
-            </div>
-            <aside class="story-role-note story-role-note--restricted"><span>SCOPE NOTE</span><p>HAI-3/VLA2.0 目前作为整体设计方向，用于把已有焊接与装载机工作组织进同一条闭环；这不等同于完整系统已经实现。具体方法、实验结果和个人贡献将在具备公开条件后补充。</p></aside>
-          </div>
-        </section>
+        <nav class="vla-nav" aria-label="HAI-3 page sections">
+          <a href="#motivation">01 / Motivation</a><a href="#overall-design">02 / Design</a><a href="#research-positioning">03 / Research Context</a><a href="#application-scenarios">04 / Scenarios</a>
+        </nav>
 
-        <section class="policy-work-section policy-vla20-section" id="application-scenarios">
-          <div class="policy-work-section__index">04 / APPLICATION SCENARIOS</div>
+        <section class="policy-work-section vla-design-section" id="motivation">
+          <div class="policy-work-section__index">01 / MOTIVATION</div>
           <div class="policy-work-section__body">
-            <p class="story-kicker">WELDING + LOADER</p>
-            <h2>Two application scenarios keep the overall design grounded.</h2>
-            <p class="policy-vla20-lead">HAI-3/VLA2.0 不停留在抽象路线图。焊接与装载机提供两个明确场景，用于检验同一套闭环设计如何覆盖精细操作与移动作业，同时保留各自的本体约束和执行反馈。</p>
-            <div class="policy-vla20-cards policy-vla20-applications">
-              <article><span>APPLICATION 01</span><h3>Robotic Welding</h3><p>面向高精度连续控制，将焊缝与熔池感知、轨迹执行、在线调整及质量反馈连接为闭环。</p></article>
-              <article><span>APPLICATION 02</span><h3>Autonomous Loader</h3><p>面向移动作业，将环境理解、路径与装载动作、本体状态及执行反馈纳入同一设计。</p></article>
+            <h2>理解任务，如何转化为可靠行动？</h2>
+            <p class="vla-lead">识别目标、描述动作和生成计划，并不足以保证机器人在当前身体与环境约束下完成任务。HAI-3 关注动作语义、身体能力与实际执行之间的偏差。</p>
+            <div class="vla-columns">
+              <article><span>ACTION UNDERSTANDING</span><h3>动作是否真正被理解？</h3><p>高层指令还需要落实到接触方式、动作阶段、施力与任务意图。细粒度理解不足时，看似合理的描述可能缺少执行所需的关键条件。</p></article>
+              <article><span>BODY CAPABILITY</span><h3>当前身体能否做到？</h3><p>同一动作的可行性依赖机器人状态、运动范围、接触条件与控制能力。规划需要参考当前本体的能力边界，而不只是任务目标。</p></article>
+              <article><span>EXECUTION FEEDBACK</span><h3>执行偏差如何改变决策？</h3><p>接触变化、滑移或轨迹偏差需要转化为上层可用的证据，用于判断继续执行、局部修正还是重新规划。</p></article>
             </div>
           </div>
         </section>
 
+        <section class="policy-work-section vla-design-section" id="overall-design">
+          <div class="policy-work-section__index">02 / OVERALL DESIGN</div>
+          <div class="policy-work-section__body">
+            <h2>动作感知大脑与本体感知小脑的协同设计</h2>
+            <p class="vla-lead">拟让大脑在理解任务与动作逻辑时参考本体约束，让小脑在执行时回传状态与偏差。两者通过持续反馈更新后续行动，共同支撑感知、决策与执行闭环。</p>
+            <div class="vla-design-pair">
+              <article><span>ACTION-AWARE BRAIN</span><h3>任务与动作理解</h3><p>结合视觉证据理解动作细节、意图与预期结果，组织候选行动，并依据执行反馈调整计划。</p></article>
+              <article><span>BODY-AWARE CONTROLLER</span><h3>本体状态与执行能力</h3><p>结合观测、机器人状态与近期执行记录，判断当前动作条件，提供能力约束和执行反馈。</p></article>
+            </div>
+            <div class="vla-feedback"><span>FEEDBACK INTERFACE / DESIGN DIRECTION</span><p>探索将本体状态、执行偏差与动作历史整理为可供决策使用的结构化反馈，必要时辅以语言解释，支撑下一轮可行性判断与恢复决策。</p></div>
+            <p class="vla-note">以上为概念设计。状态与记忆如何表示、反馈如何进入策略，以及对执行可靠性的影响，仍需进一步实现与验证。</p>
+          </div>
+        </section>
+
+        <section class="policy-work-section vla-design-section" id="research-positioning">
+          <div class="policy-work-section__index">03 / RESEARCH CONTEXT</div>
+          <div class="policy-work-section__body">
+            <h2>已有工作如何支撑 VLA2.0？</h2>
+            <p class="vla-lead">这条研究路线将评测、策略学习与数据演化连接起来。HAI-3 拟进一步研究这些能力如何协同服务于持续执行。</p>
+            <dl class="vla-research-map">
+              <div><dt><a href="topic-03.html">CFG-Bench <span>↗</span></a><small>动作认知评测</small></dt><dd>诊断细粒度物理交互、时序因果、意图与评价判断能力，为动作理解提供评测依据。闭环控制可靠性还需真机任务验证。</dd></div>
+              <div><dt><a href="policy-hai-1.html">HAI-1 / IntentDelib-VLA <span>↗</span></a><small>执行前审议</small></dt><dd>以共享 transition intent 组织候选，并用多时间尺度潜在未来证据比较候选，为动作承诺提供支持。</dd></div>
+              <div><dt><a href="policy-hai-2.html">HAI-2 / Learning How to Decide <span>↗</span></a><small>状态自适应决策</small></dt><dd>在冻结 VLA 内，依据当前状态选择直接执行、扩展动作支持或增强候选选择证据，为自适应决策过程提供基础。</dd></div>
+              <div><dt><a href="topic-02.html">Self-Evolving Data Engine <span>↗</span></a><small>数据与模型协同演化</small></dt><dd>围绕任务需求组织数据生成、优化与评测反馈。拟进一步将机器人执行中的偏差与恢复经验回流为后续数据需求。</dd></div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="policy-work-section vla-design-section" id="application-scenarios">
+          <div class="policy-work-section__index">04 / TARGET SCENARIOS</div>
+          <div class="policy-work-section__body">
+            <h2>面向通用操作与工业现场</h2>
+            <p class="vla-lead">拟以通用操作任务探索能力迁移，并以焊接和装载机作为工业验证场景，研究同一设计如何适应不同本体、工艺与反馈条件。</p>
+            <div class="vla-design-pair">
+              <article><span>ROBOTIC WELDING</span><h3>焊接：过程感知与质量反馈</h3><p>以已有焊缝、熔池理解与机器人执行工作为基础，探索如何将过程偏差和质量反馈纳入动作判断与数据回流。</p><a class="vla-text-link" href="../projects.html">查看已有工业项目 ↗</a></article>
+              <article><span>AUTONOMOUS LOADER</span><h3>装载机：作业状态与动作调整</h3><p>面向移动和装载作业，探索如何结合环境、载荷与本体状态，形成可执行的动作安排，并依据作业反馈调整后续决策。</p></article>
+            </div>
+            <aside class="vla-release-note"><strong>Coming Soon</strong><p>本页公开研究动机与整体设计方向。完整方法、系统实现及实验结果将在验证完成后发布。</p></aside>
+          </div>
+        </section>
       </main>
-
       <footer id="page-footer" class="page-footer"><a href="policy-hai-2.html">← HAI-2</a><a href="topic-04.html#hai-series">HAI Series <span>↗</span></a><p>© 2026</p></footer>
     </div>
   </body>
