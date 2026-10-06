@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AffAlign 研究页面正在准备公开材料，Coming Soon。" />
+    <meta name="description" content="AffiMoE：将高层动作意图对应到精细功能区域。研究动机、贡献、UMD与HANDAL评测结果，以及AffordBench数据构建流程。" />
     <meta name="theme-color" content="#08090d" />
-    <title>AffAlign · Coming Soon — Suyu</title>
+    <title>AffiMoE · Fine-Grained Affordance — Suyu</title>
     <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../assets/css/styles.css?v=20260922a" />
     <link rel="stylesheet" href="../../assets/css/reading.css?v=20260922c" />
+    <link rel="stylesheet" href="../../assets/css/affimoe.css?v=20261006" />
     <script src="../../assets/js/script.js?v=20260922c" defer></script>
   </head>
-  <body class="content-page page-topic page-research-story story--standalone story--affalign coming-soon-page">
+  <body class="content-page page-topic page-research-story affimoe-page">
     <canvas id="neural-canvas" aria-hidden="true"></canvas>
     <div class="page-shell">
       <header class="site-header page-header">
@@ -19,57 +20,70 @@
         <nav aria-label="Primary navigation">
           <a href="../home.html">Home</a><a href="../about.html">Career</a><a href="../education.html">Education</a><a class="active" href="index.html">Research</a><a href="../projects.html">Projects</a>
         </nav>
-        <a class="header-contact" href="https://github.com/SuyuZ1" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        <a class="header-contact" href="https://github.com/SuyuZ1" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
       </header>
-
-      <main class="research-story">
-        <section class="story-hero">
-          <a class="story-back" href="index.html">← RESEARCH ATLAS</a>
-          <div class="story-hero__status"><span><i></i> FINE-GRAINED AFFORDANCE / COMING SOON</span><span>TOPIC 05</span></div>
-          <div class="story-hero__grid">
-            <div class="story-hero__copy">
-              <p class="story-kicker">FINE-GRAINED AFFORDANCE UNDERSTANDING</p>
-              <h1>AffAlign: Cross-Backbone Alignment</h1>
-              <p class="story-hero__subtitle">For Fine-Grained Affordance Understanding</p>
-              <p class="story-hero__lead">面向细粒度 affordance 理解的跨骨干对齐研究。公开图、方法说明与实验材料正在整理中。</p>
-              <div class="story-actions">
-                <a href="#coming-soon">View Status <span>↓</span></a>
-              </div>
-            </div>
-            <figure class="story-hero__visual story-visual story-visual--affalign">
-              <div class="story-visual__top"><span>RESEARCH TOPIC / 05</span><b>PUBLIC MATERIALS PENDING</b></div>
-              <div class="story-visual__image story-visual__image--affalign">
-                <div class="coming-soon-visual" role="img" aria-label="AffAlign research materials coming soon">
-                  <span>TOPIC 05</span><strong>COMING<br />SOON</strong><p>AFFALIGN · FINE-GRAINED AFFORDANCE</p>
-                </div>
-              </div>
-              <figcaption><span>AFFALIGN</span><b>RESEARCH PAGE IN PREPARATION</b></figcaption>
-            </figure>
+      <main class="aff-main">
+        <a class="aff-back" href="index.html#affalign">← ALL RESEARCH</a>
+        <div class="aff-meta"><span>FINE-GRAINED AFFORDANCE</span><span>ICLR 2027 · UNDER REVIEW</span></div>
+        <section class="aff-intro" aria-labelledby="aff-title">
+          <div class="aff-intro-copy">
+            <h1 id="aff-title">AffiMoE</h1>
+            <p class="aff-subtitle">Language-Grounded<br /> Affordance Reasoning</p>
+            <p class="aff-lead">让动作意图精确对应到<br class="aff-desktop-break" />物体的局部功能区域</p>
+            <p class="aff-paper-title">Fine-Grained Text-Visual Alignment via Token-Wise Expert Routing for Language-Grounded Affordance Reasoning</p>
+            <nav class="aff-jump" aria-label="Page sections"><a href="#motivation">Motivation & Contribution ↓</a><a href="#results">Results ↓</a><a href="#data">AffordBench ↓</a></nav>
           </div>
-          <dl class="story-facts">
-            <div><dt>RESEARCH AREA</dt><dd>Fine-Grained Affordance Understanding</dd></div>
-            <div><dt>CORE METHOD</dt><dd>Cross-Backbone Alignment</dd></div>
-            <div><dt>PUBLIC STATUS</dt><dd>Coming Soon</dd></div>
-            <div><dt>SUPPORTING PROCESS</dt><dd>Semi-Automatic Affordance Annotation</dd></div>
-          </dl>
+          <figure class="aff-figure aff-motivation-figure">
+            <a href="../../material/research素材/AffiMoE/fig1-motivation.png" target="_blank" rel="noopener noreferrer" aria-label="查看完整 AffiMoE Motivation 图（新标签页）"><img src="../../material/research素材/AffiMoE/fig1-motivation.png" width="1650" height="1096" alt="同一杯子和剪刀在不同动作下对应不同功能区域：GT、RAGNet与AffiMoE的定位结果对比。" fetchpriority="high" /></a>
+            <figcaption><span>FIG. 1 · MOTIVATION OF AFFIMOE</span><span>查看大图 ↗</span></figcaption>
+          </figure>
         </section>
 
-        <nav class="story-nav story-nav--single" aria-label="Research story sections">
-          <a href="#coming-soon"><span>01</span> Coming Soon</a>
-        </nav>
-
-        <section class="launch-coming-soon launch-coming-soon--research" id="coming-soon">
-          <div class="launch-coming-soon__index">TOPIC 05 / STATUS</div>
-          <div class="launch-coming-soon__body">
-            <p class="story-kicker">RESEARCH MATERIALS IN PREPARATION</p>
-            <h2>Coming Soon.</h2>
-            <p>AffAlign 的论文图、方法架构与实验结果将在满足公开条件后统一发布。当前页面仅保留研究方向入口，不使用概念图代替真实研究证据。</p>
-            <a href="index.html">BACK TO RESEARCH ATLAS <span>↗</span></a>
+        <section class="aff-section aff-story" id="motivation" aria-label="Motivation and contribution">
+          <div>
+            <p class="aff-eyebrow">MOTIVATION</p>
+            <h2>理解任务，还需要找准操作部位</h2>
+            <p>多模态模型能够理解全局任务语义，但动作意图与局部功能区域之间的对应仍不充分。同一物体的不同操作需要不同的交互位置：抓取杯子与盛水、握住剪刀与裁剪，不能依靠相同的物体级响应来区分。</p>
           </div>
+          <div>
+            <p class="aff-eyebrow">CONTRIBUTION</p>
+            <h2>动作条件化的细粒度功能定位</h2>
+            <ul class="aff-contributions">
+              <li><strong>细粒度图文对齐</strong><span>将动作语义与密集视觉证据显式关联，增强对局部功能结构的区分。</span></li>
+              <li><strong>逐 token 全局／局部专家路由</strong><span>选择性结合全局语义与局部对齐证据，提升动作相关区域的定位精度。</span></li>
+              <li><strong>AffordBench 数据构建</strong><span>通过自动预标注与人工复核，提供细粒度功能区域的高质量监督。</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="aff-section" id="results" aria-labelledby="results-title">
+          <div class="aff-section-heading"><div><p class="aff-eyebrow">EVALUATION</p><h2 id="results-title">功能区域定位结果</h2></div><p>cIoU / gIoU · % · 越高越好</p></div>
+          <div class="aff-table-wrap" tabindex="0" role="region" aria-label="AffiMoE 评测分数表">
+            <table class="aff-results">
+              <caption>AffiMoE 在 UMD 与 HANDAL 上的评测结果</caption>
+              <thead><tr><th scope="col">评测设置</th><th scope="col">cIoU ↑</th><th scope="col">gIoU ↑</th><th scope="col">结果口径</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">UMD</th><td>72.06</td><td>63.33</td><td>原始评测标注</td></tr>
+                <tr><th scope="row">UMD-relabeled</th><td>83.04</td><td>79.76</td><td>相同 UMD 图像，人工修订标注</td></tr>
+                <tr><th scope="row">HANDAL</th><td>71.32</td><td>69.33</td><td>独立实验设置，与 AffordanceVLM 使用相同训练数据</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="aff-note">论文 Table 1、Table 6 报告结果。UMD 使用 AffordBench 微调，原始与修订标注对应同一图像集。HANDAL 为单独实验，与 AffordanceVLM 使用相同训练数据；不同设置的成绩不代表同一 checkpoint。</p>
+        </section>
+
+        <section class="aff-section" id="data" aria-labelledby="data-title">
+          <div class="aff-section-heading"><div><p class="aff-eyebrow">AFFORDBENCH</p><h2 id="data-title">经人工核验的细粒度功能区域数据</h2></div></div>
+          <dl class="aff-data-stats"><div><dt>功能区域标注记录</dt><dd>5,510</dd></div><div><dt>独立图像</dt><dd>3,144</dd></div><div><dt>Affordance 类别</dt><dd>7</dd></div></dl>
+          <p class="aff-data-lead">整合 HANDAL、Open-X、EgoObjects、GraspNet 与 IIT-AFF 的图像资源。经自动预标注、规则筛选与两轮人工复核，从 47,040 条候选标注中保留 5,510 条记录，其中 751 条来自人工重新标注。</p>
+          <figure class="aff-figure aff-data-figure">
+            <a href="../../material/research素材/AffiMoE/fig7-dataset.png" target="_blank" rel="noopener noreferrer" aria-label="查看完整 AffordBench 数据构建图（新标签页）"><img src="../../material/research素材/AffiMoE/fig7-dataset.png" width="1659" height="546" loading="lazy" decoding="async" alt="AffordBench 构建流程：多源图像、自动预标注、规则过滤、两轮人工复核及手动修订，最终保留5510条标注。" /></a>
+            <figcaption><span>FIG. 7 · CONSTRUCTION OF AFFORDBENCH</span><span>查看大图 ↗</span></figcaption>
+          </figure>
+          <p class="aff-note">AffordBench 在上述主实验中提供训练监督。记录按“物体实例—affordance”标注计数，同一图像可以包含多条记录；5,510 不代表独立图像数量。</p>
         </section>
       </main>
-
-      <footer id="page-footer" class="page-footer"><a href="topic-04.html">← Topic 04</a><a href="index.html">All Research <span>↗</span></a><p>© 2026</p></footer>
+      <footer id="page-footer" class="page-footer"><a href="topic-04.html">← HAI Series</a><a href="index.html">All Research <span>↗</span></a><p>© 2026</p></footer>
     </div>
   </body>
 </html>

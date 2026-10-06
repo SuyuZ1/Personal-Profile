@@ -17,3 +17,10 @@ material/research素材/HAI2/*
 !material/research素材/HAI3/
 material/research素材/HAI3/*
 !material/research素材/HAI3/hai3-vla20-concept-v2.png
+
+# AffiMoE public summary: only the approved motivation and data figures.
+material/AffiMoE Fine Grained.pdf
+!material/research素材/AffiMoE/
+material/research素材/AffiMoE/*
+!material/research素材/AffiMoE/fig1-motivation.png
+!material/research素材/AffiMoE/fig7-dataset.png
